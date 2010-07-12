@@ -63,6 +63,7 @@ DECL|variable|license
 name|'license'
 op|'='
 string|"'Apache License (2.0)'"
+op|','
 nl|'\n'
 DECL|variable|author
 name|'author'

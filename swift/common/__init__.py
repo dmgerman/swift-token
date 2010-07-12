@@ -1,0 +1,22 @@
+begin_unit
+string|'""" Code common to all of Swift. """'
+newline|'\n'
+nl|'\n'
+DECL|variable|ACCOUNT_LISTING_LIMIT
+name|'ACCOUNT_LISTING_LIMIT'
+op|'='
+number|'10000'
+newline|'\n'
+DECL|variable|CONTAINER_LISTING_LIMIT
+name|'CONTAINER_LISTING_LIMIT'
+op|'='
+number|'10000'
+newline|'\n'
+DECL|variable|FILE_SIZE_LIMIT
+name|'FILE_SIZE_LIMIT'
+op|'='
+number|'5368709122'
+newline|'\n'
+nl|'\n'
+endmarker|''
+end_unit

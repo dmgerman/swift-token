@@ -148,7 +148,7 @@ name|'conf'
 op|'.'
 name|'get'
 op|'('
-string|"'bind_ip'"
+string|"'ip'"
 op|','
 string|"'127.0.0.1'"
 op|')'
@@ -163,7 +163,7 @@ name|'conf'
 op|'.'
 name|'get'
 op|'('
-string|"'bind_port'"
+string|"'port'"
 op|','
 number|'11000'
 op|')'

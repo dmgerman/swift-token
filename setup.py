@@ -92,11 +92,11 @@ op|']'
 op|')'
 op|','
 nl|'\n'
-comment|'#Uncomment this once unittests work without /etc'
-nl|'\n'
-comment|'#Also, figure out how to make this only run unit tests'
-nl|'\n'
-comment|"#test_suite = 'nose.collector',"
+DECL|variable|test_suite
+name|'test_suite'
+op|'='
+string|"'nose.collector'"
+op|','
 nl|'\n'
 DECL|variable|classifiers
 name|'classifiers'

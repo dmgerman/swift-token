@@ -9154,15 +9154,18 @@ op|')'
 op|':'
 newline|'\n'
 indent|'            '
-name|'raise'
-name|'Exception'
-op|'('
-string|"'PATH_TO_TEST_XFS not set or not pointing to '"
-nl|'\n'
-string|"'a valid directory.\\nPlease set PATH_TO_TEST_XFS to a '"
-nl|'\n'
-string|"'directory on an XFS file system for testing.'"
-op|')'
+name|'print'
+op|'>>'
+name|'sys'
+op|'.'
+name|'stderr'
+op|','
+string|"'WARNING: PATH_TO_TEST_XFS not set or not '"
+string|"'pointing to a valid directory.\\n'"
+string|"'Please set PATH_TO_TEST_XFS to a directory on an XFS file '"
+string|"'system for testing.'"
+newline|'\n'
+name|'return'
 newline|'\n'
 dedent|''
 name|'testdir'

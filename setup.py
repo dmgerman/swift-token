@@ -205,6 +205,10 @@ op|','
 nl|'\n'
 string|"'bin/swift-object-info'"
 op|','
+nl|'\n'
+string|"'bin/swift-object-replicator'"
+op|','
+nl|'\n'
 string|"'bin/swift-object-server'"
 op|','
 nl|'\n'

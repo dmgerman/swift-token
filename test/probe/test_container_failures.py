@@ -447,7 +447,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-server'"
+string|"'swift-container-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"
@@ -1121,7 +1121,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-server'"
+string|"'swift-container-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"
@@ -1812,7 +1812,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-server'"
+string|"'swift-container-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"
@@ -2510,7 +2510,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-server'"
+string|"'swift-container-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"

@@ -893,7 +893,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-updater'"
+string|"'swift-container-updater'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"
@@ -1069,7 +1069,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-account-server'"
+string|"'swift-account-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/account-server/%d.conf'"

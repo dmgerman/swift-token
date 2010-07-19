@@ -521,7 +521,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-account-server'"
+string|"'swift-account-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/account-server/%d.conf'"
@@ -568,7 +568,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-server'"
+string|"'swift-container-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"
@@ -615,7 +615,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-server'"
+string|"'swift-object-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"

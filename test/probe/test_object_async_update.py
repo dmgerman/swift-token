@@ -298,7 +298,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-container-server'"
+string|"'swift-container-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/container-server/%d.conf'"
@@ -372,7 +372,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-updater'"
+string|"'swift-object-updater'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"

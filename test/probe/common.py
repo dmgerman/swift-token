@@ -157,7 +157,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-auth-server'"
+string|"'swift-auth-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/auth-server.conf'"
@@ -174,7 +174,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-proxy-server'"
+string|"'swift-proxy-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/proxy-server.conf'"
@@ -241,7 +241,7 @@ op|'='
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-%s-server'"
+string|"'swift-%s-server'"
 op|'%'
 name|'s'
 op|','
@@ -455,7 +455,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-%s'"
+string|"'swift-%s'"
 op|'%'
 name|'job'
 op|','
@@ -534,7 +534,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-%s'"
+string|"'swift-%s'"
 op|'%'
 name|'job'
 op|','
@@ -616,7 +616,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-%s'"
+string|"'swift-%s'"
 op|'%'
 name|'job'
 op|','

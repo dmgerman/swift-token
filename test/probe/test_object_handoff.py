@@ -460,7 +460,7 @@ name|'Popen'
 op|'('
 op|'['
 nl|'\n'
-string|"'/usr/bin/swift-object-server'"
+string|"'swift-object-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -679,7 +679,7 @@ name|'Popen'
 op|'('
 op|'['
 nl|'\n'
-string|"'/usr/bin/swift-object-server'"
+string|"'swift-object-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -777,7 +777,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-replicator'"
+string|"'swift-object-replicator'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -819,7 +819,7 @@ dedent|''
 name|'call'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-replicator'"
+string|"'swift-object-replicator'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -1098,7 +1098,7 @@ name|'Popen'
 op|'('
 op|'['
 nl|'\n'
-string|"'/usr/bin/swift-object-server'"
+string|"'swift-object-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -1192,7 +1192,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-replicator'"
+string|"'swift-object-replicator'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -1234,7 +1234,7 @@ dedent|''
 name|'call'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-replicator'"
+string|"'swift-object-replicator'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -1511,7 +1511,7 @@ name|'Popen'
 op|'('
 op|'['
 nl|'\n'
-string|"'/usr/bin/swift-object-server'"
+string|"'swift-object-server'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -1578,7 +1578,7 @@ op|'('
 name|'Popen'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-replicator'"
+string|"'swift-object-replicator'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"
@@ -1620,7 +1620,7 @@ dedent|''
 name|'call'
 op|'('
 op|'['
-string|"'/usr/bin/swift-object-replicator'"
+string|"'swift-object-replicator'"
 op|','
 nl|'\n'
 string|"'/etc/swift/object-server/%d.conf'"

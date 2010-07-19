@@ -96,7 +96,7 @@ op|'('
 name|'exclude'
 op|'='
 op|'['
-string|"'tests'"
+string|"'test'"
 op|','
 string|"'bin'"
 op|']'

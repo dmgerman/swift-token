@@ -137,17 +137,17 @@ name|'install_requires'
 op|'='
 op|'['
 nl|'\n'
-string|"'eventlet'"
+string|"'eventlet>=0.9.9'"
 op|','
 nl|'\n'
-string|"'simplejson'"
+string|"'simplejson>=2.0.9'"
 op|','
 comment|'# included for speed'
 nl|'\n'
-string|"'webob'"
+string|"'WebOb>=0.9.8'"
 op|','
 nl|'\n'
-string|"'xattr'"
+string|"'xattr>=0.4'"
 op|','
 nl|'\n'
 op|']'

@@ -132,6 +132,27 @@ nl|'\n'
 op|']'
 op|','
 nl|'\n'
+DECL|variable|install_requires
+name|'install_requires'
+op|'='
+op|'['
+nl|'\n'
+string|"'eventlet'"
+op|','
+nl|'\n'
+string|"'simplejson'"
+op|','
+comment|'# included for speed'
+nl|'\n'
+string|"'webob'"
+op|','
+nl|'\n'
+string|"'xattr'"
+op|','
+nl|'\n'
+op|']'
+op|','
+nl|'\n'
 DECL|variable|scripts
 name|'scripts'
 op|'='

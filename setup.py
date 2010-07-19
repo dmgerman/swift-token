@@ -137,7 +137,7 @@ name|'install_requires'
 op|'='
 op|'['
 nl|'\n'
-string|"'eventlet>=0.9.9'"
+string|"'eventlet>=0.9.1'"
 op|','
 nl|'\n'
 string|"'simplejson>=2.0.9'"

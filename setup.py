@@ -46,7 +46,7 @@ newline|'\n'
 DECL|variable|version
 name|'version'
 op|'='
-string|"'1.0.1'"
+string|"'1.0.2'"
 newline|'\n'
 nl|'\n'
 name|'setup'

@@ -17,6 +17,5 @@ name|'FILE_SIZE_LIMIT'
 op|'='
 number|'5368709122'
 newline|'\n'
-nl|'\n'
 endmarker|''
 end_unit

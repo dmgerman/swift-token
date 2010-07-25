@@ -99,6 +99,7 @@ newline|'\n'
 indent|'    '
 string|'"""\n    Auth Middleware that uses the dev auth server\n    """'
 newline|'\n'
+nl|'\n'
 DECL|member|__init__
 name|'def'
 name|'__init__'

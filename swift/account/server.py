@@ -868,7 +868,7 @@ newline|'\n'
 indent|'        '
 string|'"""Handle HTTP HEAD request."""'
 newline|'\n'
-comment|"# TODO: Refactor: The account server used to provide a 'account and"
+comment|"# TODO(refactor): The account server used to provide a 'account and"
 nl|'\n'
 comment|"# container existence check all-in-one' call by doing a HEAD with a"
 nl|'\n'

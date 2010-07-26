@@ -696,6 +696,7 @@ name|'return'
 name|'conn'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|http_connect_raw
 dedent|''
 name|'def'

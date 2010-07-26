@@ -34,6 +34,7 @@ name|'import'
 name|'Response'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|HealthCheckController
 name|'class'
 name|'HealthCheckController'

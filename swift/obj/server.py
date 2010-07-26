@@ -338,6 +338,7 @@ newline|'\n'
 indent|'    '
 string|'"""\n    Manage object files on disk.\n\n    :param path: path to devices on the node\n    :param device: device name\n    :param partition: partition on the device the object lives in\n    :param account: account name for the object\n    :param container: container name for the object\n    :param obj: object name for the object\n    :param keep_data_fp: if True, don\'t close the fp, otherwise close it\n    :param disk_chunk_Size: size of chunks on file reads\n    """'
 newline|'\n'
+nl|'\n'
 DECL|member|__init__
 name|'def'
 name|'__init__'

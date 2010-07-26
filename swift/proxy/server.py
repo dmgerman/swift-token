@@ -5256,7 +5256,6 @@ nl|'\n'
 name|'body'
 op|'='
 string|"'Destination header must be of the form '"
-op|'+'
 nl|'\n'
 string|"'container/object'"
 op|')'

@@ -135,7 +135,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Instances of MockTrue evalulate like True\n    Any attr accessed on an instance of MockTrue will return a MockTrue instance\n    Any method called on an instance of MockTrue will return a MockTrue instance\n\n    >>> thing = MockTrue()\n    >>> thing\n    True\n    >>> thing == True # True == True\n    True\n    >>> thing == False # True == False\n    False\n    >>> thing != True # True != True\n    False\n    >>> thing != False # True != False\n    True\n    >>> thing.attribute\n    True\n    >>> thing.method()\n    True\n    >>> thing.attribute.method()\n    True\n    >>> thing.method().attribute\n    True\n\n    """'
+string|'"""\n    Instances of MockTrue evaluate like True\n    Any attr accessed on an instance of MockTrue will return a MockTrue instance\n    Any method called on an instance of MockTrue will return a MockTrue instance\n\n    >>> thing = MockTrue()\n    >>> thing\n    True\n    >>> thing == True # True == True\n    True\n    >>> thing == False # True == False\n    False\n    >>> thing != True # True != True\n    False\n    >>> thing != False # True != False\n    True\n    >>> thing.attribute\n    True\n    >>> thing.method()\n    True\n    >>> thing.attribute.method()\n    True\n    >>> thing.method().attribute\n    True\n\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__getattribute__

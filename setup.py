@@ -82,6 +82,12 @@ op|'='
 string|"'OpenStack, LLC.'"
 op|','
 nl|'\n'
+DECL|variable|author_email
+name|'author_email'
+op|'='
+string|"'openstack-admins@lists.launchpad.net'"
+op|','
+nl|'\n'
 DECL|variable|url
 name|'url'
 op|'='

@@ -114,8 +114,6 @@ number|'10000'
 newline|'\n'
 nl|'\n'
 nl|'\n'
-nl|'\n'
-nl|'\n'
 DECL|function|check_metadata
 name|'def'
 name|'check_metadata'

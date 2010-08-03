@@ -201,7 +201,6 @@ nl|'\n'
 comment|"# like more work than it's worth."
 nl|'\n'
 nl|'\n'
-nl|'\n'
 DECL|function|run_wsgi
 dedent|''
 name|'def'

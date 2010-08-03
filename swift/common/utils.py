@@ -269,6 +269,7 @@ op|'%'
 name|'func_name'
 op|')'
 newline|'\n'
+nl|'\n'
 DECL|function|noop_libc_function
 name|'def'
 name|'noop_libc_function'

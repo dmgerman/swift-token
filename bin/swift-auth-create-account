@@ -1,274 +1,47 @@
-begin_unit
-comment|'#!/usr/bin/python'
-nl|'\n'
-comment|'# Copyright (c) 2010 OpenStack, LLC.'
-nl|'\n'
-comment|'#'
-nl|'\n'
-comment|'# Licensed under the Apache License, Version 2.0 (the "License");'
-nl|'\n'
-comment|'# you may not use this file except in compliance with the License.'
-nl|'\n'
-comment|'# You may obtain a copy of the License at'
-nl|'\n'
-comment|'#'
-nl|'\n'
-comment|'#    http://www.apache.org/licenses/LICENSE-2.0'
-nl|'\n'
-comment|'#'
-nl|'\n'
-comment|'# Unless required by applicable law or agreed to in writing, software'
-nl|'\n'
-comment|'# distributed under the License is distributed on an "AS IS" BASIS,'
-nl|'\n'
-comment|'# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or'
-nl|'\n'
-comment|'# implied.'
-nl|'\n'
-comment|'# See the License for the specific language governing permissions and'
-nl|'\n'
-comment|'# limitations under the License.'
-nl|'\n'
-nl|'\n'
-name|'from'
-name|'ConfigParser'
-name|'import'
-name|'ConfigParser'
-newline|'\n'
-name|'from'
-name|'sys'
-name|'import'
-name|'argv'
-op|','
-name|'exit'
-newline|'\n'
-nl|'\n'
-name|'from'
-name|'swift'
-op|'.'
-name|'common'
-op|'.'
-name|'bufferedhttp'
-name|'import'
-name|'http_connect_raw'
-name|'as'
-name|'http_connect'
-newline|'\n'
-nl|'\n'
-nl|'\n'
-name|'if'
-name|'__name__'
-op|'=='
-string|"'__main__'"
-op|':'
-newline|'\n'
-DECL|variable|f
-indent|'    '
-name|'f'
-op|'='
-string|"'/etc/swift/auth-server.conf'"
-newline|'\n'
-name|'if'
-name|'len'
-op|'('
-name|'argv'
-op|')'
-op|'=='
-number|'5'
-op|':'
-newline|'\n'
-DECL|variable|f
-indent|'        '
-name|'f'
-op|'='
-name|'argv'
-op|'['
-number|'4'
-op|']'
-newline|'\n'
-dedent|''
-name|'elif'
-name|'len'
-op|'('
-name|'argv'
-op|')'
-op|'!='
-number|'4'
-op|':'
-newline|'\n'
-indent|'        '
-name|'exit'
-op|'('
-string|"'Syntax: %s <new_account> <new_user> <new_password> [conf_file]'"
-op|'%'
-nl|'\n'
-name|'argv'
-op|'['
-number|'0'
-op|']'
-op|')'
-newline|'\n'
-DECL|variable|new_account
-dedent|''
-name|'new_account'
-op|'='
-name|'argv'
-op|'['
-number|'1'
-op|']'
-newline|'\n'
-DECL|variable|new_user
-name|'new_user'
-op|'='
-name|'argv'
-op|'['
-number|'2'
-op|']'
-newline|'\n'
-DECL|variable|new_password
-name|'new_password'
-op|'='
-name|'argv'
-op|'['
-number|'3'
-op|']'
-newline|'\n'
-DECL|variable|c
-name|'c'
-op|'='
-name|'ConfigParser'
-op|'('
-op|')'
-newline|'\n'
-name|'if'
-name|'not'
-name|'c'
-op|'.'
-name|'read'
-op|'('
-name|'f'
-op|')'
-op|':'
-newline|'\n'
-indent|'        '
-name|'exit'
-op|'('
-string|"'Unable to read conf file: %s'"
-op|'%'
-name|'f'
-op|')'
-newline|'\n'
-DECL|variable|conf
-dedent|''
-name|'conf'
-op|'='
-name|'dict'
-op|'('
-name|'c'
-op|'.'
-name|'items'
-op|'('
-string|"'auth-server'"
-op|')'
-op|')'
-newline|'\n'
-DECL|variable|host
-name|'host'
-op|'='
-name|'conf'
-op|'.'
-name|'get'
-op|'('
-string|"'bind_ip'"
-op|','
-string|"'127.0.0.1'"
-op|')'
-newline|'\n'
-DECL|variable|port
-name|'port'
-op|'='
-name|'int'
-op|'('
-name|'conf'
-op|'.'
-name|'get'
-op|'('
-string|"'bind_port'"
-op|','
-number|'11000'
-op|')'
-op|')'
-newline|'\n'
-DECL|variable|path
-name|'path'
-op|'='
-string|"'/account/%s/%s'"
-op|'%'
-op|'('
-name|'new_account'
-op|','
-name|'new_user'
-op|')'
-newline|'\n'
-DECL|variable|conn
-name|'conn'
-op|'='
-name|'http_connect'
-op|'('
-name|'host'
-op|','
-name|'port'
-op|','
-string|"'PUT'"
-op|','
-name|'path'
-op|','
-op|'{'
-string|"'x-auth-key'"
-op|':'
-name|'new_password'
-op|'}'
-op|')'
-newline|'\n'
-DECL|variable|resp
-name|'resp'
-op|'='
-name|'conn'
-op|'.'
-name|'getresponse'
-op|'('
-op|')'
-newline|'\n'
-name|'if'
-name|'resp'
-op|'.'
-name|'status'
-op|'=='
-number|'204'
-op|':'
-newline|'\n'
-indent|'        '
-name|'print'
-name|'resp'
-op|'.'
-name|'getheader'
-op|'('
-string|"'x-storage-url'"
-op|')'
-newline|'\n'
-dedent|''
-name|'else'
-op|':'
-newline|'\n'
-indent|'        '
-name|'print'
-string|"'Account creation failed. (%d)'"
-op|'%'
-name|'resp'
-op|'.'
-name|'status'
-newline|'\n'
-dedent|''
-dedent|''
-endmarker|''
-end_unit
+#!/usr/bin/python
+# Copyright (c) 2010 OpenStack, LLC.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+# implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+from ConfigParser import ConfigParser
+from sys import argv, exit
+
+from swift.common.bufferedhttp import http_connect_raw as http_connect
+
+
+if __name__ == '__main__':
+    f = '/etc/swift/auth-server.conf'
+    if len(argv) == 5:
+        f = argv[4]
+    elif len(argv) != 4:
+        exit('Syntax: %s <new_account> <new_user> <new_password> [conf_file]' %
+             argv[0])
+    new_account = argv[1]
+    new_user = argv[2]
+    new_password = argv[3]
+    c = ConfigParser()
+    if not c.read(f):
+        exit('Unable to read conf file: %s' % f)
+    conf = dict(c.items('auth-server'))
+    host = conf.get('bind_ip', '127.0.0.1')
+    port = int(conf.get('bind_port', 11000))
+    ssl = conf.get('cert_file') is not None
+    path = '/account/%s/%s' % (new_account, new_user)
+    conn = http_connect(host, port, 'PUT', path, {'x-auth-key':new_password},
+                        ssl=ssl)
+    resp = conn.getresponse()
+    if resp.status == 204:
+        print resp.getheader('x-storage-url')
+    else:
+        print 'Account creation failed. (%d)' % resp.status

@@ -1341,7 +1341,7 @@ name|'conf'
 op|'.'
 name|'get'
 op|'('
-string|"'replication_concurrency'"
+string|"'concurrency'"
 op|','
 number|'1'
 op|')'

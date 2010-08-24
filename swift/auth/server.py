@@ -193,7 +193,7 @@ name|'get'
 op|'('
 string|"'default_cluster_url'"
 op|','
-string|"'http://127.0.0.1:9000/v1'"
+string|"'http://127.0.0.1:8080/v1'"
 op|')'
 newline|'\n'
 name|'self'

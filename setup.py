@@ -383,7 +383,7 @@ nl|'\n'
 string|"'healthcheck=swift.common.middleware.healthcheck:filter_factory'"
 op|','
 nl|'\n'
-string|"'cache=swift.common.middleware.cache:filter_factory'"
+string|"'memcache=swift.common.middleware.memcache:filter_factory'"
 op|','
 nl|'\n'
 op|']'

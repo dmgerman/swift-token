@@ -1,129 +1,24 @@
-begin_unit
-comment|'#!/usr/bin/python'
-nl|'\n'
-comment|'# Copyright (c) 2010 OpenStack, LLC.'
-nl|'\n'
-comment|'#'
-nl|'\n'
-comment|'# Licensed under the Apache License, Version 2.0 (the "License");'
-nl|'\n'
-comment|'# you may not use this file except in compliance with the License.'
-nl|'\n'
-comment|'# You may obtain a copy of the License at'
-nl|'\n'
-comment|'#'
-nl|'\n'
-comment|'#    http://www.apache.org/licenses/LICENSE-2.0'
-nl|'\n'
-comment|'#'
-nl|'\n'
-comment|'# Unless required by applicable law or agreed to in writing, software'
-nl|'\n'
-comment|'# distributed under the License is distributed on an "AS IS" BASIS,'
-nl|'\n'
-comment|'# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or'
-nl|'\n'
-comment|'# implied.'
-nl|'\n'
-comment|'# See the License for the specific language governing permissions and'
-nl|'\n'
-comment|'# limitations under the License.'
-nl|'\n'
-nl|'\n'
-name|'from'
-name|'ConfigParser'
-name|'import'
-name|'ConfigParser'
-newline|'\n'
-name|'import'
-name|'sys'
-newline|'\n'
-nl|'\n'
-name|'from'
-name|'swift'
-op|'.'
-name|'common'
-op|'.'
-name|'wsgi'
-name|'import'
-name|'run_wsgi'
-newline|'\n'
-name|'from'
-name|'swift'
-op|'.'
-name|'container'
-op|'.'
-name|'server'
-name|'import'
-name|'ContainerController'
-newline|'\n'
-nl|'\n'
-name|'if'
-name|'__name__'
-op|'=='
-string|"'__main__'"
-op|':'
-newline|'\n'
-DECL|variable|c
-indent|'    '
-name|'c'
-op|'='
-name|'ConfigParser'
-op|'('
-op|')'
-newline|'\n'
-name|'if'
-name|'not'
-name|'c'
-op|'.'
-name|'read'
-op|'('
-name|'sys'
-op|'.'
-name|'argv'
-op|'['
-number|'1'
-op|']'
-op|')'
-op|':'
-newline|'\n'
-indent|'        '
-name|'print'
-string|'"Unable to read config file."'
-newline|'\n'
-name|'sys'
-op|'.'
-name|'exit'
-op|'('
-number|'1'
-op|')'
-newline|'\n'
-DECL|variable|conf
-dedent|''
-name|'conf'
-op|'='
-name|'dict'
-op|'('
-name|'c'
-op|'.'
-name|'items'
-op|'('
-string|"'container-server'"
-op|')'
-op|')'
-newline|'\n'
-name|'run_wsgi'
-op|'('
-name|'ContainerController'
-op|','
-name|'conf'
-op|','
-name|'default_port'
-op|'='
-number|'6001'
-op|')'
-newline|'\n'
-nl|'\n'
-dedent|''
-endmarker|''
-end_unit
+#!/usr/bin/python
+# Copyright (c) 2010 OpenStack, LLC.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+# implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import sys
+
+from swift.common.wsgi import run_wsgi
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        sys.exit("Usage: %s CONFIG_FILE" % sys.argv[0])
+    run_wsgi(sys.argv[1], 'container-server', default_port=6001)

@@ -489,6 +489,10 @@ op|':'
 name|'self'
 op|'.'
 name|'testdir'
+op|','
+string|"'log_name'"
+op|':'
+string|"'auth'"
 op|'}'
 newline|'\n'
 name|'self'

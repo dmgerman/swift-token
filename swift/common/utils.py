@@ -218,6 +218,26 @@ string|"'endcap'"
 op|')'
 newline|'\n'
 nl|'\n'
+comment|'# Used when reading config values'
+nl|'\n'
+DECL|variable|TRUE_VALUES
+name|'TRUE_VALUES'
+op|'='
+name|'set'
+op|'('
+op|'('
+string|"'true'"
+op|','
+string|"'1'"
+op|','
+string|"'yes'"
+op|','
+string|"'True'"
+op|','
+string|"'Yes'"
+op|')'
+op|')'
+newline|'\n'
 nl|'\n'
 DECL|function|load_libc_function
 name|'def'

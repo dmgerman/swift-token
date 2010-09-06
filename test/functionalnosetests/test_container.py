@@ -4154,10 +4154,10 @@ number|'201'
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_noaccess_user
+DECL|member|test_nonadmin_user
 dedent|''
 name|'def'
-name|'test_noaccess_user'
+name|'test_nonadmin_user'
 op|'('
 name|'self'
 op|')'

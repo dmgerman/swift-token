@@ -2055,7 +2055,7 @@ name|'req'
 op|'.'
 name|'acl'
 op|'='
-string|"'.ref:any'"
+string|"'.r:*'"
 newline|'\n'
 name|'self'
 op|'.'
@@ -2092,7 +2092,7 @@ name|'req'
 op|'.'
 name|'acl'
 op|'='
-string|"'.ref:.example.com'"
+string|"'.r:.example.com'"
 newline|'\n'
 name|'resp'
 op|'='
@@ -2139,7 +2139,7 @@ string|"'act:usr,act'"
 newline|'\n'
 name|'req'
 op|'.'
-name|'referrer'
+name|'referer'
 op|'='
 string|"'http://www.example.com/index.html'"
 newline|'\n'
@@ -2147,7 +2147,7 @@ name|'req'
 op|'.'
 name|'acl'
 op|'='
-string|"'.ref:.example.com'"
+string|"'.r:.example.com'"
 newline|'\n'
 name|'self'
 op|'.'
@@ -2215,7 +2215,7 @@ name|'req'
 op|'.'
 name|'acl'
 op|'='
-string|"'.ref:any'"
+string|"'.r:*'"
 newline|'\n'
 name|'self'
 op|'.'
@@ -2246,7 +2246,7 @@ name|'req'
 op|'.'
 name|'acl'
 op|'='
-string|"'.ref:.example.com'"
+string|"'.r:.example.com'"
 newline|'\n'
 name|'resp'
 op|'='
@@ -2287,7 +2287,7 @@ op|')'
 newline|'\n'
 name|'req'
 op|'.'
-name|'referrer'
+name|'referer'
 op|'='
 string|"'http://www.example.com/index.html'"
 newline|'\n'
@@ -2295,7 +2295,7 @@ name|'req'
 op|'.'
 name|'acl'
 op|'='
-string|"'.ref:.example.com'"
+string|"'.r:.example.com'"
 newline|'\n'
 name|'self'
 op|'.'

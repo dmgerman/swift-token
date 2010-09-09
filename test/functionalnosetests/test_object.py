@@ -562,7 +562,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Read'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|'}'
 op|')'
 newline|'\n'

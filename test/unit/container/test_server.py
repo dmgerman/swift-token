@@ -434,7 +434,7 @@ string|"'1'"
 op|','
 string|"'X-Container-Read'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|','
 nl|'\n'
 string|"'X-Container-Write'"
@@ -507,8 +507,7 @@ op|'('
 string|"'x-container-read'"
 op|')'
 op|','
-nl|'\n'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|')'
 newline|'\n'
 name|'self'
@@ -668,7 +667,7 @@ string|"'4'"
 op|','
 string|"'X-Container-Read'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|','
 nl|'\n'
 string|"'X-Container-Write'"
@@ -741,8 +740,7 @@ op|'('
 string|"'x-container-read'"
 op|')'
 op|','
-nl|'\n'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|')'
 newline|'\n'
 name|'self'

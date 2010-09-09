@@ -17677,7 +17677,7 @@ op|'='
 op|'{'
 string|"'X-Container-Read'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|'}'
 op|')'
 newline|'\n'
@@ -17786,7 +17786,7 @@ op|'='
 op|'{'
 string|"'X-Container-Write'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|'}'
 op|')'
 newline|'\n'
@@ -17930,7 +17930,7 @@ op|'='
 op|'{'
 string|"'X-Container-Read'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|'}'
 op|')'
 newline|'\n'
@@ -18039,7 +18039,7 @@ op|'='
 op|'{'
 string|"'X-Container-Write'"
 op|':'
-string|"'.ref:any'"
+string|"'.r:*'"
 op|'}'
 op|')'
 newline|'\n'

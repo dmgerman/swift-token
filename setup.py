@@ -293,7 +293,7 @@ op|','
 string|"'bin/swift-account-server'"
 op|','
 nl|'\n'
-string|"'bin/swift-auth-create-account'"
+string|"'bin/swift-auth-add-user'"
 op|','
 nl|'\n'
 string|"'bin/swift-auth-recreate-accounts'"

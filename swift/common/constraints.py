@@ -112,6 +112,16 @@ name|'ACCOUNT_LISTING_LIMIT'
 op|'='
 number|'10000'
 newline|'\n'
+DECL|variable|MAX_ACCOUNT_NAME_LENGTH
+name|'MAX_ACCOUNT_NAME_LENGTH'
+op|'='
+number|'256'
+newline|'\n'
+DECL|variable|MAX_CONTAINER_NAME_LENGTH
+name|'MAX_CONTAINER_NAME_LENGTH'
+op|'='
+number|'256'
+newline|'\n'
 nl|'\n'
 nl|'\n'
 DECL|function|check_metadata

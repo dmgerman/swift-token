@@ -214,7 +214,7 @@ name|'d'
 op|'.'
 name|'setdefault'
 op|'('
-string|"'count'"
+string|"'replica_count'"
 op|','
 number|'0'
 op|')'

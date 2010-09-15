@@ -206,6 +206,8 @@ name|'return'
 name|'code'
 op|','
 name|'data'
+op|'('
+op|')'
 newline|'\n'
 nl|'\n'
 DECL|class|TestLogProcessor
@@ -233,7 +235,7 @@ newline|'\n'
 DECL|variable|stats_test_line
 name|'stats_test_line'
 op|'='
-string|"'account,1,2,3,1283378584.881391'"
+string|"'account,1,2,3'"
 newline|'\n'
 DECL|variable|proxy_config
 name|'proxy_config'
@@ -1021,7 +1023,7 @@ string|"'a'"
 op|','
 string|"'c'"
 op|','
-string|"'o'"
+string|"'y/m/d/h/o'"
 op|')'
 newline|'\n'
 name|'expected'
@@ -1049,11 +1051,6 @@ nl|'\n'
 string|"'bytes_used'"
 op|':'
 number|'3'
-op|','
-nl|'\n'
-string|"'created_at'"
-op|':'
-string|"'1283378584.881391'"
 op|'}'
 op|'}'
 newline|'\n'

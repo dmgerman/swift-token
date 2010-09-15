@@ -1585,7 +1585,7 @@ name|'lookback_start'
 op|'.'
 name|'strftime'
 op|'('
-string|"'%Y%m%d'"
+string|"'%Y%m%d%H'"
 op|')'
 newline|'\n'
 name|'if'
@@ -1644,7 +1644,7 @@ name|'lookback_end'
 op|'.'
 name|'strftime'
 op|'('
-string|"'%Y%m%d'"
+string|"'%Y%m%d%H'"
 op|')'
 newline|'\n'
 dedent|''

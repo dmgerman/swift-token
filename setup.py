@@ -301,6 +301,9 @@ op|','
 string|"'bin/swift-auth-server'"
 op|','
 nl|'\n'
+string|"'bin/swift-auth-update-reseller-prefixes'"
+op|','
+nl|'\n'
 string|"'bin/swift-container-auditor'"
 op|','
 nl|'\n'

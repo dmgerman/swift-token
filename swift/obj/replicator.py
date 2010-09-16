@@ -1210,7 +1210,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Replicate objects.\n\n    Encapsulates most logic and data needed by the object replication process.\n    Each call to .replicate() performs one replication pass.  It\'s up to the \n    caller to do this in a loop.\n    """'
+string|'"""\n    Replicate objects.\n\n    Encapsulates most logic and data needed by the object replication process.\n    Each call to .replicate() performs one replication pass.  It\'s up to the\n    caller to do this in a loop.\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

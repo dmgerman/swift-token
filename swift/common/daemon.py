@@ -45,6 +45,7 @@ name|'import'
 name|'utils'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|Daemon
 name|'class'
 name|'Daemon'

@@ -3315,6 +3315,7 @@ name|'start_response'
 op|')'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|app_factory
 dedent|''
 dedent|''

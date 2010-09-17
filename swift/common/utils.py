@@ -235,6 +235,10 @@ op|','
 string|"'True'"
 op|','
 string|"'Yes'"
+op|','
+string|"'on'"
+op|','
+string|"'On'"
 op|')'
 op|')'
 newline|'\n'

@@ -10483,6 +10483,7 @@ name|'return'
 name|'None'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|app_factory
 dedent|''
 dedent|''

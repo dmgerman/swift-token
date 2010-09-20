@@ -235,9 +235,14 @@ op|','
 string|"'True'"
 op|','
 string|"'Yes'"
+op|','
+string|"'on'"
+op|','
+string|"'On'"
 op|')'
 op|')'
 newline|'\n'
+nl|'\n'
 nl|'\n'
 DECL|function|load_libc_function
 name|'def'
@@ -2613,6 +2618,7 @@ indent|'                '
 name|'pass'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|item_from_env
 dedent|''
 dedent|''
@@ -2659,6 +2665,7 @@ dedent|''
 name|'return'
 name|'item'
 newline|'\n'
+nl|'\n'
 nl|'\n'
 DECL|function|cache_from_env
 dedent|''

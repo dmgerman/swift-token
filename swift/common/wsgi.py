@@ -205,10 +205,10 @@ op|'='
 name|'parsetype'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 comment|'# We might be able to pull pieces of this out to test, but right now it seems'
 nl|'\n'
 comment|"# like more work than it's worth."
-nl|'\n'
 nl|'\n'
 DECL|function|run_wsgi
 dedent|''

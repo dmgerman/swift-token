@@ -88,7 +88,6 @@ name|'default_port'
 op|'='
 number|'6002'
 newline|'\n'
-nl|'\n'
 dedent|''
 endmarker|''
 end_unit

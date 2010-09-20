@@ -1033,7 +1033,7 @@ string|"'account'"
 op|':'
 nl|'\n'
 op|'{'
-string|"'count'"
+string|"'replica_count'"
 op|':'
 number|'1'
 op|','

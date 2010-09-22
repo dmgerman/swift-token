@@ -35,10 +35,9 @@ name|'import'
 name|'struct'
 newline|'\n'
 nl|'\n'
-nl|'\n'
-DECL|class|CompressedFileReader
+DECL|class|CompressingFileReader
 name|'class'
-name|'CompressedFileReader'
+name|'CompressingFileReader'
 op|'('
 name|'object'
 op|')'

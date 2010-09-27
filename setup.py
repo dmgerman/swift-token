@@ -345,6 +345,10 @@ string|"'bin/swift-stats-populate'"
 op|','
 nl|'\n'
 string|"'bin/swift-stats-report'"
+op|','
+nl|'\n'
+string|"'bin/swift-bench'"
+op|','
 nl|'\n'
 op|']'
 op|','

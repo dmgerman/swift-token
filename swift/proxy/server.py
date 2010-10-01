@@ -3924,7 +3924,7 @@ name|'body'
 op|'='
 string|"'X-Copy-From header must be of the form'"
 nl|'\n'
-string|"'container/object'"
+string|"'<container name>/<object name>'"
 op|')'
 newline|'\n'
 dedent|''
@@ -5581,7 +5581,7 @@ name|'split'
 op|'('
 string|"'/'"
 op|','
-number|'3'
+number|'2'
 op|')'
 newline|'\n'
 dedent|''
@@ -5602,7 +5602,7 @@ name|'body'
 op|'='
 string|"'Destination header must be of the form '"
 nl|'\n'
-string|"'container/object'"
+string|"'<container name>/<object name>'"
 op|')'
 newline|'\n'
 dedent|''

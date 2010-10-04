@@ -389,6 +389,8 @@ nl|'\n'
 string|"'memcache=swift.common.middleware.memcache:filter_factory'"
 op|','
 nl|'\n'
+comment|"#            'ratelimit=swift.common.middeware.ratelimit:filter_factory',"
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

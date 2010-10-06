@@ -389,7 +389,8 @@ nl|'\n'
 string|"'memcache=swift.common.middleware.memcache:filter_factory'"
 op|','
 nl|'\n'
-comment|"#            'ratelimit=swift.common.middeware.ratelimit:filter_factory',"
+string|"'ratelimit=swift.common.middleware.ratelimit:filter_factory'"
+op|','
 nl|'\n'
 op|']'
 op|','

@@ -350,6 +350,15 @@ nl|'\n'
 string|"'bin/swift-bench'"
 op|','
 nl|'\n'
+string|"'bin/swift-log-uploader'"
+op|','
+nl|'\n'
+string|"'bin/swift-log-stats-collector'"
+op|','
+nl|'\n'
+string|"'bin/swift-account-stats-logger'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

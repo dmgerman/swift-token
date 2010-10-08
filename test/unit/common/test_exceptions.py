@@ -42,9 +42,10 @@ name|'import'
 name|'exceptions'
 newline|'\n'
 nl|'\n'
-DECL|class|TestAuditor
+nl|'\n'
+DECL|class|TestExceptions
 name|'class'
-name|'TestAuditor'
+name|'TestExceptions'
 op|'('
 name|'unittest'
 op|'.'

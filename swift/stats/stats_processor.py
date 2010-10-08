@@ -38,6 +38,7 @@ name|'import'
 name|'get_logger'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|StatsLogProcessor
 name|'class'
 name|'StatsLogProcessor'

@@ -1950,7 +1950,7 @@ newline|'\n'
 indent|'        '
 name|'conf'
 op|'='
-string|"'''\n            [section1]\n            foo = bar\n            \n            [section2]\n            log_name = yarr\n        '''"
+string|"'''[section1]\nfoo = bar\n\n[section2]\nlog_name = yarr\n        '''"
 newline|'\n'
 name|'result'
 op|'='

@@ -954,7 +954,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'        '
-string|"'''\n        Performs rate limiting and account white/black listing.  Sleeps\n        if necessary.\n        :param account_name: account name from path\n        :param container_name: container name from path\n        :param obj_name: object name from path\n        '''"
+string|"'''\n        Performs rate limiting and account white/black listing.  Sleeps\n        if necessary.\n\n        :param account_name: account name from path\n        :param container_name: container name from path\n        :param obj_name: object name from path\n        '''"
 newline|'\n'
 name|'if'
 name|'account_name'

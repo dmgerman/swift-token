@@ -689,9 +689,9 @@ op|'.'
 name|'info'
 op|'('
 nl|'\n'
-string|"'Since %s: Locally: %d passed audit, %d quarantined, %d '"
+string|"'Since %s: Locally: %d passed audit, %d quarantined, '"
 nl|'\n'
-string|"'errors'"
+string|"'%d errors'"
 op|'%'
 op|'('
 name|'time'

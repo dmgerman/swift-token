@@ -476,6 +476,8 @@ name|'yield'
 name|'path'
 op|','
 name|'device'
+op|','
+name|'partition'
 newline|'\n'
 nl|'\n'
 DECL|member|run_forever

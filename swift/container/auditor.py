@@ -630,7 +630,7 @@ name|'self'
 op|'.'
 name|'logger'
 op|'.'
-name|'error'
+name|'exception'
 op|'('
 string|"'ERROR Could not get container info %s'"
 op|'%'

@@ -3083,7 +3083,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|"'''\n    Given a devices path and a data directory, yield (path, device,\n    partition) for all files in that directory\n\n    :param devices: parent directory of the devices to be audited\n    :param datadir: a directory located under self.devices. This should be\n    one of the DATADIR constants defined in the account, container, and\n    object servers.\n    :param mount_check: Flag to check if a mount check should be performed\n    on devices\n    :param logger: a logger object\n    '''"
+string|"'''\n    Given a devices path and a data directory, yield (path, device,\n    partition) for all files in that directory\n\n    :param devices: parent directory of the devices to be audited\n    :param datadir: a directory located under self.devices. This should be\n                    one of the DATADIR constants defined in the account,\n                    container, and object servers.\n    :param mount_check: Flag to check if a mount check should be performed\n                    on devices\n    :param logger: a logger object\n    '''"
 newline|'\n'
 name|'for'
 name|'device'

@@ -5854,7 +5854,7 @@ op|'='
 op|'{'
 string|"'REQUEST_METHOD'"
 op|':'
-string|"'PUT'"
+string|"'COPY'"
 op|'}'
 op|','
 name|'headers'

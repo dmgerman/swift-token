@@ -407,6 +407,9 @@ nl|'\n'
 string|"'ratelimit=swift.common.middleware.ratelimit:filter_factory'"
 op|','
 nl|'\n'
+string|"'catch_errors=swift.common.middleware.catch_errors:filter_factory'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

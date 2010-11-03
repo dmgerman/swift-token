@@ -51,7 +51,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Middleware that translates container and account parts of a domain to\n    path parameters that the proxy server understands.\n    \n    container.account.storageurl/object gets translated to\n    container.account.storageurl/path_root/account/container/object\n    \n    account.storageurl/path_root/container/object gets translated to\n    account.storageurl/path_root/account/container/object\n    """'
+string|'"""\n    Middleware that translates container and account parts of a domain to\n    path parameters that the proxy server understands.\n\n    container.account.storageurl/object gets translated to\n    container.account.storageurl/path_root/account/container/object\n\n    account.storageurl/path_root/container/object gets translated to\n    account.storageurl/path_root/account/container/object\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

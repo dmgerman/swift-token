@@ -208,7 +208,7 @@ newline|'\n'
 DECL|variable|copyright
 name|'copyright'
 op|'='
-string|"u'2010, OpenStack, LLC.'"
+string|"u'2010, OpenStack, LLC'"
 newline|'\n'
 nl|'\n'
 comment|"# The version info for the project you're documenting, acts as replacement for"

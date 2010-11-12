@@ -336,10 +336,19 @@ comment|'# The theme to use for HTML and HTML Help pages.  Major themes that com
 nl|'\n'
 comment|"# Sphinx are currently 'default' and 'sphinxdoc'."
 nl|'\n'
+comment|"# html_theme = 'default'"
+nl|'\n'
+DECL|variable|html_theme_path
+name|'html_theme_path'
+op|'='
+op|'['
+string|'"."'
+op|']'
+newline|'\n'
 DECL|variable|html_theme
 name|'html_theme'
 op|'='
-string|"'default'"
+string|"'_theme'"
 newline|'\n'
 nl|'\n'
 comment|'# Theme options are theme-specific and customize the look and feel of a theme'

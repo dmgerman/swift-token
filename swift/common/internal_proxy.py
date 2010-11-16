@@ -1030,7 +1030,7 @@ string|"'&end_marker=%s'"
 op|'%'
 name|'quote'
 op|'('
-name|'marker'
+name|'end_marker'
 op|')'
 newline|'\n'
 dedent|''

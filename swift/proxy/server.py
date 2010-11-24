@@ -9364,8 +9364,6 @@ name|'path'
 op|'.'
 name|'join'
 op|'('
-name|'self'
-op|'.'
 name|'swift_dir'
 op|','
 string|"'mime.types'"

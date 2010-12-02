@@ -255,9 +255,25 @@ op|'='
 string|"'https'"
 newline|'\n'
 dedent|''
+name|'if'
+string|"'auth_prefix'"
+name|'not'
+name|'in'
+name|'conf'
+op|':'
+newline|'\n'
+indent|'            '
+name|'conf'
+op|'['
+string|"'auth_prefix'"
+op|']'
+op|'='
+string|"'/'"
+newline|'\n'
+dedent|''
 name|'swift_test_auth'
 op|'+='
-string|"'://%(auth_host)s:%(auth_port)s/v1.0'"
+string|"'://%(auth_host)s:%(auth_port)s%(auth_prefix)sv1.0'"
 op|'%'
 name|'conf'
 newline|'\n'

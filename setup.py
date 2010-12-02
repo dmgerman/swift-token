@@ -375,6 +375,9 @@ string|"'bin/swauth-list'"
 op|','
 string|"'bin/swauth-prep'"
 op|','
+string|"'bin/swauth-set-account-service'"
+op|','
+nl|'\n'
 string|"'bin/swift-auth-to-swauth'"
 op|','
 nl|'\n'

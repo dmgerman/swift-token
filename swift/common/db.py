@@ -749,6 +749,13 @@ op|')'
 newline|'\n'
 name|'conn'
 op|'.'
+name|'execute'
+op|'('
+string|"'PRAGMA journal_mode = DELETE'"
+op|')'
+newline|'\n'
+name|'conn'
+op|'.'
 name|'create_function'
 op|'('
 string|"'chexor'"

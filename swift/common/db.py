@@ -4662,7 +4662,7 @@ newline|'\n'
 indent|'                    '
 name|'query'
 op|'+='
-string|"' name <= ? AND'"
+string|"' name < ? AND'"
 newline|'\n'
 name|'query_args'
 op|'.'

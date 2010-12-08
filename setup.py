@@ -61,6 +61,7 @@ name|'as'
 name|'version'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|local_sdist
 name|'class'
 name|'local_sdist'

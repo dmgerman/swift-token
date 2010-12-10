@@ -25440,7 +25440,7 @@ name|'assertEquals'
 op|'('
 name|'groups'
 op|','
-string|"'.auth,.reseller_admin'"
+string|"'.auth,.reseller_admin,AUTH_.auth'"
 op|')'
 newline|'\n'
 nl|'\n'

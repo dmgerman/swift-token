@@ -332,7 +332,7 @@ nl|'\n'
 indent|'    '
 name|'access_test_line'
 op|'='
-string|"'Jul  9 04:14:30 saio proxy 1.2.3.4 4.5.6.7 '"
+string|"'Jul  9 04:14:30 saio proxy-server 1.2.3.4 4.5.6.7 '"
 string|"'09/Jul/2010/04/14/30 GET '"
 string|"'/v1/acct/foo/bar?format=json&foo HTTP/1.0 200 - '"
 string|"'curl tk4e350daf-9338-4cc6-aabb-090e49babfbd '"

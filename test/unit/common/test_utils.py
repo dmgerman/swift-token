@@ -2314,7 +2314,7 @@ op|'('
 op|')'
 op|','
 nl|'\n'
-string|"'test1\\nserver test3\\nserver test4\\n'"
+string|"'test1\\ntest3\\ntest4\\n'"
 op|')'
 newline|'\n'
 name|'logger'
@@ -2335,7 +2335,7 @@ op|'('
 op|')'
 op|','
 nl|'\n'
-string|"'test1\\nserver test3\\nserver test4\\n'"
+string|"'test1\\ntest3\\ntest4\\n'"
 op|')'
 newline|'\n'
 nl|'\n'

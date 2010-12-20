@@ -96,7 +96,7 @@ name|'get'
 op|'('
 string|"'server_name'"
 op|','
-string|"'proxy'"
+string|"'proxy-server'"
 op|')'
 newline|'\n'
 name|'self'

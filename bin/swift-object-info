@@ -1,94 +1,581 @@
-#!/usr/bin/python
-# Copyright (c) 2010 OpenStack, LLC.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-# implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-import sys
-import cPickle as pickle
-from datetime import datetime
-from hashlib import md5
-import gettext
-
-from swift.common.ring import Ring
-from swift.obj.server import read_metadata
-from swift.common.utils import hash_path
-
-if __name__ == '__main__':
-    gettext.install('swift', unicode=1)
-    if len(sys.argv) <= 1:
-        print "Usage: %s OBJECT_FILE" % sys.argv[0]
-        sys.exit(1)
-    try:
-        ring = Ring('/etc/swift/object.ring.gz')
-    except:
-        ring = None
-    datafile = sys.argv[1]
-    fp = open(datafile, 'rb')
-    metadata = read_metadata(fp)
-    path = metadata.pop('name','')
-    content_type = metadata.pop('Content-Type','')
-    ts = metadata.pop('X-Timestamp','')
-    etag = metadata.pop('ETag','')
-    length = metadata.pop('Content-Length','')
-    if path:
-        print 'Path: %s' % path
-        account, container, obj = path.split('/',3)[1:]
-        print '  Account: %s' % account
-        print '  Container: %s' % container
-        print '  Object: %s' % obj
-        obj_hash = hash_path(account, container, obj)
-        print '  Object hash: %s' % obj_hash
-        if ring is not None:
-            print 'Ring locations:'
-            part, nodes = ring.get_nodes(account, container, obj)
-            for node in nodes:
-                print ('  %s:%s - /srv/node/%s/objects/%s/%s/%s/%s.data' %
-                        (node['ip'], node['port'], node['device'], part,
-                        obj_hash[-3:], obj_hash, ts))
-    else:
-        print 'Path: Not found in metadata'
-    if content_type:
-        print 'Content-Type: %s' % content_type
-    else:
-        print 'Content-Type: Not found in metadata'
-    if ts:
-        print 'Timestamp: %s (%s)' % (datetime.fromtimestamp(float(ts)), ts)
-    else:
-        print 'Timestamp: Not found in metadata'
-    h = md5()
-    file_len = 0
-    while True:
-        data = fp.read(64*1024)
-        if not data:
-            break
-        h.update(data)
-        file_len += len(data)
-    h = h.hexdigest()
-    if etag:
-        if h == etag:
-            print 'ETag: %s (valid)' % etag
-        else:
-            print "Etag: %s doesn't match file hash of %s!" % (etag, h)
-    else:
-        print 'ETag: Not found in metadata'
-    if length:
-        if file_len == int(length):
-            print 'Content-Length: %s (valid)' % length
-        else:
-            print "Content-Length: %s doesn't match file length of %s" % (
-                length, file_len)
-    else:
-        print 'Content-Length: Not found in metadata'
-    print 'User Metadata: %s' % metadata
-    fp.close()
+begin_unit
+comment|'#!/usr/bin/python'
+nl|'\n'
+comment|'# Copyright (c) 2010 OpenStack, LLC.'
+nl|'\n'
+comment|'#'
+nl|'\n'
+comment|'# Licensed under the Apache License, Version 2.0 (the "License");'
+nl|'\n'
+comment|'# you may not use this file except in compliance with the License.'
+nl|'\n'
+comment|'# You may obtain a copy of the License at'
+nl|'\n'
+comment|'#'
+nl|'\n'
+comment|'#    http://www.apache.org/licenses/LICENSE-2.0'
+nl|'\n'
+comment|'#'
+nl|'\n'
+comment|'# Unless required by applicable law or agreed to in writing, software'
+nl|'\n'
+comment|'# distributed under the License is distributed on an "AS IS" BASIS,'
+nl|'\n'
+comment|'# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or'
+nl|'\n'
+comment|'# implied.'
+nl|'\n'
+comment|'# See the License for the specific language governing permissions and'
+nl|'\n'
+comment|'# limitations under the License.'
+nl|'\n'
+nl|'\n'
+name|'import'
+name|'sys'
+newline|'\n'
+name|'import'
+name|'cPickle'
+name|'as'
+name|'pickle'
+newline|'\n'
+name|'from'
+name|'datetime'
+name|'import'
+name|'datetime'
+newline|'\n'
+name|'from'
+name|'hashlib'
+name|'import'
+name|'md5'
+newline|'\n'
+nl|'\n'
+name|'from'
+name|'swift'
+op|'.'
+name|'common'
+op|'.'
+name|'ring'
+name|'import'
+name|'Ring'
+newline|'\n'
+name|'from'
+name|'swift'
+op|'.'
+name|'obj'
+op|'.'
+name|'server'
+name|'import'
+name|'read_metadata'
+newline|'\n'
+name|'from'
+name|'swift'
+op|'.'
+name|'common'
+op|'.'
+name|'utils'
+name|'import'
+name|'hash_path'
+newline|'\n'
+nl|'\n'
+name|'if'
+name|'__name__'
+op|'=='
+string|"'__main__'"
+op|':'
+newline|'\n'
+indent|'    '
+name|'if'
+name|'len'
+op|'('
+name|'sys'
+op|'.'
+name|'argv'
+op|')'
+op|'<='
+number|'1'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|'"Usage: %s OBJECT_FILE"'
+op|'%'
+name|'sys'
+op|'.'
+name|'argv'
+op|'['
+number|'0'
+op|']'
+newline|'\n'
+name|'sys'
+op|'.'
+name|'exit'
+op|'('
+number|'1'
+op|')'
+newline|'\n'
+dedent|''
+name|'try'
+op|':'
+newline|'\n'
+DECL|variable|ring
+indent|'        '
+name|'ring'
+op|'='
+name|'Ring'
+op|'('
+string|"'/etc/swift/object.ring.gz'"
+op|')'
+newline|'\n'
+dedent|''
+name|'except'
+op|':'
+newline|'\n'
+DECL|variable|ring
+indent|'        '
+name|'ring'
+op|'='
+name|'None'
+newline|'\n'
+DECL|variable|datafile
+dedent|''
+name|'datafile'
+op|'='
+name|'sys'
+op|'.'
+name|'argv'
+op|'['
+number|'1'
+op|']'
+newline|'\n'
+DECL|variable|fp
+name|'fp'
+op|'='
+name|'open'
+op|'('
+name|'datafile'
+op|','
+string|"'rb'"
+op|')'
+newline|'\n'
+DECL|variable|metadata
+name|'metadata'
+op|'='
+name|'read_metadata'
+op|'('
+name|'fp'
+op|')'
+newline|'\n'
+DECL|variable|path
+name|'path'
+op|'='
+name|'metadata'
+op|'.'
+name|'pop'
+op|'('
+string|"'name'"
+op|','
+string|"''"
+op|')'
+newline|'\n'
+DECL|variable|content_type
+name|'content_type'
+op|'='
+name|'metadata'
+op|'.'
+name|'pop'
+op|'('
+string|"'Content-Type'"
+op|','
+string|"''"
+op|')'
+newline|'\n'
+DECL|variable|ts
+name|'ts'
+op|'='
+name|'metadata'
+op|'.'
+name|'pop'
+op|'('
+string|"'X-Timestamp'"
+op|','
+string|"''"
+op|')'
+newline|'\n'
+DECL|variable|etag
+name|'etag'
+op|'='
+name|'metadata'
+op|'.'
+name|'pop'
+op|'('
+string|"'ETag'"
+op|','
+string|"''"
+op|')'
+newline|'\n'
+DECL|variable|length
+name|'length'
+op|'='
+name|'metadata'
+op|'.'
+name|'pop'
+op|'('
+string|"'Content-Length'"
+op|','
+string|"''"
+op|')'
+newline|'\n'
+name|'if'
+name|'path'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Path: %s'"
+op|'%'
+name|'path'
+newline|'\n'
+name|'account'
+op|','
+name|'container'
+op|','
+name|'obj'
+op|'='
+name|'path'
+op|'.'
+name|'split'
+op|'('
+string|"'/'"
+op|','
+number|'3'
+op|')'
+op|'['
+number|'1'
+op|':'
+op|']'
+newline|'\n'
+name|'print'
+string|"'  Account: %s'"
+op|'%'
+name|'account'
+newline|'\n'
+name|'print'
+string|"'  Container: %s'"
+op|'%'
+name|'container'
+newline|'\n'
+name|'print'
+string|"'  Object: %s'"
+op|'%'
+name|'obj'
+newline|'\n'
+DECL|variable|obj_hash
+name|'obj_hash'
+op|'='
+name|'hash_path'
+op|'('
+name|'account'
+op|','
+name|'container'
+op|','
+name|'obj'
+op|')'
+newline|'\n'
+name|'print'
+string|"'  Object hash: %s'"
+op|'%'
+name|'obj_hash'
+newline|'\n'
+name|'if'
+name|'ring'
+name|'is'
+name|'not'
+name|'None'
+op|':'
+newline|'\n'
+indent|'            '
+name|'print'
+string|"'Ring locations:'"
+newline|'\n'
+name|'part'
+op|','
+name|'nodes'
+op|'='
+name|'ring'
+op|'.'
+name|'get_nodes'
+op|'('
+name|'account'
+op|','
+name|'container'
+op|','
+name|'obj'
+op|')'
+newline|'\n'
+name|'for'
+name|'node'
+name|'in'
+name|'nodes'
+op|':'
+newline|'\n'
+indent|'                '
+name|'print'
+op|'('
+string|"'  %s:%s - /srv/node/%s/objects/%s/%s/%s/%s.data'"
+op|'%'
+nl|'\n'
+op|'('
+name|'node'
+op|'['
+string|"'ip'"
+op|']'
+op|','
+name|'node'
+op|'['
+string|"'port'"
+op|']'
+op|','
+name|'node'
+op|'['
+string|"'device'"
+op|']'
+op|','
+name|'part'
+op|','
+nl|'\n'
+name|'obj_hash'
+op|'['
+op|'-'
+number|'3'
+op|':'
+op|']'
+op|','
+name|'obj_hash'
+op|','
+name|'ts'
+op|')'
+op|')'
+newline|'\n'
+dedent|''
+dedent|''
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Path: Not found in metadata'"
+newline|'\n'
+dedent|''
+name|'if'
+name|'content_type'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Content-Type: %s'"
+op|'%'
+name|'content_type'
+newline|'\n'
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Content-Type: Not found in metadata'"
+newline|'\n'
+dedent|''
+name|'if'
+name|'ts'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Timestamp: %s (%s)'"
+op|'%'
+op|'('
+name|'datetime'
+op|'.'
+name|'fromtimestamp'
+op|'('
+name|'float'
+op|'('
+name|'ts'
+op|')'
+op|')'
+op|','
+name|'ts'
+op|')'
+newline|'\n'
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Timestamp: Not found in metadata'"
+newline|'\n'
+DECL|variable|h
+dedent|''
+name|'h'
+op|'='
+name|'md5'
+op|'('
+op|')'
+newline|'\n'
+DECL|variable|file_len
+name|'file_len'
+op|'='
+number|'0'
+newline|'\n'
+name|'while'
+name|'True'
+op|':'
+newline|'\n'
+DECL|variable|data
+indent|'        '
+name|'data'
+op|'='
+name|'fp'
+op|'.'
+name|'read'
+op|'('
+number|'64'
+op|'*'
+number|'1024'
+op|')'
+newline|'\n'
+name|'if'
+name|'not'
+name|'data'
+op|':'
+newline|'\n'
+indent|'            '
+name|'break'
+newline|'\n'
+dedent|''
+name|'h'
+op|'.'
+name|'update'
+op|'('
+name|'data'
+op|')'
+newline|'\n'
+name|'file_len'
+op|'+='
+name|'len'
+op|'('
+name|'data'
+op|')'
+newline|'\n'
+DECL|variable|h
+dedent|''
+name|'h'
+op|'='
+name|'h'
+op|'.'
+name|'hexdigest'
+op|'('
+op|')'
+newline|'\n'
+name|'if'
+name|'etag'
+op|':'
+newline|'\n'
+indent|'        '
+name|'if'
+name|'h'
+op|'=='
+name|'etag'
+op|':'
+newline|'\n'
+indent|'            '
+name|'print'
+string|"'ETag: %s (valid)'"
+op|'%'
+name|'etag'
+newline|'\n'
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'            '
+name|'print'
+string|'"Etag: %s doesn\'t match file hash of %s!"'
+op|'%'
+op|'('
+name|'etag'
+op|','
+name|'h'
+op|')'
+newline|'\n'
+dedent|''
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'ETag: Not found in metadata'"
+newline|'\n'
+dedent|''
+name|'if'
+name|'length'
+op|':'
+newline|'\n'
+indent|'        '
+name|'if'
+name|'file_len'
+op|'=='
+name|'int'
+op|'('
+name|'length'
+op|')'
+op|':'
+newline|'\n'
+indent|'            '
+name|'print'
+string|"'Content-Length: %s (valid)'"
+op|'%'
+name|'length'
+newline|'\n'
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'            '
+name|'print'
+string|'"Content-Length: %s doesn\'t match file length of %s"'
+op|'%'
+op|'('
+nl|'\n'
+name|'length'
+op|','
+name|'file_len'
+op|')'
+newline|'\n'
+dedent|''
+dedent|''
+name|'else'
+op|':'
+newline|'\n'
+indent|'        '
+name|'print'
+string|"'Content-Length: Not found in metadata'"
+newline|'\n'
+dedent|''
+name|'print'
+string|"'User Metadata: %s'"
+op|'%'
+name|'metadata'
+newline|'\n'
+name|'fp'
+op|'.'
+name|'close'
+op|'('
+op|')'
+newline|'\n'
+dedent|''
+endmarker|''
+end_unit

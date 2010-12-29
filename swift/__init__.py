@@ -4,5 +4,15 @@ name|'__version__'
 op|'='
 string|"'1.1.0'"
 newline|'\n'
+name|'import'
+name|'gettext'
+newline|'\n'
+name|'gettext'
+op|'.'
+name|'install'
+op|'('
+string|"'swift'"
+op|')'
+newline|'\n'
 endmarker|''
 end_unit

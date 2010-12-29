@@ -1,11 +1,13 @@
 begin_unit
+name|'import'
+name|'gettext'
+newline|'\n'
+nl|'\n'
+nl|'\n'
 DECL|variable|__version__
 name|'__version__'
 op|'='
 string|"'1.1.0'"
-newline|'\n'
-name|'import'
-name|'gettext'
 newline|'\n'
 name|'gettext'
 op|'.'

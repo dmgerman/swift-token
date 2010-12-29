@@ -661,7 +661,7 @@ name|'exc'
 op|')'
 newline|'\n'
 dedent|''
-name|'_'
+name|'_junk'
 op|','
 name|'account'
 op|','
@@ -902,9 +902,9 @@ name|'error'
 op|'('
 name|'_'
 op|'('
-string|"'ERROR Object %(obj)s failed audit and will be '"
+string|"'ERROR Object %(obj)s failed audit and will '"
 nl|'\n'
-string|"'quarantined: %(err)s'"
+string|"'be quarantined: %(err)s'"
 op|')'
 op|','
 op|'{'

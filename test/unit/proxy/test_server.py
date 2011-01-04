@@ -14614,7 +14614,7 @@ string|"'X-Timestamp'"
 op|':'
 name|'ts'
 op|','
-string|"'X-CF-Trans-Id'"
+string|"'x-swift-txn-id'"
 op|':'
 string|"'test'"
 op|'}'

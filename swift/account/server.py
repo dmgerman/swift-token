@@ -621,7 +621,7 @@ comment|'# put account container'
 newline|'\n'
 indent|'            '
 name|'if'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 name|'in'
 name|'req'
 op|'.'
@@ -2406,7 +2406,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 name|'None'
 op|')'
@@ -2629,7 +2629,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 string|"'-'"
 op|')'

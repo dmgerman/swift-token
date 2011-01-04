@@ -1942,7 +1942,7 @@ newline|'\n'
 name|'headers'
 op|'='
 op|'{'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -2455,7 +2455,7 @@ newline|'\n'
 name|'headers'
 op|'='
 op|'{'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -8634,7 +8634,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -9160,7 +9160,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -9629,7 +9629,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -10329,7 +10329,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -10751,7 +10751,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'X-CF-Trans-Id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -11169,7 +11169,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'X-CF-Trans-Id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'self'
 op|'.'
@@ -12204,7 +12204,7 @@ name|'req'
 op|'.'
 name|'headers'
 op|'['
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|']'
 op|'='
 string|"'tx'"
@@ -12367,7 +12367,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 string|"'-'"
 op|')'
@@ -12384,7 +12384,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 name|'None'
 op|')'
@@ -12966,7 +12966,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 string|"'-'"
 op|')'

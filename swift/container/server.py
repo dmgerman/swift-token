@@ -540,7 +540,7 @@ string|"'bytes_used'"
 op|']'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|':'
 name|'req'
 op|'.'
@@ -548,7 +548,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'X-Cf-Trans-Id'"
+string|"'x-swift-txn-id'"
 op|','
 string|"'-'"
 op|')'
@@ -3059,7 +3059,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 name|'None'
 op|')'
@@ -3252,7 +3252,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-swift-txn-id'"
 op|','
 string|"'-'"
 op|')'

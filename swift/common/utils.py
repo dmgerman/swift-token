@@ -1890,6 +1890,7 @@ name|'return'
 name|'msg'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|get_logger
 dedent|''
 dedent|''

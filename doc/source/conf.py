@@ -1,7 +1,7 @@
 begin_unit
 comment|'# -*- coding: utf-8 -*-'
 nl|'\n'
-comment|'# Copyright (c) 2010 OpenStack, LLC.'
+comment|'# Copyright (c) 2010-2011 OpenStack, LLC.'
 nl|'\n'
 comment|'#'
 nl|'\n'

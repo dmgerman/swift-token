@@ -1441,7 +1441,6 @@ nl|'\n'
 comment|'# tests'
 nl|'\n'
 nl|'\n'
-nl|'\n'
 DECL|class|TestController
 dedent|''
 dedent|''
@@ -2680,7 +2679,6 @@ number|'503'
 op|')'
 newline|'\n'
 nl|'\n'
-nl|'\n'
 DECL|class|TestProxyServer
 dedent|''
 dedent|''
@@ -3501,7 +3499,6 @@ op|']'
 op|')'
 op|')'
 newline|'\n'
-nl|'\n'
 DECL|member|test_custom_mime_types_files
 dedent|''
 dedent|''
@@ -14617,7 +14614,7 @@ string|"'X-Timestamp'"
 op|':'
 name|'ts'
 op|','
-string|"'x-swift-txn-id'"
+string|"'X-CF-Trans-Id'"
 op|':'
 string|"'test'"
 op|'}'

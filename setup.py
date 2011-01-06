@@ -416,7 +416,7 @@ nl|'\n'
 string|"'domain_remap=swift.common.middleware.domain_remap:filter_factory'"
 op|','
 nl|'\n'
-string|"'s3=swift.common.middleware.s3:filter_factory'"
+string|"'swift3=swift.common.middleware.swift3:filter_factory'"
 op|','
 nl|'\n'
 op|']'

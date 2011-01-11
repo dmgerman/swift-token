@@ -1,5 +1,5 @@
 begin_unit
-comment|'# Copyright (c) 2010 OpenStack, LLC.'
+comment|'# Copyright (c) 2010-2011 OpenStack, LLC.'
 nl|'\n'
 comment|'#'
 nl|'\n'
@@ -420,6 +420,7 @@ name|'return'
 name|'wrapped'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|get_account_memcache_key
 dedent|''
 name|'def'
@@ -435,6 +436,7 @@ string|"'account/%s'"
 op|'%'
 name|'account'
 newline|'\n'
+nl|'\n'
 nl|'\n'
 DECL|function|get_container_memcache_key
 dedent|''
@@ -1633,7 +1635,9 @@ op|'('
 nl|'\n'
 name|'_'
 op|'('
-string|"'ERROR with %(type)s server %(ip)s:%(port)s/%(device)s re: %(info)s'"
+string|"'ERROR with %(type)s server %(ip)s:%(port)s/%(device)s re: '"
+nl|'\n'
+string|"'%(info)s'"
 op|')'
 op|','
 nl|'\n'
@@ -1907,7 +1911,7 @@ op|'=='
 number|'404'
 op|':'
 newline|'\n'
-indent|'                 '
+indent|'                '
 name|'return'
 name|'None'
 op|','

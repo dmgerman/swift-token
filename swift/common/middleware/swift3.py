@@ -1035,7 +1035,7 @@ op|'.'
 name|'join'
 op|'('
 op|'['
-string|"'<CommonPrefixes><Prefix>%s</Prefix><CommonPrefixes>'"
+string|"'<CommonPrefixes><Prefix>%s</Prefix></CommonPrefixes>'"
 nl|'\n'
 op|'%'
 name|'xml_escape'

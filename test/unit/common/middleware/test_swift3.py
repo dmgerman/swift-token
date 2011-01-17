@@ -1618,7 +1618,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_something:hoge'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1728,7 +1728,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_something:hoge'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1862,7 +1862,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -2034,7 +2034,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -2387,7 +2387,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -2679,7 +2679,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -2772,7 +2772,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -2943,7 +2943,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -3062,7 +3062,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -3258,7 +3258,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -3553,7 +3553,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -3752,7 +3752,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -3845,7 +3845,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'
@@ -4285,7 +4285,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|','
 nl|'\n'
 string|"'x-amz-storage-class'"
@@ -4487,7 +4487,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|','
 nl|'\n'
 string|"'X-Amz-Storage-Class'"
@@ -4727,7 +4727,7 @@ op|'='
 op|'{'
 string|"'Authorization'"
 op|':'
-string|"'AUTH_who:password'"
+string|"'AWS test:tester:hmac'"
 op|'}'
 op|')'
 newline|'\n'

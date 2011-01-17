@@ -1096,7 +1096,7 @@ op|','
 nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
-string|"'local:badscheme://host/path'"
+string|"'local#badscheme://host/path'"
 op|'}'
 op|')'
 op|','
@@ -1128,7 +1128,7 @@ op|'.'
 name|'default_swift_cluster'
 op|','
 nl|'\n'
-string|"'local:http://127.0.0.1:8080/v1'"
+string|"'local#http://127.0.0.1:8080/v1'"
 op|')'
 newline|'\n'
 name|'ath'
@@ -1145,7 +1145,7 @@ op|','
 nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
-string|"'local:http://host/path'"
+string|"'local#http://host/path'"
 op|'}'
 op|')'
 op|'('
@@ -1161,7 +1161,7 @@ op|'.'
 name|'default_swift_cluster'
 op|','
 nl|'\n'
-string|"'local:http://host/path'"
+string|"'local#http://host/path'"
 op|')'
 newline|'\n'
 name|'ath'
@@ -1178,7 +1178,7 @@ op|','
 nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
-string|"'local:https://host/path/'"
+string|"'local#https://host/path/'"
 op|'}'
 op|')'
 op|'('
@@ -1222,7 +1222,7 @@ nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
 nl|'\n'
-string|"'local::https://host/path/::http://host2/path2/'"
+string|"'local#https://host/path/#http://host2/path2/'"
 op|'}'
 op|')'
 op|'('
@@ -25298,7 +25298,7 @@ op|','
 nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
-string|"'local:https://1.2.3.4/v1'"
+string|"'local#https://1.2.3.4/v1'"
 op|'}'
 op|')'
 op|'('
@@ -25375,7 +25375,7 @@ op|','
 nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
-string|"'local:https://1.2.3.4/v1'"
+string|"'local#https://1.2.3.4/v1'"
 op|'}'
 op|')'
 op|'('
@@ -25460,7 +25460,7 @@ op|','
 nl|'\n'
 string|"'default_swift_cluster'"
 op|':'
-string|"'local:http://1.2.3.4/v1'"
+string|"'local#http://1.2.3.4/v1'"
 op|'}'
 op|')'
 op|'('

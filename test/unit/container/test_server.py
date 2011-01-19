@@ -143,6 +143,7 @@ name|'mkdtemp'
 op|'('
 op|')'
 op|','
+nl|'\n'
 string|"'tmp_test_object_server_ObjectController'"
 op|')'
 newline|'\n'

@@ -561,6 +561,10 @@ op|':'
 string|"'15'"
 op|','
 nl|'\n'
+string|"'account_suppression_time'"
+op|':'
+number|'0'
+nl|'\n'
 op|'}'
 op|')'
 newline|'\n'

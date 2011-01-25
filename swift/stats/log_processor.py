@@ -1830,6 +1830,7 @@ op|'('
 string|"'loaded %d files to process'"
 op|')'
 op|'%'
+nl|'\n'
 name|'len'
 op|'('
 name|'logs_to_process'

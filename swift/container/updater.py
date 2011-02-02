@@ -172,6 +172,8 @@ name|'get_logger'
 op|'('
 name|'conf'
 op|','
+name|'log_route'
+op|'='
 string|"'container-updater'"
 op|')'
 newline|'\n'

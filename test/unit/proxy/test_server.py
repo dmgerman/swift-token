@@ -15190,10 +15190,10 @@ op|')'
 op|':'
 newline|'\n'
 nl|'\n'
-DECL|member|info
+DECL|member|access
 indent|'            '
 name|'def'
-name|'info'
+name|'access'
 op|'('
 name|'self'
 op|','

@@ -2184,6 +2184,7 @@ name|'logging'
 op|'.'
 name|'getLogger'
 op|'('
+string|"'server'"
 op|')'
 newline|'\n'
 name|'logger'

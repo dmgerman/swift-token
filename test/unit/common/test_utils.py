@@ -2348,13 +2348,13 @@ nl|'\n'
 string|"'test1\\ntest3\\ntest4\\n'"
 op|')'
 newline|'\n'
-comment|'# make sure access lvl logs by default'
+comment|'# make sure notice lvl logs by default'
 nl|'\n'
 name|'logger'
 op|'.'
-name|'access'
+name|'notice'
 op|'('
-string|"'test6'"
+string|"'test7'"
 op|')'
 newline|'\n'
 name|'self'

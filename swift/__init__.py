@@ -7,7 +7,7 @@ nl|'\n'
 DECL|variable|__version__
 name|'__version__'
 op|'='
-string|"'1.2-rc'"
+string|"'1.3-dev'"
 newline|'\n'
 name|'gettext'
 op|'.'

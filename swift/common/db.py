@@ -1520,7 +1520,7 @@ name|'execute'
 op|'('
 string|"'PRAGMA journal_mode = DELETE'"
 op|')'
-comment|'# remove any journal files'
+comment|'# remove journal files'
 newline|'\n'
 name|'conn'
 op|'.'

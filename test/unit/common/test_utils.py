@@ -2329,6 +2329,10 @@ op|'('
 name|'None'
 op|','
 string|"'server'"
+op|','
+name|'log_route'
+op|'='
+string|"'server'"
 op|')'
 newline|'\n'
 name|'logger'
@@ -2384,6 +2388,11 @@ string|"'DEBUG'"
 op|'}'
 op|','
 string|"'server'"
+op|','
+nl|'\n'
+name|'log_route'
+op|'='
+string|"'server'"
 op|')'
 newline|'\n'
 name|'logger'
@@ -2422,6 +2431,11 @@ op|':'
 string|"'LOG_LOCAL3'"
 op|'}'
 op|','
+string|"'server'"
+op|','
+nl|'\n'
+name|'log_route'
+op|'='
 string|"'server'"
 op|')'
 newline|'\n'

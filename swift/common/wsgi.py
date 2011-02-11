@@ -555,6 +555,10 @@ string|"'verbose'"
 op|','
 name|'False'
 op|')'
+op|','
+name|'log_route'
+op|'='
+string|"'wsgi'"
 op|')'
 newline|'\n'
 nl|'\n'

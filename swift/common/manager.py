@@ -116,8 +116,6 @@ string|"'proxy-server'"
 op|','
 string|"'account-replicator'"
 op|','
-string|"'auth-server'"
-op|','
 string|"'account-reaper'"
 op|']'
 newline|'\n'
@@ -125,15 +123,13 @@ DECL|variable|MAIN_SERVERS
 name|'MAIN_SERVERS'
 op|'='
 op|'['
-string|"'auth-server'"
-op|','
 string|"'proxy-server'"
 op|','
 string|"'account-server'"
 op|','
-nl|'\n'
 string|"'container-server'"
 op|','
+nl|'\n'
 string|"'object-server'"
 op|']'
 newline|'\n'

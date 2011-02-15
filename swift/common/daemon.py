@@ -200,6 +200,7 @@ string|"'swift'"
 op|')'
 op|')'
 newline|'\n'
+nl|'\n'
 DECL|function|kill_children
 name|'def'
 name|'kill_children'

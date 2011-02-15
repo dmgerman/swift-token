@@ -111,6 +111,7 @@ newline|'\n'
 indent|'    '
 string|'"""Walk through file system to audit object"""'
 newline|'\n'
+nl|'\n'
 DECL|member|__init__
 name|'def'
 name|'__init__'

@@ -1935,6 +1935,7 @@ newline|'\n'
 indent|'    '
 string|'"""\n    Custom logging.Formatter will append txn_id to a log message if the record\n    has one and the message does not.\n    """'
 newline|'\n'
+nl|'\n'
 DECL|member|format
 name|'def'
 name|'format'

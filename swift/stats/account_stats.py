@@ -272,7 +272,9 @@ name|'get_logger'
 op|'('
 name|'stats_conf'
 op|','
-string|"'swift-account-stats-logger'"
+name|'log_route'
+op|'='
+string|"'account-stats'"
 op|')'
 newline|'\n'
 nl|'\n'

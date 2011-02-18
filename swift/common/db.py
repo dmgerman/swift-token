@@ -5043,7 +5043,7 @@ op|')'
 newline|'\n'
 name|'query'
 op|'='
-string|"'SELECT name FROM object WHERE name = ?'"
+string|"'SELECT 1 FROM object WHERE name = ?'"
 newline|'\n'
 name|'if'
 name|'self'

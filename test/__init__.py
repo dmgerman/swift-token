@@ -42,9 +42,9 @@ name|'x'
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|function|get_func_test_config
+DECL|function|get_config
 name|'def'
-name|'get_func_test_config'
+name|'get_config'
 op|'('
 op|')'
 op|':'

@@ -123,6 +123,7 @@ op|')'
 op|')'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|Base
 name|'class'
 name|'Base'

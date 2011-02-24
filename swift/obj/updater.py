@@ -158,6 +158,8 @@ name|'get_logger'
 op|'('
 name|'conf'
 op|','
+name|'log_route'
+op|'='
 string|"'object-updater'"
 op|')'
 newline|'\n'

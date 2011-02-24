@@ -94,7 +94,7 @@ name|'sys'
 op|'.'
 name|'stderr'
 op|','
-string|"'SKIPPING FUNCTIONAL TESTS DUE TO NO CONFIG'"
+string|"'UNABLE TO READ FUNCTIONAL TESTS CONFIG FILE'"
 newline|'\n'
 dedent|''
 name|'except'
@@ -112,8 +112,8 @@ name|'sys'
 op|'.'
 name|'stderr'
 op|','
-string|"'SKIPPING FUNCTIONAL TESTS DUE TO NO '"
-string|"'[func_test] CONFIG SECTION'"
+string|"'UNABLE TO READ FUNCTIONAL TESTS CONFIG FILE '"
+string|"'DUE TO NO [func_test] SECTION'"
 newline|'\n'
 dedent|''
 name|'return'

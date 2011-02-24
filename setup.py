@@ -388,6 +388,8 @@ op|','
 nl|'\n'
 string|"'bin/swift-container-replicator'"
 op|','
+string|"'bin/swift-container-sync'"
+op|','
 nl|'\n'
 string|"'bin/swift-container-server'"
 op|','

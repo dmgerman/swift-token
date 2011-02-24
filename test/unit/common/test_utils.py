@@ -5157,7 +5157,6 @@ number|'10'
 op|')'
 newline|'\n'
 nl|'\n'
-nl|'\n'
 DECL|function|test_search_tree
 dedent|''
 name|'def'

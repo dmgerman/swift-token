@@ -1656,6 +1656,10 @@ nl|'\n'
 string|"''"
 op|','
 op|'{'
+string|"'User-Agent'"
+op|':'
+string|"'GLHUA'"
+op|','
 string|"'X-Auth-Token'"
 op|':'
 name|'token'

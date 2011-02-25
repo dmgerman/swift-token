@@ -3726,7 +3726,7 @@ name|'hasattr'
 op|'('
 name|'conf'
 op|','
-string|"'read'"
+string|"'readline'"
 op|')'
 op|':'
 newline|'\n'

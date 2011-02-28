@@ -104,7 +104,7 @@ newline|'\n'
 DECL|variable|ERROR_LIMIT_DURATION
 name|'ERROR_LIMIT_DURATION'
 op|'='
-number|'300'
+number|'60'
 newline|'\n'
 nl|'\n'
 nl|'\n'

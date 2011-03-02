@@ -8983,7 +8983,7 @@ name|'environ'
 op|'.'
 name|'get'
 op|'('
-string|"'owner'"
+string|"'swift_owner'"
 op|','
 name|'False'
 op|')'

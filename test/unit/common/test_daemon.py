@@ -106,6 +106,10 @@ op|'('
 name|'None'
 op|','
 string|"'server'"
+op|','
+name|'log_route'
+op|'='
+string|"'server'"
 op|')'
 newline|'\n'
 name|'MyDaemon'
@@ -583,6 +587,10 @@ name|'get_logger'
 op|'('
 name|'None'
 op|','
+string|"'server'"
+op|','
+name|'log_route'
+op|'='
 string|"'server'"
 op|')'
 newline|'\n'

@@ -4407,7 +4407,11 @@ name|'self'
 op|'.'
 name|'conf'
 op|','
-string|"'auth'"
+string|"'auth-server'"
+op|','
+name|'log_route'
+op|'='
+string|"'auth-server'"
 op|')'
 newline|'\n'
 name|'logger'
@@ -4973,7 +4977,11 @@ name|'self'
 op|'.'
 name|'conf'
 op|','
-string|"'auth'"
+string|"'auth-server'"
+op|','
+name|'log_route'
+op|'='
+string|"'auth-server'"
 op|')'
 newline|'\n'
 name|'logger'

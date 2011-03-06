@@ -4585,7 +4585,7 @@ name|'req'
 op|'.'
 name|'headers'
 op|'['
-string|"'X-Object-Copy'"
+string|"'X-Copy-From'"
 op|']'
 op|','
 string|"'/some/source'"

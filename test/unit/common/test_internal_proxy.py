@@ -1289,6 +1289,8 @@ op|'.'
 name|'upload_file'
 op|'('
 name|'file_obj'
+op|'.'
+name|'name'
 op|','
 string|"'a'"
 op|','

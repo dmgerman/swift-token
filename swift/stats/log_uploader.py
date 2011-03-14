@@ -505,7 +505,7 @@ name|'for'
 name|'marker'
 op|','
 op|'('
-name|'type'
+name|'mtype'
 op|','
 name|'group'
 op|')'
@@ -540,7 +540,7 @@ string|"'source_filename_pattern much contain a '"
 nl|'\n'
 string|"'marker %(marker)s to match the '"
 nl|'\n'
-string|"'%(type)s'"
+string|"'%(mtype)s'"
 op|')'
 op|'%'
 op|'{'
@@ -549,9 +549,9 @@ op|':'
 name|'marker'
 op|','
 nl|'\n'
-string|"'type'"
+string|"'mtype'"
 op|':'
-name|'type'
+name|'mtype'
 op|'}'
 op|')'
 newline|'\n'

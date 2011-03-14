@@ -446,8 +446,6 @@ op|','
 nl|'\n'
 string|"'bin/swauth-set-account-service'"
 op|','
-string|"'bin/swift-auth-to-swauth'"
-op|','
 nl|'\n'
 op|']'
 op|','

@@ -776,8 +776,6 @@ name|'in'
 op|'('
 string|"'content-type'"
 op|','
-string|"'content-encoding'"
-op|','
 nl|'\n'
 string|"'deleted'"
 op|','

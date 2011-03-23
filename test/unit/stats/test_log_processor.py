@@ -701,11 +701,6 @@ op|':'
 string|"'-'"
 op|','
 nl|'\n'
-string|"'foo'"
-op|':'
-number|'1'
-op|','
-nl|'\n'
 string|"'method'"
 op|':'
 string|"'GET'"

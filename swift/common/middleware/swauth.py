@@ -1913,7 +1913,8 @@ name|'if'
 name|'not'
 name|'obj'
 name|'and'
-string|"'.rnolisting'"
+string|"'.rlistings'"
+name|'not'
 name|'in'
 name|'groups'
 op|':'

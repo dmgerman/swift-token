@@ -3420,7 +3420,7 @@ name|'resp'
 op|'.'
 name|'content_type'
 op|'='
-string|"'text/plain'"
+string|"'text/html'"
 newline|'\n'
 name|'if'
 name|'etag'

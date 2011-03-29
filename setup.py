@@ -502,6 +502,9 @@ nl|'\n'
 string|"'swift3=swift.common.middleware.swift3:filter_factory'"
 op|','
 nl|'\n'
+string|"'staticweb=swift.common.middleware.staticweb:filter_factory'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

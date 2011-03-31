@@ -3088,7 +3088,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Read'"
 op|':'
-string|"'.r:*'"
+string|"'.r:*,.rlistings'"
 op|'}'
 op|')'
 newline|'\n'
@@ -3894,7 +3894,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Read'"
 op|':'
-string|"'.r:*'"
+string|"'.r:*,.rlistings'"
 op|'}'
 op|')'
 newline|'\n'

@@ -5237,7 +5237,7 @@ nl|'\n'
 op|'{'
 string|"'Content-Type'"
 op|':'
-string|"''"
+name|'None'
 op|','
 string|"'X-Amz-Something'"
 op|':'
@@ -5245,7 +5245,6 @@ string|"'test'"
 op|'}'
 op|')'
 newline|'\n'
-nl|'\n'
 nl|'\n'
 name|'req1'
 op|'='

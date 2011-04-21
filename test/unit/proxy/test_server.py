@@ -20538,7 +20538,7 @@ op|'='
 op|'{'
 string|"'REQUEST_METHOD'"
 op|':'
-string|"'GET'"
+string|"'HEAD'"
 op|'}'
 op|')'
 newline|'\n'

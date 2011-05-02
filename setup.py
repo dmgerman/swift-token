@@ -427,6 +427,9 @@ nl|'\n'
 string|"'bin/swift-account-stats-logger'"
 op|','
 nl|'\n'
+string|"'bin/swift-container-stats-logger'"
+op|','
+nl|'\n'
 string|"'bin/swauth-add-account'"
 op|','
 string|"'bin/swauth-add-user'"

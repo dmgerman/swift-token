@@ -9051,7 +9051,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'

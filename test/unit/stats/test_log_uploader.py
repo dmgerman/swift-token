@@ -105,12 +105,6 @@ op|'('
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|variable|DEFAULT_GLOB
-name|'DEFAULT_GLOB'
-op|'='
-string|"'%Y%m%d%H'"
-newline|'\n'
-nl|'\n'
 name|'COMPRESSED_DATA'
 op|'='
 string|"'\\x1f\\x8b\\x08\\x08\\x87\\xa5zM\\x02\\xffdata\\x00KI,I\\x04\\x00c'"

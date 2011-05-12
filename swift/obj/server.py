@@ -3740,7 +3740,7 @@ string|"'ETag'"
 op|']'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'request'
 op|'.'
@@ -3748,7 +3748,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'
@@ -5009,7 +5009,7 @@ string|"'X-Timestamp'"
 op|']'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'request'
 op|'.'
@@ -5017,7 +5017,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'
@@ -5281,7 +5281,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 name|'None'
 op|')'
@@ -5484,7 +5484,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'

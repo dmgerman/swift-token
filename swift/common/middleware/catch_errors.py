@@ -131,6 +131,8 @@ newline|'\n'
 indent|'            '
 name|'trans_id'
 op|'='
+string|"'tx'"
+op|'+'
 name|'uuid'
 op|'.'
 name|'uuid4'
@@ -144,8 +146,6 @@ op|'['
 string|"'HTTP_X_TRANS_ID'"
 op|']'
 op|'='
-string|"'tx'"
-op|'+'
 name|'trans_id'
 newline|'\n'
 dedent|''

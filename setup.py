@@ -415,6 +415,11 @@ nl|'\n'
 string|"'bin/swift-stats-report'"
 op|','
 nl|'\n'
+string|"'bin/swift-dispersion-populate'"
+op|','
+string|"'bin/swift-dispersion-report'"
+op|','
+nl|'\n'
 string|"'bin/swift-bench'"
 op|','
 nl|'\n'

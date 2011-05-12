@@ -128,6 +128,7 @@ name|'Exception'
 op|')'
 op|':'
 newline|'\n'
+nl|'\n'
 DECL|member|__init__
 indent|'    '
 name|'def'

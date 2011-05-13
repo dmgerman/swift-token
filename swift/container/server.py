@@ -2466,6 +2466,7 @@ op|'.'
 name|'append'
 op|'('
 string|'\'<subdir name="%s"><name>%s</name>\''
+nl|'\n'
 string|"'</subdir>'"
 op|'%'
 op|'('

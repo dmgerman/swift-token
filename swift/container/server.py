@@ -2465,7 +2465,8 @@ name|'xml_output'
 op|'.'
 name|'append'
 op|'('
-string|'\'<subdir name="%s" />\''
+string|"'<subdir><name>%s</name>'"
+string|"'</subdir>'"
 op|'%'
 name|'name'
 op|')'

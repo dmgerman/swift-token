@@ -1166,7 +1166,7 @@ newline|'\n'
 indent|'            '
 name|'remote_file'
 op|'='
-string|"'%s::%s%s/%s/tmp/%s'"
+string|"'[%s]::%s%s/%s/tmp/%s'"
 op|'%'
 op|'('
 name|'device'
@@ -1200,7 +1200,7 @@ newline|'\n'
 indent|'            '
 name|'remote_file'
 op|'='
-string|"'%s::%s/%s/tmp/%s'"
+string|"'[%s]::%s/%s/tmp/%s'"
 op|'%'
 op|'('
 name|'device'

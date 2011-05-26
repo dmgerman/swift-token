@@ -513,6 +513,9 @@ nl|'\n'
 string|"'staticweb=swift.common.middleware.staticweb:filter_factory'"
 op|','
 nl|'\n'
+string|"'testauth=swift.common.middleware.testauth:filter_factory'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

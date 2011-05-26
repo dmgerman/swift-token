@@ -490,7 +490,7 @@ nl|'\n'
 string|"'staticweb=swift.common.middleware.staticweb:filter_factory'"
 op|','
 nl|'\n'
-string|"'testauth=swift.common.middleware.testauth:filter_factory'"
+string|"'tempauth=swift.common.middleware.tempauth:filter_factory'"
 op|','
 nl|'\n'
 op|']'

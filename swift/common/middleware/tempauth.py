@@ -122,16 +122,16 @@ name|'split_path'
 newline|'\n'
 nl|'\n'
 nl|'\n'
-DECL|class|TestAuth
+DECL|class|TempAuth
 name|'class'
-name|'TestAuth'
+name|'TempAuth'
 op|'('
 name|'object'
 op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Test authentication and authorization system.\n\n    Add to your pipeline in proxy-server.conf, such as::\n\n        [pipeline:main]\n        pipeline = catch_errors cache testauth proxy-server\n\n    And add a testauth filter section, such as::\n\n        [filter:testauth]\n        use = egg:swift#testauth\n        user_admin_admin = admin .admin .reseller_admin\n        user_test_tester = testing .admin\n        user_test2_tester2 = testing2 .admin\n        user_test_tester3 = testing3\n\n    See the proxy-server.conf-sample for more information.\n\n    :param app: The next WSGI app in the pipeline\n    :param conf: The dict of configuration values\n    """'
+string|'"""\n    Test authentication and authorization system.\n\n    Add to your pipeline in proxy-server.conf, such as::\n\n        [pipeline:main]\n        pipeline = catch_errors cache tempauth proxy-server\n\n    And add a tempauth filter section, such as::\n\n        [filter:tempauth]\n        use = egg:swift#tempauth\n        user_admin_admin = admin .admin .reseller_admin\n        user_test_tester = testing .admin\n        user_test2_tester2 = testing2 .admin\n        user_test_tester3 = testing3\n\n    See the proxy-server.conf-sample for more information.\n\n    :param app: The next WSGI app in the pipeline\n    :param conf: The dict of configuration values\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__
@@ -169,7 +169,7 @@ name|'conf'
 op|','
 name|'log_route'
 op|'='
-string|"'testauth'"
+string|"'tempauth'"
 op|')'
 newline|'\n'
 name|'self'
@@ -556,7 +556,7 @@ string|"'GET'"
 op|','
 string|"'HTTP_USER_AGENT'"
 op|':'
-string|"'TestAuth'"
+string|"'TempAuth'"
 op|'}'
 newline|'\n'
 name|'for'
@@ -3196,7 +3196,7 @@ op|':'
 newline|'\n'
 indent|'        '
 name|'return'
-name|'TestAuth'
+name|'TempAuth'
 op|'('
 name|'app'
 op|','

@@ -89,9 +89,9 @@ name|'_version'
 op|'='
 name|'Version'
 op|'('
-string|"'1.4.1'"
+string|"'1.4.0'"
 op|','
-name|'False'
+name|'True'
 op|')'
 newline|'\n'
 DECL|variable|__version__

@@ -79,7 +79,7 @@ dedent|''
 name|'from'
 name|'swift'
 name|'import'
-name|'__version__'
+name|'__canonical_version__'
 name|'as'
 name|'version'
 newline|'\n'
@@ -417,6 +417,11 @@ nl|'\n'
 string|"'bin/swift-stats-report'"
 op|','
 nl|'\n'
+string|"'bin/swift-dispersion-populate'"
+op|','
+string|"'bin/swift-dispersion-report'"
+op|','
+nl|'\n'
 string|"'bin/swift-bench'"
 op|','
 nl|'\n'
@@ -427,6 +432,9 @@ string|"'bin/swift-log-stats-collector'"
 op|','
 nl|'\n'
 string|"'bin/swift-account-stats-logger'"
+op|','
+nl|'\n'
+string|"'bin/swift-container-stats-logger'"
 op|','
 nl|'\n'
 string|"'bin/swauth-add-account'"

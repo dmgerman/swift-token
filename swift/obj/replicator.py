@@ -1707,7 +1707,7 @@ newline|'\n'
 indent|'            '
 name|'rsync_module'
 op|'='
-string|"'%s::object%s'"
+string|"'[%s]::object%s'"
 op|'%'
 op|'('
 name|'node'
@@ -1728,7 +1728,7 @@ newline|'\n'
 indent|'            '
 name|'rsync_module'
 op|'='
-string|"'%s::object'"
+string|"'[%s]::object'"
 op|'%'
 name|'node'
 op|'['

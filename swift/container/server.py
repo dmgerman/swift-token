@@ -596,7 +596,7 @@ string|"'bytes_used'"
 op|']'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'req'
 op|'.'
@@ -604,7 +604,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'X-Cf-Trans-Id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'
@@ -2597,9 +2597,15 @@ name|'xml_output'
 op|'.'
 name|'append'
 op|'('
-string|'\'<subdir name="%s" />\''
+string|'\'<subdir name="%s"><name>%s</name>\''
+nl|'\n'
+string|"'</subdir>'"
 op|'%'
+op|'('
 name|'name'
+op|','
+name|'name'
+op|')'
 op|')'
 newline|'\n'
 dedent|''
@@ -3246,7 +3252,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 name|'None'
 op|')'
@@ -3440,7 +3446,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'

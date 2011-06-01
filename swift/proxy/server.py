@@ -1977,7 +1977,7 @@ newline|'\n'
 name|'headers'
 op|'='
 op|'{'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'self'
 op|'.'
@@ -2507,7 +2507,7 @@ newline|'\n'
 name|'headers'
 op|'='
 op|'{'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'self'
 op|'.'
@@ -9125,7 +9125,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'self'
 op|'.'
@@ -9374,7 +9374,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'self'
 op|'.'
@@ -9592,7 +9592,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'X-Cf-Trans-Id'"
+string|"'X-Trans-Id'"
 op|':'
 name|'self'
 op|'.'
@@ -9958,7 +9958,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|':'
 name|'self'
 op|'.'
@@ -10127,7 +10127,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'X-CF-Trans-Id'"
+string|"'X-Trans-Id'"
 op|':'
 name|'self'
 op|'.'
@@ -10298,7 +10298,7 @@ op|')'
 op|')'
 op|','
 nl|'\n'
-string|"'X-CF-Trans-Id'"
+string|"'X-Trans-Id'"
 op|':'
 name|'self'
 op|'.'
@@ -11175,35 +11175,6 @@ op|'='
 name|'False'
 newline|'\n'
 name|'if'
-string|"'x-cf-trans-id'"
-name|'not'
-name|'in'
-name|'req'
-op|'.'
-name|'headers'
-op|':'
-newline|'\n'
-indent|'            '
-name|'req'
-op|'.'
-name|'headers'
-op|'['
-string|"'x-cf-trans-id'"
-op|']'
-op|'='
-string|"'tx'"
-op|'+'
-name|'str'
-op|'('
-name|'uuid'
-op|'.'
-name|'uuid4'
-op|'('
-op|')'
-op|')'
-newline|'\n'
-dedent|''
-name|'if'
 string|"'x-storage-token'"
 name|'in'
 name|'req'
@@ -11352,7 +11323,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'
@@ -11369,7 +11340,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 name|'None'
 op|')'
@@ -11909,7 +11880,7 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'x-cf-trans-id'"
+string|"'x-trans-id'"
 op|','
 string|"'-'"
 op|')'

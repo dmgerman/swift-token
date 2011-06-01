@@ -1404,7 +1404,7 @@ newline|'\n'
 indent|'            '
 name|'rsync_mod'
 op|'='
-string|"'%s::object/sda/objects/%s'"
+string|"'[%s]::object/sda/objects/%s'"
 op|'%'
 op|'('
 name|'node'
@@ -3279,7 +3279,7 @@ newline|'\n'
 indent|'            '
 name|'rsync_mod'
 op|'='
-string|"'%s::object/sda/objects/%s'"
+string|"'[%s]::object/sda/objects/%s'"
 op|'%'
 op|'('
 name|'node'

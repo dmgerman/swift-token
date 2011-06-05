@@ -250,7 +250,7 @@ name|'get'
 op|'('
 string|"'unlink_log'"
 op|','
-string|"'True'"
+string|"'true'"
 op|')'
 op|'.'
 name|'lower'

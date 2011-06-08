@@ -939,7 +939,7 @@ newline|'\n'
 indent|'        '
 name|'header'
 op|'='
-string|"'Account Hash, Container Name, Object Count, Bytes Used'"
+string|"'Account Hash,Container Name,Object Count,Bytes Used'"
 newline|'\n'
 name|'if'
 name|'self'

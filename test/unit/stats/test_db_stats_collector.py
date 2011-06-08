@@ -1104,7 +1104,7 @@ name|'headers'
 op|'.'
 name|'startswith'
 op|'('
-string|"'Account Hash, Container Name,'"
+string|"'Account Hash,Container Name,'"
 op|')'
 op|')'
 newline|'\n'
@@ -1337,7 +1337,7 @@ name|'headers'
 op|'.'
 name|'startswith'
 op|'('
-string|"'Account Hash, Container Name,'"
+string|"'Account Hash,Container Name,'"
 op|')'
 op|')'
 newline|'\n'

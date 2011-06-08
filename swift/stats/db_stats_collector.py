@@ -836,6 +836,7 @@ name|'return'
 string|"''"
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|ContainerStatsCollector
 dedent|''
 dedent|''

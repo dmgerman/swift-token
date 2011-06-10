@@ -327,13 +327,7 @@ string|"'1'"
 op|','
 string|"'yes'"
 op|','
-string|"'True'"
-op|','
-string|"'Yes'"
-op|','
 string|"'on'"
-op|','
-string|"'On'"
 op|','
 string|"'t'"
 op|','

@@ -341,9 +341,9 @@ op|':'
 newline|'\n'
 indent|'        '
 name|'raise'
-name|'Exception'
+name|'NotImplementedError'
 op|'('
-string|"'Not Implemented'"
+string|"'Subclasses must override'"
 op|')'
 newline|'\n'
 nl|'\n'
@@ -358,9 +358,9 @@ op|':'
 newline|'\n'
 indent|'        '
 name|'raise'
-name|'Exception'
+name|'NotImplementedError'
 op|'('
-string|"'Not Implemented'"
+string|"'Subclasses must override'"
 op|')'
 newline|'\n'
 nl|'\n'

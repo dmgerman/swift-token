@@ -375,6 +375,10 @@ string|"'daemonize'"
 op|','
 string|"'true'"
 op|')'
+op|'.'
+name|'lower'
+op|'('
+op|')'
 name|'not'
 name|'in'
 name|'utils'

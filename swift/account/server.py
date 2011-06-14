@@ -1969,7 +1969,7 @@ name|'ret'
 op|'.'
 name|'charset'
 op|'='
-string|"'utf8'"
+string|"'utf-8'"
 newline|'\n'
 name|'return'
 name|'ret'

@@ -1565,7 +1565,7 @@ string|"'content-type'"
 op|']'
 op|','
 nl|'\n'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|')'
 newline|'\n'
 dedent|''
@@ -1586,7 +1586,7 @@ string|"'content-type'"
 op|']'
 op|','
 nl|'\n'
-string|"'application/xml; charset=utf8'"
+string|"'application/xml; charset=utf-8'"
 op|')'
 newline|'\n'
 nl|'\n'
@@ -9891,7 +9891,7 @@ string|"'content-type'"
 op|']'
 op|','
 nl|'\n'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|')'
 newline|'\n'
 dedent|''
@@ -9912,7 +9912,7 @@ string|"'content-type'"
 op|']'
 op|','
 nl|'\n'
-string|"'application/xml; charset=utf8'"
+string|"'application/xml; charset=utf-8'"
 op|')'
 newline|'\n'
 nl|'\n'

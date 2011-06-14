@@ -1461,7 +1461,7 @@ op|','
 nl|'\n'
 string|"'Content-Type'"
 op|':'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1513,7 +1513,7 @@ op|','
 nl|'\n'
 string|"'Content-Type'"
 op|':'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1561,7 +1561,7 @@ op|','
 nl|'\n'
 string|"'Content-Type'"
 op|':'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1618,7 +1618,7 @@ op|','
 nl|'\n'
 string|"'Content-Type'"
 op|':'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1677,7 +1677,7 @@ op|','
 nl|'\n'
 string|"'Content-Type'"
 op|':'
-string|"'application/json; charset=utf8'"
+string|"'application/json; charset=utf-8'"
 op|'}'
 op|')'
 newline|'\n'
@@ -1711,7 +1711,7 @@ op|','
 nl|'\n'
 string|"'Content-Type'"
 op|':'
-string|"'text/plain; charset=utf8'"
+string|"'text/plain; charset=utf-8'"
 op|'}'
 op|')'
 newline|'\n'

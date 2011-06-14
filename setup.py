@@ -357,7 +357,7 @@ name|'scripts'
 op|'='
 op|'['
 nl|'\n'
-string|"'bin/st'"
+string|"'bin/swift'"
 op|','
 string|"'bin/swift-account-auditor'"
 op|','

@@ -4458,11 +4458,11 @@ name|'headers'
 op|','
 nl|'\n'
 op|'{'
-string|"'X-Container-Sync-Key'"
+string|"'x-container-sync-key'"
 op|':'
 string|"'key'"
 op|','
-string|"'X-Timestamp'"
+string|"'x-timestamp'"
 op|':'
 string|"'1.2'"
 op|'}'
@@ -5056,12 +5056,12 @@ op|'('
 name|'headers'
 op|','
 op|'{'
-string|"'X-Container-Sync-Key'"
+string|"'x-container-sync-key'"
 op|':'
 string|"'key'"
 op|','
 nl|'\n'
-string|"'X-Timestamp'"
+string|"'x-timestamp'"
 op|':'
 string|"'1.2'"
 op|','
@@ -5171,6 +5171,10 @@ nl|'\n'
 string|"'etag'"
 op|':'
 string|'\'"etagvalue"\''
+op|','
+string|"'x-timestamp'"
+op|':'
+string|"'1.2'"
 op|'}'
 op|','
 nl|'\n'
@@ -5281,6 +5285,11 @@ nl|'\n'
 string|"'last-modified'"
 op|':'
 string|"'last modified value'"
+op|','
+nl|'\n'
+string|"'x-timestamp'"
+op|':'
+string|"'1.2'"
 op|','
 nl|'\n'
 string|"'other-header'"
@@ -5678,6 +5687,10 @@ op|':'
 string|"'other header value'"
 op|','
 nl|'\n'
+string|"'x-timestamp'"
+op|':'
+string|"'1.2'"
+op|','
 string|"'etag'"
 op|':'
 string|'\'"etagvalue"\''

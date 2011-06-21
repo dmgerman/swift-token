@@ -3196,7 +3196,7 @@ op|'{'
 nl|'\n'
 string|"'url'"
 op|':'
-string|"'http://127.0.0.1:80/v1/AUTH_admin'"
+string|"'http://127.0.0.1:8080/v1/AUTH_admin'"
 op|','
 nl|'\n'
 string|"'groups'"
@@ -3220,7 +3220,7 @@ op|'{'
 nl|'\n'
 string|"'url'"
 op|':'
-string|"'http://127.0.0.1:80/v1/AUTH_test'"
+string|"'http://127.0.0.1:8080/v1/AUTH_test'"
 op|','
 nl|'\n'
 string|"'groups'"

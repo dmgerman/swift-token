@@ -445,7 +445,7 @@ name|'get'
 op|'('
 string|"'bind_port'"
 op|','
-number|'80'
+string|"'80'"
 op|')'
 op|'+'
 string|"'/v1/'"

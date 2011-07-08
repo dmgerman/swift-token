@@ -1854,7 +1854,7 @@ op|':'
 newline|'\n'
 comment|'# If any errors are not 404, make sure we report the'
 nl|'\n'
-comment|"# non-404 one. We don't want to mistankely assume the"
+comment|"# non-404 one. We don't want to mistakenly assume the"
 nl|'\n'
 comment|'# object no longer exists just because one says so and'
 nl|'\n'
@@ -2073,7 +2073,7 @@ name|'_'
 op|'('
 string|"'Unauth %(sync_from)r '"
 nl|'\n'
-string|"'=> %(sync_to)r key: %(sync_key)r'"
+string|"'=> %(sync_to)r'"
 op|')'
 op|','
 nl|'\n'
@@ -2105,11 +2105,6 @@ nl|'\n'
 string|"'sync_to'"
 op|':'
 name|'sync_to'
-op|','
-nl|'\n'
-string|"'sync_key'"
-op|':'
-name|'sync_key'
 op|'}'
 op|')'
 newline|'\n'
@@ -2133,7 +2128,7 @@ name|'_'
 op|'('
 string|"'Not found %(sync_from)r '"
 nl|'\n'
-string|"'=> %(sync_to)r key: %(sync_key)r'"
+string|"'=> %(sync_to)r'"
 op|')'
 op|','
 nl|'\n'
@@ -2165,11 +2160,6 @@ nl|'\n'
 string|"'sync_to'"
 op|':'
 name|'sync_to'
-op|','
-nl|'\n'
-string|"'sync_key'"
-op|':'
-name|'sync_key'
 op|'}'
 op|')'
 newline|'\n'

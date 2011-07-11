@@ -643,6 +643,8 @@ op|'('
 string|"'PUT'"
 op|','
 string|"'DELETE'"
+op|','
+string|"'POST'"
 op|')'
 op|':'
 newline|'\n'
@@ -680,6 +682,10 @@ op|'('
 string|"'PUT'"
 op|','
 string|"'DELETE'"
+op|','
+string|"'POST'"
+op|','
+string|"'COPY'"
 op|')'
 op|':'
 newline|'\n'

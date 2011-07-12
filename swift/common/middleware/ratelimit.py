@@ -625,6 +625,18 @@ op|'='
 op|'['
 op|']'
 newline|'\n'
+name|'limit_req_types'
+op|'='
+op|'['
+string|"'PUT'"
+op|','
+string|"'DELETE'"
+op|','
+string|"'POST'"
+op|']'
+newline|'\n'
+comment|'# COPYs are not limited'
+nl|'\n'
 name|'if'
 name|'self'
 op|'.'
@@ -639,13 +651,7 @@ name|'obj_name'
 name|'and'
 name|'req_method'
 name|'in'
-op|'('
-string|"'PUT'"
-op|','
-string|"'DELETE'"
-op|','
-string|"'POST'"
-op|')'
+name|'limit_req_types'
 op|':'
 newline|'\n'
 comment|'# account_ratelimit PUTs/DELETEs to acc_name/cont_name'
@@ -678,15 +684,7 @@ name|'obj_name'
 name|'and'
 name|'req_method'
 name|'in'
-op|'('
-string|"'PUT'"
-op|','
-string|"'DELETE'"
-op|','
-string|"'POST'"
-op|','
-string|"'COPY'"
-op|')'
+name|'limit_req_types'
 op|':'
 newline|'\n'
 comment|'# container_ratelimit PUTs/DELETEs to acc_name/cont_name/obj_name'

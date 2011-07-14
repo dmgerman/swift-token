@@ -2710,7 +2710,7 @@ name|'join'
 op|'('
 op|'['
 nl|'\n'
-string|'\'<?xml version="1.0" encoding="UTF-8"?>\\n\''
+string|'\'<?xml version="1.1" encoding="UTF-8"?>\\n\''
 op|','
 nl|'\n'
 string|"'<container name=%s>'"

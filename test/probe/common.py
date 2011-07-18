@@ -361,11 +361,11 @@ name|'print'
 name|'err'
 newline|'\n'
 name|'print'
-string|"'Retrying in 1 second...'"
+string|"'Retrying in 2 seconds...'"
 newline|'\n'
 name|'sleep'
 op|'('
-number|'1'
+number|'2'
 op|')'
 newline|'\n'
 dedent|''

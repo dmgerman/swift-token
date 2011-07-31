@@ -859,7 +859,7 @@ number|'200'
 op|','
 name|'content_type'
 op|'='
-string|"'text/xml'"
+string|"'application/xml'"
 op|','
 name|'body'
 op|'='
@@ -1424,7 +1424,7 @@ name|'body'
 op|','
 name|'content_type'
 op|'='
-string|"'text/xml'"
+string|"'application/xml'"
 op|')'
 newline|'\n'
 nl|'\n'

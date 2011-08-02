@@ -1308,6 +1308,8 @@ op|')'
 op|':'
 newline|'\n'
 indent|'        '
+string|'"""\n        Checks the exception info to see if it indicates a quarantine situation\n        (malformed or corrupted database). If not, the original exception will\n        be reraised. If so, the database will be quarantined and a new\n        sqlite3.DatabaseError will be raised indicating the action taken.\n        """'
+newline|'\n'
 name|'if'
 string|"'database disk image is malformed'"
 name|'in'

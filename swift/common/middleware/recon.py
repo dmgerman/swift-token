@@ -81,7 +81,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Recon middleware used for monitoring.\n\n    /recon/load|mem|async... will return various system metrics.\n    """'
+string|'"""\n    Recon middleware used for monitoring.\n\n    /recon/load|mem|async... will return various system metrics.\n\n    Needs to be added to the pipeline and a requires a filter\n    declaration in the object-server.conf:\n\n    [filter:recon]\n    use = egg:swift#recon\n    recon_cache_path = /var/cache/swift\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

@@ -425,6 +425,11 @@ nl|'\n'
 string|"'bin/swift-bench'"
 op|','
 nl|'\n'
+string|"'bin/swift-recon'"
+op|','
+string|"'bin/swift-recon-cron'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'
@@ -481,6 +486,9 @@ string|"'staticweb=swift.common.middleware.staticweb:filter_factory'"
 op|','
 nl|'\n'
 string|"'tempauth=swift.common.middleware.tempauth:filter_factory'"
+op|','
+nl|'\n'
+string|"'recon=swift.common.middleware.recon:filter_factory'"
 op|','
 nl|'\n'
 op|']'

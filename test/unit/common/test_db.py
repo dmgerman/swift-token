@@ -1576,7 +1576,7 @@ newline|'\n'
 indent|'                '
 name|'qpath'
 op|'+='
-string|"'/quarantined/test/db'"
+string|"'/quarantined/tests/db'"
 newline|'\n'
 dedent|''
 name|'else'
@@ -1585,7 +1585,7 @@ newline|'\n'
 indent|'                '
 name|'qpath'
 op|'='
-string|"'quarantined/test/db'"
+string|"'quarantined/tests/db'"
 newline|'\n'
 comment|'# Test malformed database'
 nl|'\n'

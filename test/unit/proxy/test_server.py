@@ -409,6 +409,11 @@ nl|'\n'
 string|"'mount_check'"
 op|':'
 string|"'false'"
+op|','
+string|"'allowed_headers'"
+op|':'
+nl|'\n'
+string|"'content-encoding, x-object-manifest, content-disposition, foo'"
 op|'}'
 newline|'\n'
 name|'prolis'
@@ -20499,7 +20504,9 @@ string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
 nl|'\n'
 string|"'t\\r\\nContent-Length: 0\\r\\nX-Object-Manifest: '"
 nl|'\n'
-string|"'segmented/name/\\r\\nContent-Type: text/jibberish\\r\\n\\r\\n'"
+string|"'segmented/name/\\r\\nContent-Type: text/jibberish\\r\\n'"
+nl|'\n'
+string|"'Foo: barbaz\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -20621,6 +20628,15 @@ op|'.'
 name|'assert_'
 op|'('
 string|"'Content-Type: text/jibberish'"
+name|'in'
+name|'headers'
+op|')'
+newline|'\n'
+name|'self'
+op|'.'
+name|'assert_'
+op|'('
+string|"'Foo: barbaz'"
 name|'in'
 name|'headers'
 op|')'

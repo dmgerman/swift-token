@@ -1573,7 +1573,6 @@ string|'"object.recon"'
 op|')'
 newline|'\n'
 nl|'\n'
-nl|'\n'
 DECL|member|_rsync
 dedent|''
 name|'def'

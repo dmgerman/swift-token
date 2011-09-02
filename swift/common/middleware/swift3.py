@@ -1334,7 +1334,7 @@ op|'.'
 name|'join'
 op|'('
 op|'['
-string|"'<Contents><Key>%s</Key><LastModified>%s</LastModif'"
+string|"'<Contents><Key>%s</Key><LastModified>%sZ</LastModif'"
 string|"'ied><ETag>%s</ETag><Size>%s</Size><StorageClass>STA'"
 string|"'NDARD</StorageClass></Contents>'"
 op|'%'

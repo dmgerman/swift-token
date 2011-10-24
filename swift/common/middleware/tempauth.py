@@ -3033,11 +3033,11 @@ op|','
 nl|'\n'
 name|'req'
 op|'.'
-name|'headers'
+name|'environ'
 op|'.'
 name|'get'
 op|'('
-string|"'x-trans-id'"
+string|"'swift.trans_id'"
 op|','
 string|"'-'"
 op|')'

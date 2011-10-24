@@ -593,7 +593,7 @@ name|'in'
 op|'('
 string|"'eventlet.posthooks'"
 op|','
-string|"'HTTP_X_CF_TRANS_ID'"
+string|"'swift.trans_id'"
 op|','
 string|"'REMOTE_USER'"
 op|','
@@ -2780,7 +2780,7 @@ name|'env'
 op|'.'
 name|'get'
 op|'('
-string|"'HTTP_X_CF_TRANS_ID'"
+string|"'swift.trans_id'"
 op|','
 string|"'-'"
 op|')'

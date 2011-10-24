@@ -1215,7 +1215,7 @@ name|'in'
 op|'('
 string|"'swift.cache'"
 op|','
-string|"'HTTP_X_TRANS_ID'"
+string|"'swift.trans_id'"
 op|')'
 op|':'
 newline|'\n'

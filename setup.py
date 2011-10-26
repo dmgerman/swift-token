@@ -194,6 +194,8 @@ op|','
 string|"'bin/swift-object-auditor'"
 op|','
 nl|'\n'
+string|"'bin/swift-object-expirer'"
+op|','
 string|"'bin/swift-object-info'"
 op|','
 nl|'\n'

@@ -5626,7 +5626,7 @@ op|'='
 name|'md5'
 op|'('
 nl|'\n'
-string|'\'"\''
+string|"''"
 op|'.'
 name|'join'
 op|'('

@@ -1974,8 +1974,11 @@ op|','
 string|"'content-type'"
 op|','
 nl|'\n'
+string|"'content-range'"
+op|','
 string|"'content-encoding'"
 op|','
+nl|'\n'
 string|"'etag'"
 op|','
 string|"'last-modified'"

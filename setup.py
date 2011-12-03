@@ -230,6 +230,10 @@ string|"'bin/swift-recon'"
 op|','
 string|"'bin/swift-recon-cron'"
 op|','
+string|"'bin/swift-orphans'"
+op|','
+nl|'\n'
+string|"'bin/swift-oldies'"
 nl|'\n'
 op|']'
 op|','

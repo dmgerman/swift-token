@@ -4330,7 +4330,7 @@ string|'"""\n    Ensure that a pickle file gets written to disk.  The file\n    
 newline|'\n'
 name|'if'
 name|'tmp'
-op|'=='
+name|'is'
 name|'None'
 op|':'
 newline|'\n'

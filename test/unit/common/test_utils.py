@@ -266,6 +266,8 @@ name|'pass'
 newline|'\n'
 nl|'\n'
 dedent|''
+name|'setgroups'
+op|'='
 name|'chdir'
 op|'='
 name|'setsid'
@@ -361,6 +363,22 @@ name|'append'
 op|'('
 name|'target'
 op|')'
+newline|'\n'
+nl|'\n'
+DECL|member|geteuid
+dedent|''
+name|'def'
+name|'geteuid'
+op|'('
+name|'self'
+op|')'
+op|':'
+newline|'\n'
+indent|'        '
+string|"'''Pretend we are running as root.'''"
+newline|'\n'
+name|'return'
+number|'0'
 newline|'\n'
 nl|'\n'
 DECL|member|__getattr__
@@ -4367,12 +4385,15 @@ nl|'\n'
 name|'required_func_calls'
 op|'='
 op|'('
+string|"'setgroups'"
+op|','
 string|"'setgid'"
 op|','
 string|"'setuid'"
 op|','
 string|"'setsid'"
 op|','
+nl|'\n'
 string|"'chdir'"
 op|','
 string|"'umask'"

@@ -2076,6 +2076,13 @@ op|']'
 op|'='
 name|'True'
 newline|'\n'
+name|'subenv'
+op|'['
+string|"'REMOTE_USER'"
+op|']'
+op|'='
+string|"'.wsgi.formpost'"
+newline|'\n'
 name|'substatus'
 op|'='
 op|'['
@@ -2347,6 +2354,13 @@ string|"'swift.authorize_override'"
 op|']'
 op|'='
 name|'True'
+newline|'\n'
+name|'newenv'
+op|'['
+string|"'REMOTE_USER'"
+op|']'
+op|'='
+string|"'.wsgi.formpost'"
 newline|'\n'
 name|'key'
 op|'='

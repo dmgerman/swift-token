@@ -855,6 +855,13 @@ op|']'
 op|'='
 name|'True'
 newline|'\n'
+name|'env'
+op|'['
+string|"'REMOTE_USER'"
+op|']'
+op|'='
+string|"'.wsgi.tempurl'"
+newline|'\n'
 nl|'\n'
 DECL|function|_start_response
 name|'def'
@@ -1362,6 +1369,13 @@ string|"'swift.authorize_override'"
 op|']'
 op|'='
 name|'True'
+newline|'\n'
+name|'newenv'
+op|'['
+string|"'REMOTE_USER'"
+op|']'
+op|'='
+string|"'.wsgi.tempurl'"
 newline|'\n'
 name|'key'
 op|'='

@@ -5854,10 +5854,10 @@ op|']'
 newline|'\n'
 nl|'\n'
 nl|'\n'
-DECL|function|strcmp_const_time
+DECL|function|streq_const_time
 dedent|''
 name|'def'
-name|'strcmp_const_time'
+name|'streq_const_time'
 op|'('
 name|'s1'
 op|','

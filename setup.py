@@ -316,6 +316,9 @@ nl|'\n'
 string|"'formpost=swift.common.middleware.formpost:filter_factory'"
 op|','
 nl|'\n'
+string|"'name_check=swift.common.middleware.name_check:filter_factory'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

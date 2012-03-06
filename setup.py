@@ -246,12 +246,6 @@ nl|'\n'
 string|"'bin/swift-ring-builder'"
 op|','
 nl|'\n'
-string|"'bin/swift-stats-populate'"
-op|','
-nl|'\n'
-string|"'bin/swift-stats-report'"
-op|','
-nl|'\n'
 string|"'bin/swift-temp-url'"
 op|','
 nl|'\n'

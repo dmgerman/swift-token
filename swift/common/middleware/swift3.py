@@ -1184,7 +1184,7 @@ indent|'                '
 name|'return'
 name|'get_err_response'
 op|'('
-string|"'InvalidBucketName'"
+string|"'NoSuchBucket'"
 op|')'
 newline|'\n'
 dedent|''
@@ -1658,7 +1658,7 @@ indent|'                '
 name|'return'
 name|'get_err_response'
 op|'('
-string|"'InvalidBucketName'"
+string|"'NoSuchBucket'"
 op|')'
 newline|'\n'
 dedent|''
@@ -2280,7 +2280,7 @@ indent|'                '
 name|'return'
 name|'get_err_response'
 op|'('
-string|"'InvalidBucketName'"
+string|"'NoSuchBucket'"
 op|')'
 newline|'\n'
 dedent|''

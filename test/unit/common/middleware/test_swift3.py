@@ -2198,7 +2198,7 @@ name|'assertEquals'
 op|'('
 name|'code'
 op|','
-string|"'InvalidBucketName'"
+string|"'NoSuchBucket'"
 op|')'
 newline|'\n'
 name|'code'
@@ -3584,7 +3584,7 @@ name|'assertEquals'
 op|'('
 name|'code'
 op|','
-string|"'InvalidBucketName'"
+string|"'NoSuchBucket'"
 op|')'
 newline|'\n'
 name|'code'
@@ -4325,7 +4325,7 @@ name|'assertEquals'
 op|'('
 name|'code'
 op|','
-string|"'InvalidBucketName'"
+string|"'NoSuchBucket'"
 op|')'
 newline|'\n'
 name|'code'

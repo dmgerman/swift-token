@@ -2180,6 +2180,7 @@ name|'body'
 op|')'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|get_container
 dedent|''
 dedent|''

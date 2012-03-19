@@ -1,7 +1,7 @@
 begin_unit
 comment|'#!/usr/bin/python'
 nl|'\n'
-comment|'# Copyright (c) 2010-2011 OpenStack, LLC.'
+comment|'# Copyright (c) 2010-2012 OpenStack, LLC.'
 nl|'\n'
 comment|'#'
 nl|'\n'

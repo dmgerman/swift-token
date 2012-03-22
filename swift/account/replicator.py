@@ -64,11 +64,6 @@ name|'server_type'
 op|'='
 string|"'account'"
 newline|'\n'
-DECL|variable|ring_file
-name|'ring_file'
-op|'='
-string|"'account.ring.gz'"
-newline|'\n'
 DECL|variable|brokerclass
 name|'brokerclass'
 op|'='

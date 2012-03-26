@@ -1232,7 +1232,7 @@ string|"'GET'"
 op|','
 name|'path'
 op|'+'
-string|"'&'"
+string|"'&marker='"
 op|'+'
 name|'quote'
 op|'('

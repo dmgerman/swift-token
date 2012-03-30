@@ -438,7 +438,7 @@ op|'('
 string|"'REMOTE_USER'"
 op|')'
 op|'!='
-string|"'.wsgi.formpost'"
+string|"'.wsgi.pre_authed'"
 op|':'
 newline|'\n'
 indent|'            '

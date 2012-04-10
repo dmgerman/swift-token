@@ -1619,6 +1619,8 @@ op|','
 nl|'\n'
 string|"'PATH_INFO'"
 op|','
+string|"'QUERY_STRING'"
+op|','
 string|"'REMOTE_USER'"
 op|','
 string|"'REQUEST_METHOD'"
@@ -1680,6 +1682,34 @@ name|'path'
 op|':'
 newline|'\n'
 indent|'        '
+name|'if'
+string|"'?'"
+name|'in'
+name|'path'
+op|':'
+newline|'\n'
+indent|'            '
+name|'path'
+op|','
+name|'query_string'
+op|'='
+name|'path'
+op|'.'
+name|'split'
+op|'('
+string|"'?'"
+op|','
+number|'1'
+op|')'
+newline|'\n'
+name|'newenv'
+op|'['
+string|"'QUERY_STRING'"
+op|']'
+op|'='
+name|'query_string'
+newline|'\n'
+dedent|''
 name|'newenv'
 op|'['
 string|"'PATH_INFO'"

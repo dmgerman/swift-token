@@ -761,7 +761,7 @@ op|'('
 string|"'Previously downed object server had test object'"
 op|')'
 newline|'\n'
-comment|"# Run the extra server last so it'll remove it's extra partition"
+comment|"# Run the extra server last so it'll remove its extra partition"
 nl|'\n'
 dedent|''
 name|'ps'
@@ -997,7 +997,7 @@ comment|"#           raise Exception('Previously downed object server had the ne
 nl|'\n'
 comment|"#                           'metadata when it should not have it')"
 nl|'\n'
-comment|"#       # Run the extra server last so it'll remove it's extra partition"
+comment|"#       # Run the extra server last so it'll remove its extra partition"
 nl|'\n'
 comment|'#       ps = []'
 nl|'\n'
@@ -1293,7 +1293,7 @@ nl|'\n'
 name|'obj'
 op|')'
 newline|'\n'
-comment|"# Run the extra server last so it'll remove it's extra partition"
+comment|"# Run the extra server last so it'll remove its extra partition"
 nl|'\n'
 name|'ps'
 op|'='

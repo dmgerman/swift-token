@@ -2954,7 +2954,7 @@ op|'.'
 name|'procs'
 op|':'
 newline|'\n'
-comment|"# wait for process to close it's stdout"
+comment|'# wait for process to close its stdout'
 nl|'\n'
 indent|'            '
 name|'output'

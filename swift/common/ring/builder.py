@@ -171,7 +171,7 @@ comment|'# number of hours since a given partition was last moved. This is used'
 nl|'\n'
 comment|"# to guarantee we don't move a partition twice within a given number of"
 nl|'\n'
-comment|"# hours (24 is my usual test). Removing a device or setting it's weight"
+comment|'# hours (24 is my usual test). Removing a device or setting its weight'
 nl|'\n'
 comment|"# to 0 overrides this behavior as it's assumed those actions are done"
 nl|'\n'

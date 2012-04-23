@@ -3864,7 +3864,7 @@ op|')'
 newline|'\n'
 comment|"# Write some files into '1' and run replicate- they should be moved"
 nl|'\n'
-comment|'# to the other partitoins and then node should get deleted.'
+comment|'# to the other partitions and then node should get deleted.'
 nl|'\n'
 name|'cur_part'
 op|'='

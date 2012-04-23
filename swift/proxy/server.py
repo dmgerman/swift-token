@@ -348,11 +348,8 @@ op|','
 nl|'\n'
 string|"'connection'"
 op|','
-string|"'x-timestamp'"
-op|','
 string|"'x-put-timestamp'"
 op|','
-nl|'\n'
 string|"'x-delete-after'"
 op|')'
 op|':'

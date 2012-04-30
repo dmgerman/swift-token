@@ -55,6 +55,7 @@ name|'conf'
 op|'='
 name|'get_config'
 op|'('
+string|"'func_test'"
 op|')'
 newline|'\n'
 nl|'\n'

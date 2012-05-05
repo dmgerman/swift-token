@@ -301,9 +301,6 @@ nl|'\n'
 string|"'swift3=swift.common.middleware.swift3:filter_factory'"
 op|','
 nl|'\n'
-string|"'staticweb=swift.common.middleware.staticweb:filter_factory'"
-op|','
-nl|'\n'
 string|"'tempauth=swift.common.middleware.tempauth:filter_factory'"
 op|','
 nl|'\n'

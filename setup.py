@@ -289,9 +289,6 @@ nl|'\n'
 string|"'catch_errors=swift.common.middleware.catch_errors:filter_factory'"
 op|','
 nl|'\n'
-string|"'domain_remap=swift.common.middleware.domain_remap:filter_factory'"
-op|','
-nl|'\n'
 string|"'swift3=swift.common.middleware.swift3:filter_factory'"
 op|','
 nl|'\n'

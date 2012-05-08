@@ -201,9 +201,6 @@ nl|'\n'
 string|"'bin/swift-drive-audit'"
 op|','
 nl|'\n'
-string|"'bin/swift-form-signature'"
-op|','
-nl|'\n'
 string|"'bin/swift-get-nodes'"
 op|','
 nl|'\n'
@@ -244,9 +241,6 @@ string|"'bin/swift-recon-cron'"
 op|','
 nl|'\n'
 string|"'bin/swift-ring-builder'"
-op|','
-nl|'\n'
-string|"'bin/swift-temp-url'"
 op|','
 nl|'\n'
 op|']'
@@ -305,12 +299,6 @@ string|"'tempauth=swift.common.middleware.tempauth:filter_factory'"
 op|','
 nl|'\n'
 string|"'recon=swift.common.middleware.recon:filter_factory'"
-op|','
-nl|'\n'
-string|"'tempurl=swift.common.middleware.tempurl:filter_factory'"
-op|','
-nl|'\n'
-string|"'formpost=swift.common.middleware.formpost:filter_factory'"
 op|','
 nl|'\n'
 string|"'name_check=swift.common.middleware.name_check:filter_factory'"

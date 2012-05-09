@@ -280,9 +280,6 @@ nl|'\n'
 string|"'memcache=swift.common.middleware.memcache:filter_factory'"
 op|','
 nl|'\n'
-string|"'ratelimit=swift.common.middleware.ratelimit:filter_factory'"
-op|','
-nl|'\n'
 string|"'cname_lookup=swift.common.middleware.cname_lookup:filter_factory'"
 op|','
 nl|'\n'

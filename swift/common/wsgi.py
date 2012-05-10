@@ -1700,6 +1700,8 @@ string|"'eventlet.posthooks'"
 op|','
 string|"'HTTP_USER_AGENT'"
 op|','
+string|"'HTTP_HOST'"
+op|','
 nl|'\n'
 string|"'PATH_INFO'"
 op|','

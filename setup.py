@@ -298,9 +298,6 @@ nl|'\n'
 string|"'domain_remap=swift.common.middleware.domain_remap:filter_factory'"
 op|','
 nl|'\n'
-string|"'swift3=swift.common.middleware.swift3:filter_factory'"
-op|','
-nl|'\n'
 string|"'staticweb=swift.common.middleware.staticweb:filter_factory'"
 op|','
 nl|'\n'

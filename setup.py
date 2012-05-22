@@ -156,9 +156,6 @@ name|'scripts'
 op|'='
 op|'['
 nl|'\n'
-string|"'bin/swift'"
-op|','
-nl|'\n'
 string|"'bin/swift-account-audit'"
 op|','
 nl|'\n'

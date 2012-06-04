@@ -828,9 +828,10 @@ string|"'zone'"
 op|':'
 number|'6'
 op|','
+nl|'\n'
 string|"'ip'"
 op|':'
-string|"'127.0.0.5'"
+string|"'fe80::202:b3ff:fe1e:8329'"
 op|','
 string|"'port'"
 op|':'
@@ -851,9 +852,10 @@ string|"'zone'"
 op|':'
 number|'7'
 op|','
+nl|'\n'
 string|"'ip'"
 op|':'
-string|"'127.0.0.6'"
+string|"'2001:0db8:85a3:0000:0000:8a2e:0370:7334'"
 op|','
 string|"'port'"
 op|':'
@@ -1415,7 +1417,7 @@ newline|'\n'
 indent|'            '
 name|'rsync_mod'
 op|'='
-string|"'[%s]::object/sda/objects/%s'"
+string|"'%s::object/sda/objects/%s'"
 op|'%'
 op|'('
 name|'node'
@@ -3489,7 +3491,7 @@ newline|'\n'
 indent|'                '
 name|'rsync_mod'
 op|'='
-string|"'[%s]::object/sda/objects/%s'"
+string|"'%s::object/sda/objects/%s'"
 op|'%'
 op|'('
 name|'node'
@@ -4027,7 +4029,7 @@ newline|'\n'
 indent|'                '
 name|'rsync_mod'
 op|'='
-string|"'[%s]::object/sda/objects/%s'"
+string|"'%s::object/sda/objects/%s'"
 op|'%'
 op|'('
 name|'node'

@@ -24641,7 +24641,6 @@ op|'='
 name|'orig_time'
 newline|'\n'
 nl|'\n'
-nl|'\n'
 DECL|member|test_POST_non_int_delete_after
 dedent|''
 dedent|''

@@ -211,6 +211,17 @@ name|'return'
 string|"'1.2.3.4:5'"
 newline|'\n'
 dedent|''
+name|'elif'
+name|'option'
+op|'=='
+string|"'memcache_serialization_support'"
+op|':'
+newline|'\n'
+indent|'                '
+name|'return'
+string|"'2'"
+newline|'\n'
+dedent|''
 name|'else'
 op|':'
 newline|'\n'
@@ -482,6 +493,11 @@ op|'{'
 string|"'memcache_servers'"
 op|':'
 string|"'1.2.3.4:5'"
+op|','
+nl|'\n'
+string|"'memcache_serialization_support'"
+op|':'
+string|"'2'"
 op|'}'
 op|')'
 newline|'\n'

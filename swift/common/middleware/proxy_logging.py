@@ -303,6 +303,11 @@ op|','
 string|"'log_name'"
 op|','
 string|"'log_level'"
+op|','
+string|"'log_udp_host'"
+op|','
+nl|'\n'
+string|"'log_udp_port'"
 op|')'
 op|':'
 newline|'\n'

@@ -13907,6 +13907,11 @@ op|','
 string|"'log_name'"
 op|','
 string|"'log_level'"
+op|','
+nl|'\n'
+string|"'log_udp_host'"
+op|','
+string|"'log_udp_port'"
 op|')'
 op|':'
 newline|'\n'

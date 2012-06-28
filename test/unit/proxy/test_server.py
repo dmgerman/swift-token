@@ -21415,6 +21415,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -21450,11 +21451,17 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/segmented HTTP/1.1\\r\\nHost: localhost\\r\\n'"
+string|"'PUT /v1/a/segmented%20object HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'Connection: close\\r\\nX-Storage-Token: t\\r\\n'"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'Content-Length: 0\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -21537,11 +21544,21 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/segmented/name/%s HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/segmented%%20object/object%%20name/%s '"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 5\\r\\n\\r\\n1234 '"
+string|"'Host: localhost\\r\\n'"
+nl|'\n'
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 5\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
+nl|'\n'
+string|"'1234 '"
 op|'%'
 name|'str'
 op|'('
@@ -21629,15 +21646,23 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/segmented/name HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/segmented%20object/object%20name HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 0\\r\\nX-Object-Manifest: '"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'segmented/name/\\r\\nContent-Type: text/jibberish\\r\\n'"
+string|"'X-Storage-Token: t\\r\\n'"
 nl|'\n'
-string|"'Foo: barbaz\\r\\n\\r\\n'"
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'X-Object-Manifest: segmented%20object/object%20name/\\r\\n'"
+nl|'\n'
+string|"'Content-Type: text/jibberish\\r\\n'"
+nl|'\n'
+string|"'Foo: barbaz\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -21673,6 +21698,111 @@ op|','
 name|'exp'
 op|')'
 newline|'\n'
+comment|'# Check retrieving the listing the manifest would retrieve'
+nl|'\n'
+name|'sock'
+op|'='
+name|'connect_tcp'
+op|'('
+op|'('
+string|"'localhost'"
+op|','
+name|'prolis'
+op|'.'
+name|'getsockname'
+op|'('
+op|')'
+op|'['
+number|'1'
+op|']'
+op|')'
+op|')'
+newline|'\n'
+name|'fd'
+op|'='
+name|'sock'
+op|'.'
+name|'makefile'
+op|'('
+op|')'
+newline|'\n'
+name|'fd'
+op|'.'
+name|'write'
+op|'('
+string|"'GET /v1/a/segmented%20object?prefix=object%20name/ '"
+nl|'\n'
+string|"'HTTP/1.1\\r\\n'"
+nl|'\n'
+string|"'Host: localhost\\r\\n'"
+nl|'\n'
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
+op|')'
+newline|'\n'
+name|'fd'
+op|'.'
+name|'flush'
+op|'('
+op|')'
+newline|'\n'
+name|'headers'
+op|'='
+name|'readuntil2crlfs'
+op|'('
+name|'fd'
+op|')'
+newline|'\n'
+name|'exp'
+op|'='
+string|"'HTTP/1.1 200'"
+newline|'\n'
+name|'self'
+op|'.'
+name|'assertEquals'
+op|'('
+name|'headers'
+op|'['
+op|':'
+name|'len'
+op|'('
+name|'exp'
+op|')'
+op|']'
+op|','
+name|'exp'
+op|')'
+newline|'\n'
+name|'body'
+op|'='
+name|'fd'
+op|'.'
+name|'read'
+op|'('
+op|')'
+newline|'\n'
+name|'self'
+op|'.'
+name|'assertEquals'
+op|'('
+nl|'\n'
+name|'body'
+op|','
+nl|'\n'
+string|"'object name/0\\n'"
+nl|'\n'
+string|"'object name/1\\n'"
+nl|'\n'
+string|"'object name/2\\n'"
+nl|'\n'
+string|"'object name/3\\n'"
+nl|'\n'
+string|"'object name/4\\n'"
+op|')'
+newline|'\n'
 comment|'# Ensure retrieving the manifest file gets the whole object'
 nl|'\n'
 name|'sock'
@@ -21705,11 +21835,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/segmented/name HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/segmented%20object/object%20name HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -21749,8 +21883,9 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'X-Object-Manifest: segmented/name/'"
+string|"'X-Object-Manifest: segmented%20object/object%20name/'"
 name|'in'
+nl|'\n'
 name|'headers'
 op|')'
 newline|'\n'
@@ -21854,11 +21989,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/segmented/name HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/segmented%20object/object%20name HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -21898,8 +22037,9 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'X-Object-Manifest: segmented/name/'"
+string|"'X-Object-Manifest: segmented%20object/object%20name/'"
 name|'in'
+nl|'\n'
 name|'headers'
 op|')'
 newline|'\n'
@@ -21928,9 +22068,9 @@ name|'self'
 op|'.'
 name|'assertEquals'
 op|'('
+nl|'\n'
 name|'body'
 op|','
-nl|'\n'
 string|"'19\\r\\n1234 1234 1234 1234 1234 \\r\\n0\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
@@ -21970,13 +22110,19 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/segmented/copy HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/segmented%20object/copy HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nX-Copy-From: segmented/name\\r\\nContent-Length: '"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'0\\r\\n\\r\\n'"
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'X-Copy-From: segmented%20object/object%20name\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22060,13 +22206,19 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/segmented/copy HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/segmented%20object/copy HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nX-Copy-From: segmented/name\\r\\nContent-Length: '"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'0\\r\\n\\r\\n'"
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'X-Copy-From: segmented%20object/object%20name\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22142,11 +22294,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/segmented/copy HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/segmented%20object/copy HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22254,13 +22410,21 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/segmented/empty HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/segmented%20object/empty HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 0\\r\\nX-Object-Manifest: '"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'segmented/empty/\\r\\nContent-Type: text/jibberish\\r\\n\\r\\n'"
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'X-Object-Manifest: segmented%20object/empty/\\r\\n'"
+nl|'\n'
+string|"'Content-Type: text/jibberish\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22328,11 +22492,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/segmented/empty HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/segmented%20object/empty HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22372,7 +22540,7 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'X-Object-Manifest: segmented/empty/'"
+string|"'X-Object-Manifest: segmented%20object/empty/'"
 name|'in'
 name|'headers'
 op|')'
@@ -22435,13 +22603,19 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/c/obj HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/c/obj HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 0\\r\\nContent-Type: text/jibberish'"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'\\r\\n\\r\\n'"
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'Content-Type: text/jibberish\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22507,11 +22681,19 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/c/obj2 HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/c/obj2 HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 0\\r\\nX-Copy-From: c/obj\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'X-Copy-From: c/obj\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22579,11 +22761,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/c/obj2 HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/c/obj2 HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22660,13 +22846,19 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/c/obj3 HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/c/obj3 HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 0\\r\\nContent-Type: foo/bar'"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'\\r\\n\\r\\n'"
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'Content-Type: foo/bar\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22734,11 +22926,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/c/obj3 HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/c/obj3 HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22831,13 +23027,19 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/c/obj4 HTTP/1.1\\r\\nHost: '"
+string|"'PUT /v1/a/c/obj4 HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\nContent-Length: 0\\r\\nContent-Type: foo/bar'"
+string|"'Connection: close\\r\\n'"
 nl|'\n'
-string|"'; charset=UTF-8\\r\\n\\r\\n'"
+string|"'X-Storage-Token: t\\r\\n'"
+nl|'\n'
+string|"'Content-Length: 0\\r\\n'"
+nl|'\n'
+string|"'Content-Type: foo/bar; charset=UTF-8\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22905,11 +23107,15 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/c/obj4 HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/c/obj4 HTTP/1.1\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: '"
+string|"'Host: localhost\\r\\n'"
 nl|'\n'
-string|"'t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\n'"
+nl|'\n'
+string|"'X-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'

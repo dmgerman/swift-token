@@ -301,6 +301,9 @@ nl|'\n'
 string|"'tempauth=swift.common.middleware.tempauth:filter_factory'"
 op|','
 nl|'\n'
+string|"'keystoneauth=swift.common.middleware.keystoneauth:filter_factory'"
+op|','
+nl|'\n'
 string|"'recon=swift.common.middleware.recon:filter_factory'"
 op|','
 nl|'\n'

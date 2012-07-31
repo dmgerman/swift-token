@@ -119,6 +119,26 @@ name|'MAX_CONTAINER_NAME_LENGTH'
 op|'='
 number|'256'
 newline|'\n'
+comment|'#: Query string format= values to their corresponding content-type values'
+nl|'\n'
+DECL|variable|FORMAT2CONTENT_TYPE
+name|'FORMAT2CONTENT_TYPE'
+op|'='
+op|'{'
+string|"'plain'"
+op|':'
+string|"'text/plain'"
+op|','
+string|"'json'"
+op|':'
+string|"'application/json'"
+op|','
+nl|'\n'
+string|"'xml'"
+op|':'
+string|"'application/xml'"
+op|'}'
+newline|'\n'
 nl|'\n'
 nl|'\n'
 DECL|function|check_metadata

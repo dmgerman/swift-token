@@ -101,7 +101,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Used to build swift.common.RingData instances to be written to disk and\n    used with swift.common.ring.Ring instances. See bin/ring-builder.py for\n    example usage.\n\n    The instance variable devs_changed indicates if the device information has\n    changed since the last balancing. This can be used by tools to know whether\n    a rebalance request is an isolated request or due to added, changed, or\n    removed devices.\n\n    :param part_power: number of partitions = 2**part_power\n    :param replicas: number of replicas for each partition\n    :param min_part_hours: minimum number of hours between partition changes\n    """'
+string|'"""\n    Used to build swift.common.ring.RingData instances to be written to disk\n    and used with swift.common.ring.Ring instances. See bin/swift-ring-builder\n    for example usage.\n\n    The instance variable devs_changed indicates if the device information has\n    changed since the last balancing. This can be used by tools to know whether\n    a rebalance request is an isolated request or due to added, changed, or\n    removed devices.\n\n    :param part_power: number of partitions = 2**part_power\n    :param replicas: number of replicas for each partition\n    :param min_part_hours: minimum number of hours between partition changes\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

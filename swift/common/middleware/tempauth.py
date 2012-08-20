@@ -194,9 +194,15 @@ op|'.'
 name|'get'
 op|'('
 string|"'log_headers'"
+op|','
+string|"'f'"
 op|')'
-op|'=='
-string|"'True'"
+op|'.'
+name|'lower'
+op|'('
+op|')'
+name|'in'
+name|'TRUE_VALUES'
 newline|'\n'
 name|'self'
 op|'.'

@@ -174,6 +174,9 @@ nl|'\n'
 string|"'bin/swift-bench'"
 op|','
 nl|'\n'
+string|"'bin/swift-bench-client'"
+op|','
+nl|'\n'
 string|"'bin/swift-container-auditor'"
 op|','
 nl|'\n'

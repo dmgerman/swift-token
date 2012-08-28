@@ -381,10 +381,7 @@ newline|'\n'
 DECL|variable|server_type
 name|'server_type'
 op|'='
-name|'_'
-op|'('
 string|"'Base'"
-op|')'
 newline|'\n'
 nl|'\n'
 comment|'# Ensure these are all lowercase'

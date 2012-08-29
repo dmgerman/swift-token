@@ -138,10 +138,7 @@ newline|'\n'
 DECL|variable|server_type
 name|'server_type'
 op|'='
-name|'_'
-op|'('
 string|"'Account'"
-op|')'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

@@ -1361,10 +1361,7 @@ newline|'\n'
 DECL|variable|server_type
 name|'server_type'
 op|'='
-name|'_'
-op|'('
 string|"'Object'"
-op|')'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

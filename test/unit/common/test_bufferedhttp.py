@@ -83,6 +83,7 @@ number|'0'
 op|')'
 op|')'
 newline|'\n'
+nl|'\n'
 DECL|function|accept
 name|'def'
 name|'accept'

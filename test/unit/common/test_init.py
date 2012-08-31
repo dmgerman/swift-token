@@ -38,6 +38,7 @@ name|'import'
 name|'swift'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|TestVersioning
 name|'class'
 name|'TestVersioning'

@@ -169,19 +169,7 @@ name|'lower'
 op|'('
 op|')'
 name|'in'
-op|'('
-string|"'true'"
-op|','
-string|"'t'"
-op|','
-string|"'1'"
-op|','
-string|"'on'"
-op|','
-string|"'yes'"
-op|','
-string|"'y'"
-op|')'
+name|'TRUE_VALUES'
 newline|'\n'
 name|'self'
 op|'.'
@@ -291,6 +279,7 @@ name|'account_server'
 op|'.'
 name|'DATADIR'
 op|','
+nl|'\n'
 name|'mount_check'
 op|'='
 name|'self'
@@ -347,7 +336,9 @@ name|'_'
 op|'('
 string|"'Since %(time)s: Account audits: '"
 nl|'\n'
-string|"'%(passed)s passed audit, %(failed)s failed audit'"
+string|"'%(passed)s passed audit,'"
+nl|'\n'
+string|"'%(failed)s failed audit'"
 op|')'
 op|','
 nl|'\n'

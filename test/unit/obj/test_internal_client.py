@@ -1144,11 +1144,11 @@ op|'('
 string|"'200 Ok'"
 op|','
 op|'['
-op|'{'
+op|'('
 string|"'Content-Length'"
-op|':'
+op|','
 string|"'0'"
-op|'}'
+op|')'
 op|']'
 op|')'
 newline|'\n'

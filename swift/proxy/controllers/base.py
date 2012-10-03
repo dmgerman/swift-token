@@ -3763,6 +3763,8 @@ op|'('
 string|"''"
 op|')'
 newline|'\n'
+name|'self'
+op|'.'
 name|'close_swift_conn'
 op|'('
 name|'possible_source'

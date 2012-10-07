@@ -1280,11 +1280,13 @@ op|'['
 string|"'port'"
 op|']'
 op|','
+nl|'\n'
 name|'node'
 op|'['
 string|"'device'"
 op|']'
 op|','
+nl|'\n'
 name|'partition'
 op|','
 string|"'PUT'"
@@ -1297,6 +1299,7 @@ string|"'X-Timestamp'"
 op|':'
 name|'ts'
 op|','
+nl|'\n'
 string|"'x-trans-id'"
 op|':'
 string|"'test'"
@@ -4968,12 +4971,14 @@ name|'FakeMemcache'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'object_ring'
 op|'='
 name|'FakeRing'
@@ -5047,12 +5052,14 @@ name|'FakeMemcache'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'account_ring'
 op|'='
 name|'FakeRing'
@@ -5167,6 +5174,7 @@ name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
@@ -5288,6 +5296,7 @@ name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
@@ -5388,6 +5397,7 @@ name|'FakeLogger'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'FakeRing'
 op|'('
 op|')'
@@ -5542,6 +5552,7 @@ op|','
 nl|'\n'
 string|"'deny_host_headers'"
 op|':'
+nl|'\n'
 string|"'invalid_host.com'"
 op|'}'
 op|','
@@ -5554,6 +5565,7 @@ name|'FakeLogger'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'FakeRing'
 op|'('
 op|')'
@@ -5618,6 +5630,7 @@ name|'True'
 op|')'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|TestObjectController
 dedent|''
 dedent|''
@@ -5663,6 +5676,7 @@ name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
@@ -5756,6 +5770,7 @@ name|'blank'
 op|'('
 string|"'/a/c/o'"
 op|','
+nl|'\n'
 name|'headers'
 op|'='
 op|'{'
@@ -5828,6 +5843,7 @@ name|'blank'
 op|'('
 string|"'/a/c/o'"
 op|','
+nl|'\n'
 name|'headers'
 op|'='
 op|'{'
@@ -6068,6 +6084,7 @@ op|'='
 op|'{'
 string|"'Content-Type'"
 op|':'
+nl|'\n'
 string|"'application/octet-stream'"
 op|','
 nl|'\n'
@@ -6184,11 +6201,13 @@ name|'expected'
 op|')'
 op|':'
 newline|'\n'
-comment|'# The three responses here are for account_info() (HEAD to account server),'
+comment|'# The three responses here are for account_info() (HEAD to'
 nl|'\n'
-comment|'# container_info() (HEAD to container server) and three calls to'
+comment|'# account server), container_info() (HEAD to container server)'
 nl|'\n'
-comment|'# _connect_put_node() (PUT to three object servers)'
+comment|'# and three calls to _connect_put_node() (PUT to three object'
+nl|'\n'
+comment|'# servers)'
 nl|'\n'
 indent|'                '
 name|'set_http_connect'
@@ -6216,6 +6235,7 @@ name|'assertEquals'
 op|'('
 name|'content_type'
 op|','
+nl|'\n'
 name|'expected'
 op|'.'
 name|'next'
@@ -6241,6 +6261,7 @@ op|','
 op|'{'
 op|'}'
 op|','
+nl|'\n'
 name|'headers'
 op|'='
 op|'{'
@@ -6279,7 +6300,9 @@ op|'('
 name|'req'
 op|')'
 newline|'\n'
-comment|"# If we don't check the response here we could miss problems in PUT()"
+comment|"# If we don't check the response here we could miss problems"
+nl|'\n'
+comment|'# in PUT()'
 nl|'\n'
 name|'self'
 op|'.'
@@ -6429,6 +6452,7 @@ name|'FakeLogger'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'FakeRing'
 op|'('
 op|')'
@@ -6997,6 +7021,7 @@ op|':'
 string|"'PUT'"
 op|'}'
 op|','
+nl|'\n'
 name|'body'
 op|'='
 string|"'some data'"
@@ -7483,10 +7508,10 @@ op|','
 op|'{'
 op|'}'
 op|','
+nl|'\n'
 name|'headers'
 op|'='
 op|'{'
-nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -7733,10 +7758,10 @@ op|','
 op|'{'
 op|'}'
 op|','
+nl|'\n'
 name|'headers'
 op|'='
 op|'{'
-nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -8637,6 +8662,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'2'"
 op|','
 string|"'3'"
@@ -8668,6 +8694,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'2'"
@@ -8699,6 +8726,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'1'"
@@ -8730,6 +8758,7 @@ string|"'0'"
 op|','
 string|"'3'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'1'"
@@ -8761,6 +8790,7 @@ string|"'0'"
 op|','
 name|'None'
 op|','
+nl|'\n'
 name|'None'
 op|','
 name|'None'
@@ -8792,6 +8822,7 @@ string|"'0'"
 op|','
 name|'None'
 op|','
+nl|'\n'
 name|'None'
 op|','
 string|"'1'"
@@ -8980,6 +9011,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'2'"
 op|','
 string|"'3'"
@@ -9011,6 +9043,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'2'"
@@ -9042,6 +9075,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'1'"
@@ -9073,6 +9107,7 @@ string|"'0'"
 op|','
 string|"'3'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'1'"
@@ -9104,6 +9139,7 @@ string|"'0'"
 op|','
 name|'None'
 op|','
+nl|'\n'
 name|'None'
 op|','
 name|'None'
@@ -9135,6 +9171,7 @@ string|"'0'"
 op|','
 name|'None'
 op|','
+nl|'\n'
 name|'None'
 op|','
 string|"'1'"
@@ -9305,6 +9342,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'2'"
 op|','
 string|"'3'"
@@ -9336,6 +9374,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'2'"
@@ -9367,6 +9406,7 @@ string|"'0'"
 op|','
 string|"'1'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'1'"
@@ -9398,6 +9438,7 @@ string|"'0'"
 op|','
 string|"'3'"
 op|','
+nl|'\n'
 string|"'3'"
 op|','
 string|"'1'"
@@ -9429,6 +9470,7 @@ string|"'0'"
 op|','
 name|'None'
 op|','
+nl|'\n'
 string|"'1'"
 op|','
 string|"'2'"
@@ -10719,7 +10761,6 @@ op|'('
 string|"'/a/c/o'"
 op|','
 nl|'\n'
-DECL|variable|environ
 name|'environ'
 op|'='
 op|'{'
@@ -10727,6 +10768,7 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
+nl|'\n'
 string|"'wsgi.input'"
 op|':'
 name|'SlowBody'
@@ -10735,7 +10777,6 @@ op|')'
 op|'}'
 op|','
 nl|'\n'
-DECL|variable|headers
 name|'headers'
 op|'='
 op|'{'
@@ -10743,6 +10784,7 @@ string|"'Content-Length'"
 op|':'
 string|"'4'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'text/plain'"
@@ -10828,7 +10870,6 @@ op|'('
 string|"'/a/c/o'"
 op|','
 nl|'\n'
-DECL|variable|environ
 name|'environ'
 op|'='
 op|'{'
@@ -10836,6 +10877,7 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
+nl|'\n'
 string|"'wsgi.input'"
 op|':'
 name|'SlowBody'
@@ -10844,7 +10886,6 @@ op|')'
 op|'}'
 op|','
 nl|'\n'
-DECL|variable|headers
 name|'headers'
 op|'='
 op|'{'
@@ -10852,6 +10893,7 @@ string|"'Content-Length'"
 op|':'
 string|"'4'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'text/plain'"
@@ -11105,7 +11147,6 @@ op|'('
 string|"'/a/c/o'"
 op|','
 nl|'\n'
-DECL|variable|environ
 name|'environ'
 op|'='
 op|'{'
@@ -11113,6 +11154,7 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
+nl|'\n'
 string|"'wsgi.input'"
 op|':'
 name|'SlowBody'
@@ -11121,7 +11163,6 @@ op|')'
 op|'}'
 op|','
 nl|'\n'
-DECL|variable|headers
 name|'headers'
 op|'='
 op|'{'
@@ -11129,6 +11170,7 @@ string|"'Content-Length'"
 op|':'
 string|"'4'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'text/plain'"
@@ -11681,6 +11723,7 @@ string|"'Content-Length'"
 op|':'
 string|"'4'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'text/plain'"
@@ -11802,6 +11845,7 @@ string|"'Content-Length'"
 op|':'
 string|"'4'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'text/plain'"
@@ -11890,6 +11934,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -11910,6 +11955,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -11985,6 +12031,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -12005,6 +12052,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -12098,6 +12146,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -12118,6 +12167,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -12252,6 +12302,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -12272,6 +12323,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -12473,9 +12525,11 @@ op|','
 nl|'\n'
 string|"'Object'"
 op|','
+nl|'\n'
 name|'etag'
 op|'='
 string|"'68b329da9893e34099c7d8ad5cb9c940'"
+nl|'\n'
 op|')'
 newline|'\n'
 name|'self'
@@ -12883,6 +12937,7 @@ op|','
 number|'200'
 op|')'
 op|','
+nl|'\n'
 number|'200'
 op|')'
 newline|'\n'
@@ -12965,6 +13020,7 @@ number|'503'
 op|','
 number|'503'
 op|','
+nl|'\n'
 number|'503'
 op|')'
 op|','
@@ -13020,6 +13076,7 @@ op|','
 number|'200'
 op|')'
 op|','
+nl|'\n'
 number|'503'
 op|')'
 newline|'\n'
@@ -13060,6 +13117,7 @@ number|'201'
 op|','
 number|'201'
 op|','
+nl|'\n'
 number|'201'
 op|')'
 op|','
@@ -13092,6 +13150,7 @@ number|'202'
 op|','
 number|'202'
 op|','
+nl|'\n'
 number|'202'
 op|')'
 op|','
@@ -13153,6 +13212,7 @@ op|','
 number|'200'
 op|')'
 op|','
+nl|'\n'
 number|'200'
 op|')'
 newline|'\n'
@@ -13188,6 +13248,7 @@ op|')'
 op|','
 number|'503'
 op|','
+nl|'\n'
 name|'raise_exc'
 op|'='
 name|'True'
@@ -17312,7 +17373,7 @@ op|','
 number|'201'
 op|','
 nl|'\n'
-comment|'#                acct cont objc objc objc obj  obj  obj'
+comment|'#act cont objc objc objc obj  obj  obj'
 nl|'\n'
 name|'timestamps'
 op|'='
@@ -17331,6 +17392,7 @@ string|"'4'"
 op|','
 string|"'4'"
 op|','
+nl|'\n'
 string|"'4'"
 op|')'
 op|')'
@@ -17801,6 +17863,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -17900,6 +17963,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -17999,6 +18063,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -18100,6 +18165,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -18201,6 +18267,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -18302,6 +18369,7 @@ name|'con2srv'
 op|','
 name|'obj1srv'
 op|','
+nl|'\n'
 name|'obj2srv'
 op|')'
 op|'='
@@ -18320,6 +18388,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -18465,6 +18534,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -18590,6 +18660,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -19495,6 +19566,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -19695,6 +19767,7 @@ name|'con2lis'
 op|','
 name|'obj1lis'
 op|','
+nl|'\n'
 name|'obj2lis'
 op|')'
 op|'='
@@ -20128,7 +20201,9 @@ name|'write'
 op|'('
 string|"'GET /v1/a/versions/name HTTP/1.1\\r\\nHost: '"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: t\\r\\n\\r\\n'"
+string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: t\\r\\n'"
+nl|'\n'
+string|"'\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -20705,9 +20780,9 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'DELETE /v1/a/versions/name HTTP/1.1\\r\\nHost: '"
+string|"'DELETE /v1/a/versions/name HTTP/1.1\\r\\nHost: localhost\\r'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
+string|"'\\nConnection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -20776,9 +20851,9 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/versions/name HTTP/1.1\\r\\nHost: '"
+string|"'GET /v1/a/versions/name HTTP/1.1\\r\\nHost: localhost\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\nX-Auth-Token: t\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -20887,7 +20962,9 @@ name|'write'
 op|'('
 string|"'GET /v1/a/vers?prefix=004name/ HTTP/1.1\\r\\nHost: '"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: t\\r\\n\\r\\n'"
+string|"'localhost\\r\\nConnection: close\\r\\nX-Auth-Token: t\\r\\n\\r'"
+nl|'\n'
+string|"'\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -21068,9 +21145,9 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'DELETE /v1/a/versions/name HTTP/1.1\\r\\nHost: '"
+string|"'DELETE /v1/a/versions/name HTTP/1.1\\r\\nHost: localhost\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -21643,9 +21720,9 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'DELETE /v1/a/versions/name HTTP/1.1\\r\\nHost: '"
+string|"'DELETE /v1/a/versions/name HTTP/1.1\\r\\nHost: localhost\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -22037,9 +22114,9 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'DELETE /v1/a/whoops/foo HTTP/1.1\\r\\nHost: '"
+string|"'DELETE /v1/a/whoops/foo HTTP/1.1\\r\\nHost: localhost\\r\\n'"
 nl|'\n'
-string|"'localhost\\r\\nConnection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
+string|"'Connection: close\\r\\nX-Storage-Token: t\\r\\n\\r\\n'"
 op|')'
 newline|'\n'
 name|'fd'
@@ -26063,6 +26140,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-After'"
 op|':'
 string|"'60'"
@@ -26147,6 +26225,7 @@ op|','
 nl|'\n'
 string|"'container'"
 op|','
+nl|'\n'
 string|"'object'"
 op|')'
 newline|'\n'
@@ -26193,6 +26272,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-After'"
 op|':'
 string|"'60'"
@@ -26353,6 +26433,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-After'"
 op|':'
 string|"'60.1'"
@@ -26485,6 +26566,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-After'"
 op|':'
 string|"'-60'"
@@ -26675,6 +26757,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-At'"
 op|':'
 name|'t'
@@ -26774,6 +26857,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-At'"
 op|':'
 name|'t'
@@ -26854,6 +26938,7 @@ string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
 op|','
+nl|'\n'
 string|"'X-Delete-At'"
 op|':'
 name|'t'
@@ -27008,6 +27093,7 @@ string|"'Content-Length'"
 op|':'
 string|"'0'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -27167,6 +27253,7 @@ string|"'Content-Length'"
 op|':'
 string|"'0'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -27298,6 +27385,7 @@ string|"'Content-Length'"
 op|':'
 string|"'0'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -27476,6 +27564,7 @@ string|"'Content-Length'"
 op|':'
 string|"'0'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -27580,6 +27669,7 @@ string|"'Content-Length'"
 op|':'
 string|"'0'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -27665,6 +27755,7 @@ string|"'Content-Length'"
 op|':'
 string|"'0'"
 op|','
+nl|'\n'
 string|"'Content-Type'"
 op|':'
 string|"'foo/bar'"
@@ -27952,6 +28043,7 @@ name|'_request_instances'
 op|')'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|TestContainerController
 dedent|''
 dedent|''
@@ -27998,6 +28090,7 @@ name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
@@ -29172,6 +29265,7 @@ op|','
 nl|'\n'
 string|"'account'"
 op|','
+nl|'\n'
 string|"'container'"
 op|')'
 newline|'\n'
@@ -30456,6 +30550,34 @@ op|','
 nl|'\n'
 op|'('
 string|"'X-Remove-Container-Meta-TestHeader'"
+op|','
+string|"'anything'"
+op|')'
+op|','
+nl|'\n'
+op|'('
+string|"'X-Container-Read'"
+op|','
+string|"'.r:*'"
+op|')'
+op|','
+nl|'\n'
+op|'('
+string|"'X-Remove-Container-Read'"
+op|','
+string|"'anything'"
+op|')'
+op|','
+nl|'\n'
+op|'('
+string|"'X-Container-Write'"
+op|','
+string|"'anyone'"
+op|')'
+op|','
+nl|'\n'
+op|'('
+string|"'X-Remove-Container-Write'"
 op|','
 string|"'anything'"
 op|')'
@@ -32415,6 +32537,7 @@ name|'FakeRing'
 op|'('
 op|')'
 op|','
+nl|'\n'
 name|'container_ring'
 op|'='
 name|'FakeRing'
@@ -33031,7 +33154,6 @@ op|','
 number|'409'
 op|')'
 newline|'\n'
-nl|'\n'
 nl|'\n'
 DECL|member|test_HEAD
 dedent|''
@@ -36459,6 +36581,7 @@ op|'='
 op|'['
 op|']'
 newline|'\n'
+nl|'\n'
 DECL|function|_stub_sleep
 name|'def'
 name|'_stub_sleep'
@@ -36551,9 +36674,9 @@ op|']'
 op|')'
 newline|'\n'
 nl|'\n'
-comment|'# rate_limit_after_segment == 3, so the first 3 segments should invoke'
+comment|'# rate_limit_after_segment == 3, so the first 3 segments should'
 nl|'\n'
-comment|'# no sleeping.'
+comment|'# invoke no sleeping.'
 nl|'\n'
 name|'for'
 name|'_'
@@ -36595,6 +36718,7 @@ op|'['
 number|'4'
 op|']'
 op|','
+nl|'\n'
 string|"'/a/lc/o3'"
 op|')'
 newline|'\n'
@@ -36636,6 +36760,7 @@ op|'['
 number|'4'
 op|']'
 op|','
+nl|'\n'
 string|"'/a/lc/o4'"
 op|')'
 newline|'\n'
@@ -36680,6 +36805,7 @@ op|'['
 number|'4'
 op|']'
 op|','
+nl|'\n'
 string|"'/a/lc/o5'"
 op|')'
 newline|'\n'
@@ -36967,11 +37093,11 @@ name|'controller'
 op|','
 string|"'lc'"
 op|','
+nl|'\n'
 op|'['
 op|'{'
 string|"'name'"
 op|':'
-nl|'\n'
 string|"'o1'"
 op|'}'
 op|']'
@@ -37374,6 +37500,7 @@ name|'app_iter_range'
 op|'('
 name|'None'
 op|','
+nl|'\n'
 name|'None'
 op|')'
 op|'.'
@@ -37982,10 +38109,10 @@ op|':'
 number|'4'
 op|'}'
 op|','
+nl|'\n'
 op|'{'
 string|"'name'"
 op|':'
-nl|'\n'
 string|"'o5'"
 op|','
 string|"'bytes'"

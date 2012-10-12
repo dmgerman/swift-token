@@ -109,16 +109,16 @@ string|"'object-auditor'"
 op|','
 string|"'object-server'"
 op|','
+nl|'\n'
 string|"'object-expirer'"
 op|','
-nl|'\n'
 string|"'object-replicator'"
 op|','
 string|"'object-updater'"
 op|','
+nl|'\n'
 string|"'proxy-server'"
 op|','
-nl|'\n'
 string|"'account-replicator'"
 op|','
 string|"'account-reaper'"
@@ -1170,6 +1170,7 @@ name|'interval'
 op|'='
 name|'KILL_WAIT'
 op|','
+nl|'\n'
 op|'**'
 name|'kwargs'
 op|')'
@@ -1933,7 +1934,6 @@ op|')'
 op|'.'
 name|'rsplit'
 op|'('
-nl|'\n'
 string|"'.pid'"
 op|','
 number|'1'

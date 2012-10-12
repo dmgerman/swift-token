@@ -3500,7 +3500,7 @@ name|'_req_fancy_property'
 op|'('
 name|'Accept'
 op|','
-string|"'http-accept'"
+string|"'accept'"
 op|','
 name|'True'
 op|')'

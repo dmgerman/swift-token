@@ -300,6 +300,7 @@ op|'%'
 name|'k'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|load_constraint
 dedent|''
 dedent|''

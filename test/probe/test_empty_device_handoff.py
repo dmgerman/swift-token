@@ -596,9 +596,9 @@ name|'obj_dir'
 op|')'
 op|')'
 newline|'\n'
-comment|"# We've indirectly verified the handoff node has the object, but let's"
+comment|"# We've indirectly verified the handoff node has the object, but"
 nl|'\n'
-comment|'# directly verify it.'
+comment|"# let's directly verify it."
 nl|'\n'
 dedent|''
 name|'another_onode'

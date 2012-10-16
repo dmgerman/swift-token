@@ -269,6 +269,7 @@ string|"'No host/domain value after referrer '"
 nl|'\n'
 string|"'designation in ACL: %s'"
 op|'%'
+nl|'\n'
 name|'repr'
 op|'('
 name|'raw_value'
@@ -490,6 +491,7 @@ op|']'
 op|'=='
 string|"'.'"
 name|'and'
+nl|'\n'
 name|'rhost'
 op|'.'
 name|'endswith'

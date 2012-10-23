@@ -140,6 +140,9 @@ nl|'\n'
 string|"'Environment :: No Input/Output (Daemon)'"
 op|','
 nl|'\n'
+string|"'Environment :: OpenStack'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

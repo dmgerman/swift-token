@@ -5730,7 +5730,7 @@ op|'('
 name|'hdrs'
 op|'='
 op|'{'
-string|"'content-type'"
+string|"'Content-Type'"
 op|':'
 string|"'application/directory'"
 op|'}'
@@ -5752,7 +5752,7 @@ op|','
 name|'hdrs'
 op|'='
 op|'{'
-string|"'content-type'"
+string|"'Content-Type'"
 op|':'
 nl|'\n'
 string|"'application/directory'"

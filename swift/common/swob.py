@@ -339,7 +339,7 @@ nl|'\n'
 number|'416'
 op|':'
 op|'('
-string|"'Request Range Not Satisfiable'"
+string|"'Requested Range Not Satisfiable'"
 op|','
 string|"'The Range requested is not '"
 nl|'\n'
@@ -1579,7 +1579,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Set and retrieve the value of Response.status\n    On retrieval, it concatenates status_int and title.\n    When set to a str, it splits status_int and title apart.\n    When set to an integer, retrieves the correct title for that\n    response code from the RESPONSE_REASONS dict.\n\n    :param header: name of the header, e.g. "Content-Length"\n    """'
+string|'"""\n    Set and retrieve the value of Response.status\n    On retrieval, it concatenates status_int and title.\n    When set to a str, it splits status_int and title apart.\n    When set to an integer, retrieves the correct title for that\n    response code from the RESPONSE_REASONS dict.\n    """'
 newline|'\n'
 DECL|function|getter
 name|'def'
@@ -2222,7 +2222,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Set and retrieve Response.app_iter\n    Mostly a pass-through to Response._app_iter, it\'s a property so it can zero\n    out an exsisting content-length on assignment.\n    """'
+string|'"""\n    Set and retrieve Response.app_iter\n    Mostly a pass-through to Response._app_iter; it\'s a property so it can zero\n    out an existing content-length on assignment.\n    """'
 newline|'\n'
 DECL|function|getter
 name|'def'

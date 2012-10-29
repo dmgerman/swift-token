@@ -3553,7 +3553,7 @@ name|'resp'
 op|'.'
 name|'status'
 op|','
-string|"'416 Request Range Not Satisfiable'"
+string|"'416 Requested Range Not Satisfiable'"
 op|')'
 newline|'\n'
 nl|'\n'
@@ -3614,7 +3614,7 @@ name|'resp'
 op|'.'
 name|'status'
 op|','
-string|"'416 Request Range Not Satisfiable'"
+string|"'416 Requested Range Not Satisfiable'"
 op|')'
 newline|'\n'
 nl|'\n'

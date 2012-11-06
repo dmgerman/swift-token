@@ -320,7 +320,7 @@ op|'('
 string|"'log_statsd_valid_http_methods'"
 op|','
 nl|'\n'
-string|"'GET,HEAD,POST,PUT,DELETE,COPY'"
+string|"'GET,HEAD,POST,PUT,DELETE,COPY,OPTIONS'"
 op|')'
 op|')'
 newline|'\n'

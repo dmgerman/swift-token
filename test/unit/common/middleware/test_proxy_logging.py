@@ -1154,6 +1154,11 @@ op|':'
 string|"'DELETE'"
 op|','
 nl|'\n'
+string|"'OPTIONS'"
+op|':'
+string|"'OPTIONS'"
+op|','
+nl|'\n'
 op|'}'
 newline|'\n'
 name|'for'

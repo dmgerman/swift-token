@@ -89,7 +89,7 @@ name|'_version'
 op|'='
 name|'Version'
 op|'('
-string|"'1.7.5'"
+string|"'1.7.6'"
 op|','
 name|'False'
 op|')'

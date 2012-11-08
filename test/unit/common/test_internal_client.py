@@ -3569,7 +3569,7 @@ nl|'\n'
 string|"'/?format=json&marker=start&end_marker=end'"
 op|','
 nl|'\n'
-string|"'/?format=json&marker=one&end_marker=end'"
+string|"'/?format=json&marker=one%C3%A9&end_marker=end'"
 op|','
 nl|'\n'
 string|"'/?format=json&marker=two&end_marker=end'"
@@ -3594,7 +3594,7 @@ op|'['
 op|'{'
 string|"'name'"
 op|':'
-string|"'one'"
+string|"'one\\xc3\\xa9'"
 op|'}'
 op|','
 op|']'
@@ -3677,6 +3677,11 @@ name|'item'
 op|'['
 string|"'name'"
 op|']'
+op|'.'
+name|'encode'
+op|'('
+string|"'utf8'"
+op|')'
 op|')'
 newline|'\n'
 nl|'\n'
@@ -3685,7 +3690,7 @@ name|'self'
 op|'.'
 name|'assertEquals'
 op|'('
-string|"'one two'"
+string|"'one\\xc3\\xa9 two'"
 op|'.'
 name|'split'
 op|'('

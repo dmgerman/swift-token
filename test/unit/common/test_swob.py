@@ -3373,7 +3373,7 @@ op|'['
 string|"'content-type'"
 op|']'
 op|','
-string|"'text/html'"
+string|"'text/html; charset=UTF-8'"
 op|')'
 newline|'\n'
 name|'self'

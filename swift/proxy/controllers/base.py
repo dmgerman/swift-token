@@ -4592,8 +4592,6 @@ op|'.'
 name|'get'
 op|'('
 string|"'max_age'"
-op|','
-name|'None'
 op|')'
 name|'is'
 name|'not'
@@ -4606,8 +4604,6 @@ op|'['
 string|"'access-control-max-age'"
 op|']'
 op|'='
-string|"'%d'"
-op|'%'
 name|'cors'
 op|'.'
 name|'get'

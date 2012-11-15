@@ -79,6 +79,8 @@ op|'.'
 name|'swob'
 name|'import'
 name|'Request'
+op|','
+name|'HeaderKeyDict'
 newline|'\n'
 name|'import'
 name|'swift'
@@ -11609,6 +11611,8 @@ op|','
 nl|'\n'
 string|"'headers'"
 op|':'
+name|'HeaderKeyDict'
+op|'('
 op|'{'
 string|"'x-bytes-used'"
 op|':'
@@ -11630,10 +11634,27 @@ op|':'
 string|"'0000012345.00000'"
 op|','
 nl|'\n'
+string|"'referer'"
+op|':'
+string|"'PUT http://localhost/sda1/p/a/c'"
+op|','
+nl|'\n'
+string|"'user-agent'"
+op|':'
+string|"'container-server %d'"
+op|'%'
+name|'os'
+op|'.'
+name|'getpid'
+op|'('
+op|')'
+op|','
+nl|'\n'
 string|"'x-trans-id'"
 op|':'
 string|"'-'"
 op|'}'
+op|')'
 op|'}'
 op|')'
 newline|'\n'
@@ -11686,6 +11707,8 @@ op|','
 nl|'\n'
 string|"'headers'"
 op|':'
+name|'HeaderKeyDict'
+op|'('
 op|'{'
 string|"'x-bytes-used'"
 op|':'
@@ -11707,10 +11730,27 @@ op|':'
 string|"'0000012345.00000'"
 op|','
 nl|'\n'
+string|"'referer'"
+op|':'
+string|"'PUT http://localhost/sda1/p/a/c'"
+op|','
+nl|'\n'
+string|"'user-agent'"
+op|':'
+string|"'container-server %d'"
+op|'%'
+name|'os'
+op|'.'
+name|'getpid'
+op|'('
+op|')'
+op|','
+nl|'\n'
 string|"'x-trans-id'"
 op|':'
 string|"'-'"
 op|'}'
+op|')'
 op|'}'
 op|')'
 newline|'\n'

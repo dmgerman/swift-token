@@ -224,7 +224,7 @@ name|'resp'
 op|'.'
 name|'headers'
 op|'['
-string|"'x-trans-id'"
+string|"'X-Trans-Id'"
 op|']'
 op|'='
 name|'trans_id'
@@ -265,7 +265,7 @@ op|'.'
 name|'append'
 op|'('
 op|'('
-string|"'x-trans-id'"
+string|"'X-Trans-Id'"
 op|','
 name|'trans_id'
 op|')'

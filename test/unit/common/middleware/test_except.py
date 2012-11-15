@@ -402,7 +402,7 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'x-trans-id'"
+string|"'X-Trans-Id'"
 name|'in'
 op|'('
 name|'x'
@@ -510,7 +510,7 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'x-trans-id'"
+string|"'X-Trans-Id'"
 name|'in'
 op|'('
 name|'x'
@@ -698,7 +698,7 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'x-trans-id'"
+string|"'X-Trans-Id'"
 name|'in'
 op|'('
 name|'x'

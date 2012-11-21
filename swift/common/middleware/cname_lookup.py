@@ -661,9 +661,11 @@ name|'logger'
 op|'.'
 name|'debug'
 op|'('
+nl|'\n'
 name|'_'
 op|'('
 string|"'Following CNAME chain for  '"
+nl|'\n'
 string|"'%(given_domain)s to %(found_domain)s'"
 op|')'
 op|'%'

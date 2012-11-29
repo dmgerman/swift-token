@@ -3060,7 +3060,6 @@ op|','
 nl|'\n'
 string|"'x_container_sync_point2'"
 op|':'
-op|'-'
 number|'1'
 op|'}'
 op|','
@@ -3142,7 +3141,7 @@ op|'('
 string|"'isa.db'"
 op|')'
 newline|'\n'
-comment|"# Succeeds because the two sync points haven't deviated enough yet"
+comment|"# Succeeds because the two sync points haven't deviated yet"
 nl|'\n'
 name|'self'
 op|'.'

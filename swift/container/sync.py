@@ -1369,7 +1369,7 @@ name|'row'
 op|'['
 string|"'ROWID'"
 op|']'
-op|'>='
+op|'>'
 name|'sync_point1'
 op|':'
 newline|'\n'

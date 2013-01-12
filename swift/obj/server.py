@@ -6306,7 +6306,7 @@ name|'HTTPPreconditionFailed'
 op|'('
 name|'body'
 op|'='
-string|"'Invalid UTF8'"
+string|"'Invalid UTF8 or contains NULL'"
 op|')'
 newline|'\n'
 dedent|''

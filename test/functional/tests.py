@@ -1301,7 +1301,7 @@ name|'self'
 op|'.'
 name|'assert_body'
 op|'('
-string|"'Invalid UTF8'"
+string|"'Invalid UTF8 or contains NULL'"
 op|')'
 newline|'\n'
 nl|'\n'

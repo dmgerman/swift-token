@@ -787,6 +787,9 @@ string|"'replication_time'"
 op|','
 nl|'\n'
 string|"'replication_stats'"
+op|','
+nl|'\n'
+string|"'replication_last'"
 op|']'
 op|','
 nl|'\n'
@@ -813,6 +816,9 @@ string|"'replication_time'"
 op|','
 nl|'\n'
 string|"'replication_stats'"
+op|','
+nl|'\n'
+string|"'replication_last'"
 op|']'
 op|','
 nl|'\n'
@@ -836,6 +842,9 @@ name|'_from_recon_cache'
 op|'('
 op|'['
 string|"'object_replication_time'"
+op|','
+nl|'\n'
+string|"'object_replication_last'"
 op|']'
 op|','
 nl|'\n'

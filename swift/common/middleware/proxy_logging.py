@@ -213,6 +213,9 @@ nl|'\n'
 string|"'log_statsd_default_sample_rate'"
 op|','
 nl|'\n'
+string|"'log_statsd_sample_rate_factor'"
+op|','
+nl|'\n'
 string|"'log_statsd_metric_prefix'"
 op|')'
 op|':'

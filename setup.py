@@ -356,9 +356,12 @@ nl|'\n'
 string|"'name_check=swift.common.middleware.name_check:filter_factory'"
 op|','
 nl|'\n'
-string|"'proxy_logging=swift.common.middleware.proxy_logging:'"
+string|"'proxy_logging='"
 nl|'\n'
-string|"'filter_factory'"
+string|"'swift.common.middleware.proxy_logging:filter_factory'"
+op|','
+nl|'\n'
+string|"'bulk=swift.common.middleware.bulk:filter_factory'"
 op|','
 nl|'\n'
 op|']'

@@ -378,6 +378,11 @@ nl|'\n'
 string|"'slo=swift.common.middleware.slo:filter_factory'"
 op|','
 nl|'\n'
+string|"'list_endpoints=swift.common.middleware.list_endpoints:'"
+nl|'\n'
+string|"'filter_factory'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

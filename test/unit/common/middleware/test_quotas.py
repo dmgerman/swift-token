@@ -645,7 +645,7 @@ op|'='
 name|'FakeCache'
 op|'('
 op|'{'
-string|"'count'"
+string|"'object_count'"
 op|':'
 number|'1'
 op|','
@@ -736,7 +736,7 @@ op|'='
 name|'FakeCache'
 op|'('
 op|'{'
-string|"'count'"
+string|"'object_count'"
 op|':'
 number|'1'
 op|','
@@ -1223,7 +1223,7 @@ op|'='
 name|'FakeCache'
 op|'('
 op|'{'
-string|"'count'"
+string|"'object_count'"
 op|':'
 number|'1'
 op|','

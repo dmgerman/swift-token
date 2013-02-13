@@ -7469,7 +7469,7 @@ op|','
 nl|'\n'
 string|'"name"'
 op|':'
-string|'"seg05"'
+string|"u'\\N{SNOWMAN}seg05'"
 op|','
 nl|'\n'
 string|'"content_type"'
@@ -7913,7 +7913,7 @@ nl|'\n'
 op|'['
 string|"'GET'"
 op|','
-string|"'/a/segments/seg05'"
+string|"'/a/segments/\\xe2\\x98\\x83seg05'"
 op|','
 op|'{'
 op|'}'
@@ -7935,9 +7935,10 @@ string|"'prefix'"
 op|':'
 string|"'seg'"
 op|','
+nl|'\n'
 string|"'marker'"
 op|':'
-string|"'seg05'"
+string|"'\\xe2\\x98\\x83seg05'"
 op|'}'
 op|']'
 op|']'

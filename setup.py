@@ -375,6 +375,9 @@ nl|'\n'
 string|"'filter_factory'"
 op|','
 nl|'\n'
+string|"'slo=swift.common.middleware.slo:filter_factory'"
+op|','
+nl|'\n'
 op|']'
 op|','
 nl|'\n'

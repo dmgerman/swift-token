@@ -2457,7 +2457,7 @@ number|'1024'
 newline|'\n'
 name|'default_allowed_headers'
 op|'='
-string|"'''\n            content-disposition,\n            content-encoding,\n            x-delete-at,\n            x-object-manifest,\n        '''"
+string|"'''\n            content-disposition,\n            content-encoding,\n            x-delete-at,\n            x-object-manifest,\n            x-static-large-object,\n        '''"
 newline|'\n'
 name|'self'
 op|'.'

@@ -161,7 +161,7 @@ name|'classifiers'
 op|'='
 op|'['
 nl|'\n'
-string|"'Development Status :: 4 - Beta'"
+string|"'Development Status :: 5 - Production/Stable'"
 op|','
 nl|'\n'
 string|"'License :: OSI Approved :: Apache Software License'"
@@ -170,7 +170,13 @@ nl|'\n'
 string|"'Operating System :: POSIX :: Linux'"
 op|','
 nl|'\n'
+string|"'Programming Language :: Python'"
+op|','
+nl|'\n'
 string|"'Programming Language :: Python :: 2.6'"
+op|','
+nl|'\n'
+string|"'Programming Language :: Python :: 2.7'"
 op|','
 nl|'\n'
 string|"'Environment :: No Input/Output (Daemon)'"

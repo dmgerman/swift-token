@@ -370,6 +370,11 @@ nl|'\n'
 string|"'filter_factory'"
 op|','
 nl|'\n'
+string|"'account_quotas=swift.common.middleware.account_quotas:'"
+nl|'\n'
+string|"'filter_factory'"
+op|','
+nl|'\n'
 string|"'proxy_logging=swift.common.middleware.proxy_logging:'"
 nl|'\n'
 string|"'filter_factory'"

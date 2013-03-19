@@ -163,6 +163,12 @@ name|'HASH_PATH_SUFFIX'
 op|'='
 string|"'endcap'"
 newline|'\n'
+name|'utils'
+op|'.'
+name|'HASH_PATH_PREFIX'
+op|'='
+string|"''"
+newline|'\n'
 name|'self'
 op|'.'
 name|'testdir'

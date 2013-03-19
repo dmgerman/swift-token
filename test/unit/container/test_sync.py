@@ -69,6 +69,12 @@ name|'HASH_PATH_SUFFIX'
 op|'='
 string|"'endcap'"
 newline|'\n'
+name|'utils'
+op|'.'
+name|'HASH_PATH_PREFIX'
+op|'='
+string|"'endcap'"
+newline|'\n'
 nl|'\n'
 nl|'\n'
 DECL|class|FakeRing

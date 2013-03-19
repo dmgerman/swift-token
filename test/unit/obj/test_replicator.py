@@ -946,6 +946,12 @@ name|'HASH_PATH_SUFFIX'
 op|'='
 string|"'endcap'"
 newline|'\n'
+name|'utils'
+op|'.'
+name|'HASH_PATH_PREFIX'
+op|'='
+string|"''"
+newline|'\n'
 comment|'# Setup a test ring (stolen from common/test_ring.py)'
 nl|'\n'
 name|'self'

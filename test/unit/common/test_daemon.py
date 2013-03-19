@@ -325,6 +325,12 @@ string|"'endcap'"
 newline|'\n'
 name|'utils'
 op|'.'
+name|'HASH_PATH_PREFIX'
+op|'='
+string|"'startcap'"
+newline|'\n'
+name|'utils'
+op|'.'
 name|'drop_privileges'
 op|'='
 name|'lambda'

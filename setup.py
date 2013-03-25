@@ -220,6 +220,9 @@ nl|'\n'
 string|"'bin/swift-bench-client'"
 op|','
 nl|'\n'
+string|"'bin/swift-config'"
+op|','
+nl|'\n'
 string|"'bin/swift-container-auditor'"
 op|','
 nl|'\n'

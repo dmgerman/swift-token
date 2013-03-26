@@ -2045,7 +2045,7 @@ name|'assertEquals'
 op|'('
 name|'str'
 op|'('
-name|'err'
+name|'exc'
 op|')'
 op|','
 string|"'max_file_size exceeded'"

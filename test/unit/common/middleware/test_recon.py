@@ -4416,27 +4416,6 @@ nl|'\n'
 string|"''"
 op|']'
 newline|'\n'
-name|'sockstat6_content'
-op|'='
-op|'['
-string|"'TCP6: inuse 1'"
-op|','
-nl|'\n'
-string|"'UDP6: inuse 3'"
-op|','
-nl|'\n'
-string|"'UDPLITE6: inuse 0'"
-op|','
-nl|'\n'
-string|"'RAW6: inuse 0'"
-op|','
-nl|'\n'
-string|"'FRAG6: inuse 0 memory 0'"
-op|','
-nl|'\n'
-string|"''"
-op|']'
-newline|'\n'
 name|'oart'
 op|'='
 name|'OpenAndReadTester'
@@ -4444,8 +4423,6 @@ op|'('
 name|'sockstat_content'
 op|')'
 newline|'\n'
-name|'rv'
-op|'='
 name|'self'
 op|'.'
 name|'app'

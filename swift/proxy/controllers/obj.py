@@ -2525,6 +2525,13 @@ op|')'
 op|'=='
 string|"'get'"
 name|'and'
+string|"'X-Copy-From'"
+name|'not'
+name|'in'
+name|'req'
+op|'.'
+name|'headers'
+name|'and'
 name|'self'
 op|'.'
 name|'app'

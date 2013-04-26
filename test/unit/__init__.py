@@ -1934,6 +1934,11 @@ op|':'
 string|"'testing'"
 op|','
 nl|'\n'
+string|"'x-delete-at'"
+op|':'
+string|"'9876543210'"
+op|','
+nl|'\n'
 string|"'etag'"
 op|':'
 name|'etag'

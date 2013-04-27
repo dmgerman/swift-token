@@ -326,6 +326,9 @@ nl|'\n'
 string|"'healthcheck=swift.common.middleware.healthcheck:filter_factory'"
 op|','
 nl|'\n'
+string|"'crossdomain=swift.common.middleware.crossdomain:filter_factory'"
+op|','
+nl|'\n'
 string|"'memcache=swift.common.middleware.memcache:filter_factory'"
 op|','
 nl|'\n'

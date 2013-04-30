@@ -725,7 +725,7 @@ op|'.'
 name|'get'
 op|'('
 nl|'\n'
-string|"'count'"
+string|"'object_count'"
 op|','
 name|'container_info'
 op|'.'

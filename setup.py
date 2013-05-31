@@ -57,7 +57,7 @@ nl|'\n'
 name|'with'
 name|'open'
 op|'('
-string|"'tools/pip-requires'"
+string|"'requirements.txt'"
 op|','
 string|"'r'"
 op|')'

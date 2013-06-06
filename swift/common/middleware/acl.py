@@ -284,10 +284,10 @@ op|'('
 string|"'.r:%s%s'"
 op|'%'
 op|'('
-name|'negate'
-name|'and'
 string|"'-'"
-name|'or'
+name|'if'
+name|'negate'
+name|'else'
 string|"''"
 op|','
 name|'second'

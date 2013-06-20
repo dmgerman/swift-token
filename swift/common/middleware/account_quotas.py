@@ -70,7 +70,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'""" Account quota middleware\n\n    See above for a full description.\n\n    """'
+string|'"""Account quota middleware\n\n    See above for a full description.\n\n    """'
 newline|'\n'
 DECL|member|__init__
 name|'def'

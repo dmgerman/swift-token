@@ -419,11 +419,11 @@ name|'aresp'
 newline|'\n'
 nl|'\n'
 nl|'\n'
-DECL|class|SloSegmentError
+DECL|class|SegmentError
 dedent|''
 dedent|''
 name|'class'
-name|'SloSegmentError'
+name|'SegmentError'
 op|'('
 name|'SwiftException'
 op|')'

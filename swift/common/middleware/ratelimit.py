@@ -1,4 +1,6 @@
 begin_unit
+comment|'# Copyright (c) 2010-2013 OpenStack, LLC.'
+nl|'\n'
 comment|'#'
 nl|'\n'
 comment|'# Licensed under the Apache License, Version 2.0 (the "License");'

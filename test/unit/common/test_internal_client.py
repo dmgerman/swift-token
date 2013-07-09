@@ -2766,7 +2766,7 @@ op|':'
 string|"'1'"
 op|','
 nl|'\n'
-string|"'%stwo'"
+string|"'%sTwo'"
 op|'%'
 op|'('
 name|'metadata_prefix'
@@ -2775,7 +2775,7 @@ op|':'
 string|"'2'"
 op|','
 nl|'\n'
-string|"'%sthree'"
+string|"'%sThree'"
 op|'%'
 op|'('
 name|'metadata_prefix'
@@ -2789,7 +2789,7 @@ op|':'
 string|"'4'"
 op|','
 nl|'\n'
-string|"'some_header-five'"
+string|"'Some_header-five'"
 op|':'
 string|"'5'"
 op|','

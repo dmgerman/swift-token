@@ -1052,10 +1052,10 @@ string|"'SELECT * FROM incoming_sync'"
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|function|my_exists
+DECL|function|my_ismount
 dedent|''
 name|'def'
-name|'my_exists'
+name|'my_ismount'
 op|'('
 op|'*'
 name|'a'
@@ -1074,9 +1074,9 @@ dedent|''
 name|'with'
 name|'patch'
 op|'('
-string|"'os.path.exists'"
+string|"'os.path.ismount'"
 op|','
-name|'my_exists'
+name|'my_ismount'
 op|')'
 op|':'
 newline|'\n'

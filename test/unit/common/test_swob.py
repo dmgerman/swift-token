@@ -2130,6 +2130,15 @@ string|"'application/xml;q=1.0,*/*;q=0.9'"
 op|','
 nl|'\n'
 string|"'*/*;q=0.9,application/xml;q=1.0'"
+op|','
+nl|'\n'
+string|"'application/xml;charset=UTF-8'"
+op|','
+nl|'\n'
+string|'\'application/xml;charset=UTF-8;qws="quoted with space"\''
+op|','
+nl|'\n'
+string|'\'application/xml; q=0.99 ; qws="quoted with space"\''
 op|')'
 op|':'
 newline|'\n'
@@ -2203,6 +2212,15 @@ nl|'\n'
 string|"'text /plain'"
 op|','
 string|"'text\\x7f/plain'"
+op|','
+nl|'\n'
+string|"'text/plain;a=b=c'"
+op|','
+nl|'\n'
+string|"'text/plain;q=1;q=2'"
+op|','
+nl|'\n'
+string|'\'text/plain; ubq="unbalanced " quotes"\''
 op|')'
 op|':'
 newline|'\n'
@@ -2282,6 +2300,7 @@ op|','
 string|'"application/json"'
 op|')'
 newline|'\n'
+nl|'\n'
 nl|'\n'
 DECL|class|TestRequest
 dedent|''

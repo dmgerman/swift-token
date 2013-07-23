@@ -1247,10 +1247,6 @@ newline|'\n'
 nl|'\n'
 dedent|''
 dedent|''
-name|'account'
-op|'='
-string|"'account'"
-newline|'\n'
 name|'container'
 op|'='
 string|"'container'"

@@ -1,9 +1,4 @@
 begin_unit
-name|'import'
-name|'gettext'
-newline|'\n'
-nl|'\n'
-nl|'\n'
 DECL|class|Version
 name|'class'
 name|'Version'
@@ -107,14 +102,6 @@ op|'='
 name|'_version'
 op|'.'
 name|'canonical_version'
-newline|'\n'
-nl|'\n'
-name|'gettext'
-op|'.'
-name|'install'
-op|'('
-string|"'swift'"
-op|')'
 newline|'\n'
 endmarker|''
 end_unit

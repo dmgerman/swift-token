@@ -3187,6 +3187,12 @@ name|'content_type'
 op|'='
 string|"'application/json'"
 newline|'\n'
+name|'resp'
+op|'.'
+name|'charset'
+op|'='
+string|"'utf-8'"
+newline|'\n'
 nl|'\n'
 dedent|''
 name|'if'

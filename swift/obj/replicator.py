@@ -758,7 +758,7 @@ name|'error'
 op|'('
 name|'_'
 op|'('
-string|"'Bad rsync return code: %(args)s -> %(ret)d'"
+string|"'Bad rsync return code: %(ret)d <- %(args)s'"
 op|')'
 op|','
 nl|'\n'

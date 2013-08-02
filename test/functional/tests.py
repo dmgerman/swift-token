@@ -216,7 +216,7 @@ comment|"# /etc/swift/swift.conf if it exists. If swift.conf doesn't exist,"
 nl|'\n'
 comment|'# then limit test coverage. This allows SAIO tests to work fine but'
 nl|'\n'
-comment|'# requires remote funtional testing to know something about the cluster'
+comment|'# requires remote functional testing to know something about the cluster'
 nl|'\n'
 comment|'# that is being tested.'
 nl|'\n'

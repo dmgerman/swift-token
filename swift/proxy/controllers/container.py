@@ -495,16 +495,11 @@ indent|'            '
 name|'for'
 name|'key'
 name|'in'
-op|'('
-string|"'x-container-read'"
-op|','
-string|"'x-container-write'"
-op|','
-nl|'\n'
-string|"'x-container-sync-key'"
-op|','
-string|"'x-container-sync-to'"
-op|')'
+name|'self'
+op|'.'
+name|'app'
+op|'.'
+name|'swift_owner_headers'
 op|':'
 newline|'\n'
 indent|'                '

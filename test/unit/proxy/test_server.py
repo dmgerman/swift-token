@@ -12617,10 +12617,11 @@ op|'('
 string|"'/v1/a/c/o'"
 op|','
 op|'{'
-string|"'REQUEST_METHOD'"
-op|':'
-string|"'POST'"
 op|'}'
+op|','
+name|'method'
+op|'='
+string|"'POST'"
 op|','
 nl|'\n'
 name|'headers'

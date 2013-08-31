@@ -3236,7 +3236,7 @@ op|'('
 nl|'\n'
 string|"'ERROR DiskFile %(data_file)s in '"
 nl|'\n'
-string|"'%(data_dir)s close failure: %(exc)s : %(stack)'"
+string|"'%(data_dir)s close failure: %(exc)s : %(stack)s'"
 op|')'
 op|','
 nl|'\n'

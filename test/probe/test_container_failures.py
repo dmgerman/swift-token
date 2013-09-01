@@ -130,6 +130,7 @@ name|'True'
 op|')'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|function|get_db_file_path
 name|'def'
 name|'get_db_file_path'

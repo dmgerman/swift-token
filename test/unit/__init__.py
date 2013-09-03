@@ -88,6 +88,7 @@ name|'import'
 name|'HTTPException'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|FakeRing
 name|'class'
 name|'FakeRing'

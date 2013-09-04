@@ -1626,6 +1626,7 @@ indent|'        '
 name|'mounts_content'
 op|'='
 op|'['
+nl|'\n'
 string|"'rootfs / rootfs rw 0 0'"
 op|','
 nl|'\n'
@@ -1635,13 +1636,19 @@ nl|'\n'
 string|"'none /proc proc rw,nosuid,nodev,noexec,relatime 0 0'"
 op|','
 nl|'\n'
-string|"'none /dev devtmpfs rw,relatime,size=248404k,nr_inodes=62101,mode=755 0 0'"
+string|"'none /dev devtmpfs rw,relatime,size=248404k,nr_inodes=62101,'"
+nl|'\n'
+string|"'mode=755 0 0'"
 op|','
 nl|'\n'
-string|"'none /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0'"
+string|"'none /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,'"
+nl|'\n'
+string|"'ptmxmode=000 0 0'"
 op|','
 nl|'\n'
-string|"'/dev/disk/by-uuid/e5b143bd-9f31-49a7-b018-5e037dc59252 / ext4 rw,relatime,errors=remount-ro,barrier=1,data=ordered 0 0'"
+string|"'/dev/disk/by-uuid/e5b143bd-9f31-49a7-b018-5e037dc59252 / ext4'"
+nl|'\n'
+string|"' rw,relatime,errors=remount-ro,barrier=1,data=ordered 0 0'"
 op|','
 nl|'\n'
 string|"'none /sys/fs/fuse/connections fusectl rw,relatime 0 0'"
@@ -1665,7 +1672,9 @@ nl|'\n'
 string|"'none /lib/init/rw tmpfs rw,nosuid,relatime,mode=755 0 0'"
 op|','
 nl|'\n'
-string|"'/dev/loop0 /mnt/sdb1 xfs rw,noatime,nodiratime,attr2,nobarrier,logbufs=8,noquota 0 0'"
+string|"'/dev/loop0 /mnt/sdb1 xfs rw,noatime,nodiratime,attr2,nobarrier,'"
+nl|'\n'
+string|"'logbufs=8,noquota 0 0'"
 op|','
 nl|'\n'
 string|"'rpc_pipefs /var/lib/nfs/rpc_pipefs rpc_pipefs rw,relatime 0 0'"
@@ -1683,6 +1692,7 @@ newline|'\n'
 name|'mounted_resp'
 op|'='
 op|'['
+nl|'\n'
 op|'{'
 string|"'device'"
 op|':'
@@ -1741,7 +1751,9 @@ nl|'\n'
 op|'{'
 string|"'device'"
 op|':'
-string|"'/dev/disk/by-uuid/e5b143bd-9f31-49a7-b018-5e037dc59252'"
+string|"'/dev/disk/by-uuid/'"
+nl|'\n'
+string|"'e5b143bd-9f31-49a7-b018-5e037dc59252'"
 op|','
 string|"'path'"
 op|':'
@@ -2495,6 +2507,7 @@ indent|'        '
 name|'from_cache_response'
 op|'='
 op|'{'
+nl|'\n'
 string|'"replication_stats"'
 op|':'
 op|'{'
@@ -2628,6 +2641,7 @@ op|'('
 name|'rv'
 op|','
 op|'{'
+nl|'\n'
 string|'"replication_stats"'
 op|':'
 op|'{'
@@ -2717,6 +2731,7 @@ indent|'        '
 name|'from_cache_response'
 op|'='
 op|'{'
+nl|'\n'
 string|'"replication_time"'
 op|':'
 number|'200.0'
@@ -2859,6 +2874,7 @@ op|'('
 name|'rv'
 op|','
 op|'{'
+nl|'\n'
 string|'"replication_time"'
 op|':'
 number|'200.0'
@@ -3479,6 +3495,7 @@ indent|'        '
 name|'from_cache_response'
 op|'='
 op|'{'
+nl|'\n'
 string|'"object_auditor_stats_ALL"'
 op|':'
 op|'{'
@@ -3615,6 +3632,7 @@ op|'('
 name|'rv'
 op|','
 op|'{'
+nl|'\n'
 string|'"object_auditor_stats_ALL"'
 op|':'
 op|'{'
@@ -4354,6 +4372,7 @@ op|'.'
 name|'open_calls'
 op|','
 op|'['
+nl|'\n'
 op|'('
 op|'('
 string|"'/proc/net/sockstat'"
@@ -4676,6 +4695,7 @@ name|'blank'
 op|'('
 string|"'/recon/version'"
 op|','
+nl|'\n'
 name|'environ'
 op|'='
 op|'{'

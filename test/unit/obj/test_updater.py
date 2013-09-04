@@ -289,11 +289,11 @@ string|"'port'"
 op|':'
 number|'1'
 op|','
+nl|'\n'
 string|"'device'"
 op|':'
 string|"'sda1'"
 op|','
-nl|'\n'
 string|"'zone'"
 op|':'
 number|'0'
@@ -313,11 +313,11 @@ string|"'port'"
 op|':'
 number|'1'
 op|','
+nl|'\n'
 string|"'device'"
 op|':'
 string|"'sda1'"
 op|','
-nl|'\n'
 string|"'zone'"
 op|':'
 number|'2'

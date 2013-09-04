@@ -462,6 +462,7 @@ name|'self'
 op|'.'
 name|'assertEqual'
 op|'('
+nl|'\n'
 name|'tiers_for_dev'
 op|'('
 name|'self'
@@ -1095,6 +1096,7 @@ string|"'replication_ip'"
 op|':'
 string|"'127.0.0.10'"
 op|','
+nl|'\n'
 string|"'replication_port'"
 op|':'
 number|'20000'

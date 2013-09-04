@@ -266,6 +266,7 @@ indent|'    '
 name|'pass'
 newline|'\n'
 nl|'\n'
+nl|'\n'
 DECL|class|TestCacheMiddleware
 dedent|''
 name|'class'

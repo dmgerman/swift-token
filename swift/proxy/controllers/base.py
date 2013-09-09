@@ -1808,7 +1808,7 @@ dedent|''
 name|'return'
 name|'None'
 newline|'\n'
-comment|"# Not in cached, let's try the account servers"
+comment|"# Not in cache, let's try the account servers"
 nl|'\n'
 dedent|''
 name|'path'

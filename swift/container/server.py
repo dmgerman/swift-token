@@ -724,6 +724,7 @@ nl|'\n'
 string|"'numbers of hosts and devices in request: '"
 nl|'\n'
 string|'\'"%s" vs "%s"\''
+op|')'
 op|'%'
 nl|'\n'
 op|'('
@@ -748,7 +749,6 @@ op|'('
 string|"'X-Account-Device'"
 op|','
 string|"''"
-op|')'
 op|')'
 op|')'
 op|')'

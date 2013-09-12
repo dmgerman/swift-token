@@ -4913,7 +4913,7 @@ op|']'
 op|'='
 name|'StringIO'
 op|'('
-string|"'/c/f'"
+string|"'/c/f%20'"
 op|')'
 newline|'\n'
 name|'list'
@@ -4943,7 +4943,7 @@ op|'.'
 name|'delete_paths'
 op|','
 op|'['
-string|"'/delete_works/AUTH_Acc/c/f'"
+string|"'/delete_works/AUTH_Acc/c/f '"
 op|']'
 op|')'
 newline|'\n'
@@ -4981,7 +4981,7 @@ string|"'/delete_works/AUTH_Acc'"
 op|','
 name|'body'
 op|'='
-string|"'1\\r\\n2\\r\\n'"
+string|"'1%20\\r\\n2\\r\\n'"
 op|')'
 newline|'\n'
 name|'req'
@@ -5027,13 +5027,13 @@ op|'['
 op|'{'
 string|"'name'"
 op|':'
-string|"'1\\r'"
+string|"'1 '"
 op|'}'
 op|','
 op|'{'
 string|"'name'"
 op|':'
-string|"'2\\r'"
+string|"'2'"
 op|'}'
 op|']'
 op|')'

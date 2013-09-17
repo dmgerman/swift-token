@@ -173,7 +173,18 @@ op|':'
 op|'('
 string|"'Found'"
 op|','
-string|"''"
+string|"'The resource has moved temporarily.'"
+op|')'
+op|','
+nl|'\n'
+number|'303'
+op|':'
+op|'('
+string|"'See Other'"
+op|','
+string|"'The response to the request can be found under a '"
+nl|'\n'
+string|"'different URI.'"
 op|')'
 op|','
 nl|'\n'
@@ -6949,12 +6960,28 @@ op|'['
 number|'302'
 op|']'
 newline|'\n'
+DECL|variable|HTTPSeeOther
+name|'HTTPSeeOther'
+op|'='
+name|'status_map'
+op|'['
+number|'303'
+op|']'
+newline|'\n'
 DECL|variable|HTTPNotModified
 name|'HTTPNotModified'
 op|'='
 name|'status_map'
 op|'['
 number|'304'
+op|']'
+newline|'\n'
+DECL|variable|HTTPTemporaryRedirect
+name|'HTTPTemporaryRedirect'
+op|'='
+name|'status_map'
+op|'['
+number|'307'
 op|']'
 newline|'\n'
 DECL|variable|HTTPBadRequest

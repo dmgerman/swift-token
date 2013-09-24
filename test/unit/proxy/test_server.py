@@ -29717,7 +29717,7 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'PUT /v1/a/c/o HTTP/1.1\\r\\n'"
+string|"'PUT /v1/a/con/o HTTP/1.1\\r\\n'"
 nl|'\n'
 string|"'Host: localhost\\r\\n'"
 nl|'\n'
@@ -29811,7 +29811,7 @@ name|'fd'
 op|'.'
 name|'write'
 op|'('
-string|"'GET /v1/a/c/o HTTP/1.1\\r\\n'"
+string|"'GET /v1/a/con/o HTTP/1.1\\r\\n'"
 op|'+'
 nl|'\n'
 string|"'Host: localhost\\r\\n'"

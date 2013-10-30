@@ -2680,6 +2680,8 @@ string|"'SERVER_NAME'"
 op|','
 string|"'SERVER_PORT'"
 op|','
+string|"'HTTP_ORIGIN'"
+op|','
 nl|'\n'
 string|"'SERVER_PROTOCOL'"
 op|','

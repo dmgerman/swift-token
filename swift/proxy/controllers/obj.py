@@ -32,7 +32,7 @@ comment|'# NOTE: swift_conn'
 nl|'\n'
 comment|"# You'll see swift_conn passed around a few places in this file. This is the"
 nl|'\n'
-comment|'# source httplib connection of whatever it is attached to.'
+comment|'# source bufferedhttp connection of whatever it is attached to.'
 nl|'\n'
 comment|'#   It is used when early termination of reading from the connection should'
 nl|'\n'

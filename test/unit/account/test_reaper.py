@@ -3243,7 +3243,7 @@ nl|'\n'
 name|'with'
 name|'patch'
 op|'('
-string|"'swift.account.reaper.os.path.ismount'"
+string|"'swift.account.reaper.ismount'"
 op|','
 name|'lambda'
 name|'x'
@@ -3287,7 +3287,7 @@ nl|'\n'
 name|'with'
 name|'patch'
 op|'('
-string|"'swift.account.reaper.os.path.ismount'"
+string|"'swift.account.reaper.ismount'"
 op|','
 name|'lambda'
 name|'x'

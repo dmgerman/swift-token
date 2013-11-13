@@ -3588,7 +3588,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'os.path.ismount'"
+string|"'swift.obj.diskfile.ismount'"
 op|','
 name|'mock_ismount'
 op|')'

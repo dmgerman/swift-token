@@ -797,7 +797,7 @@ string|'\'Object audit (%(type)s) "%(mode)s" mode \''
 nl|'\n'
 string|"'completed: %(elapsed).02fs. Total quarantined: %(quars)d, '"
 nl|'\n'
-string|"'Total errors: %(errors)d, Total files/sec: %(frate).2f , '"
+string|"'Total errors: %(errors)d, Total files/sec: %(frate).2f, '"
 nl|'\n'
 string|"'Total bytes/sec: %(brate).2f, Auditing time: %(audit).2f, '"
 nl|'\n'
@@ -824,10 +824,19 @@ nl|'\n'
 string|"'quars'"
 op|':'
 name|'total_quarantines'
+op|'+'
+name|'self'
+op|'.'
+name|'quarantines'
 op|','
+nl|'\n'
 string|"'errors'"
 op|':'
 name|'total_errors'
+op|'+'
+name|'self'
+op|'.'
+name|'errors'
 op|','
 nl|'\n'
 string|"'frate'"

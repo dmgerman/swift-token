@@ -1616,6 +1616,14 @@ op|'('
 string|"'warning'"
 op|')'
 newline|'\n'
+DECL|variable|warn
+name|'warn'
+op|'='
+name|'_store_and_log_in'
+op|'('
+string|"'warning'"
+op|')'
+newline|'\n'
 DECL|variable|debug
 name|'debug'
 op|'='

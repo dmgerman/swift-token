@@ -585,7 +585,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a/c/o/with/slashes'"
+string|"'/v1/a/c/o/with/slashes'"
 op|')'
 newline|'\n'
 name|'with'
@@ -659,7 +659,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a/c/o'"
+string|"'/v1/a/c/o'"
 op|')'
 newline|'\n'
 name|'with'
@@ -732,7 +732,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a/c'"
+string|"'/v1/a/c'"
 op|')'
 newline|'\n'
 name|'with'
@@ -806,7 +806,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a'"
+string|"'/v1/a'"
 op|')'
 newline|'\n'
 name|'with'

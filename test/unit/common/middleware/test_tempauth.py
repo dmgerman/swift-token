@@ -4198,10 +4198,10 @@ string|"'http://somehost:5678/v1/AUTH_test'"
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_storage_url_overriden_scheme
+DECL|member|test_storage_url_overridden_scheme
 dedent|''
 name|'def'
-name|'test_storage_url_overriden_scheme'
+name|'test_storage_url_overridden_scheme'
 op|'('
 name|'self'
 op|')'

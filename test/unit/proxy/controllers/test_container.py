@@ -187,12 +187,12 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a/c'"
+string|"'/v1/a/c'"
 op|','
 op|'{'
 string|"'PATH_INFO'"
 op|':'
-string|"'/a/c'"
+string|"'/v1/a/c'"
 op|'}'
 op|')'
 newline|'\n'
@@ -305,7 +305,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a/c'"
+string|"'/v1/a/c'"
 op|')'
 newline|'\n'
 name|'with'
@@ -380,7 +380,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a/c'"
+string|"'/v1/a/c'"
 op|','
 name|'environ'
 op|'='

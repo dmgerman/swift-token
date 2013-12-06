@@ -194,12 +194,12 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/AUTH_bob'"
+string|"'/v1/AUTH_bob'"
 op|','
 op|'{'
 string|"'PATH_INFO'"
 op|':'
-string|"'/AUTH_bob'"
+string|"'/v1/AUTH_bob'"
 op|'}'
 op|')'
 newline|'\n'
@@ -302,7 +302,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a'"
+string|"'/v1/a'"
 op|')'
 newline|'\n'
 name|'with'
@@ -375,7 +375,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a'"
+string|"'/v1/a'"
 op|','
 name|'environ'
 op|'='
@@ -490,7 +490,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/a'"
+string|"'/v1/a'"
 op|')'
 newline|'\n'
 name|'with'
@@ -579,7 +579,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/%s'"
+string|"'/v1/%s'"
 op|'%'
 name|'long_acct_name'
 op|')'

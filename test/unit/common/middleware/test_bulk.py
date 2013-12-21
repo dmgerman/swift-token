@@ -520,6 +520,7 @@ op|')'
 newline|'\n'
 dedent|''
 name|'if'
+op|'('
 name|'env'
 op|'['
 string|"'PATH_INFO'"
@@ -528,6 +529,15 @@ op|'.'
 name|'startswith'
 op|'('
 string|"'/delete_works/'"
+op|')'
+nl|'\n'
+name|'and'
+name|'env'
+op|'['
+string|"'REQUEST_METHOD'"
+op|']'
+op|'=='
+string|"'DELETE'"
 op|')'
 op|':'
 newline|'\n'

@@ -1344,6 +1344,13 @@ number|'0'
 newline|'\n'
 name|'new_env'
 op|'['
+string|"'REQUEST_METHOD'"
+op|']'
+op|'='
+string|"'DELETE'"
+newline|'\n'
+name|'new_env'
+op|'['
 string|"'HTTP_USER_AGENT'"
 op|']'
 op|'='

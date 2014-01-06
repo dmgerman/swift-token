@@ -1810,7 +1810,7 @@ name|'get'
 op|'('
 string|"'devices'"
 op|','
-string|"'/srv/node/'"
+string|"'/srv/node'"
 op|')'
 newline|'\n'
 name|'self'

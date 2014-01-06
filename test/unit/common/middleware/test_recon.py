@@ -3826,7 +3826,7 @@ op|','
 op|'['
 op|'('
 op|'('
-string|"'/srv/node/'"
+string|"'/srv/node'"
 op|','
 op|')'
 op|','
@@ -3904,7 +3904,7 @@ op|','
 op|'['
 op|'('
 op|'('
-string|"'/srv/node/'"
+string|"'/srv/node'"
 op|','
 op|')'
 op|','
@@ -3992,7 +3992,7 @@ op|','
 op|'['
 op|'('
 op|'('
-string|"'/srv/node/'"
+string|"'/srv/node'"
 op|','
 op|')'
 op|','
@@ -4107,7 +4107,7 @@ op|','
 op|'['
 op|'('
 op|'('
-string|"'/srv/node/'"
+string|"'/srv/node'"
 op|','
 op|')'
 op|','
@@ -4350,7 +4350,7 @@ op|','
 op|'['
 op|'('
 op|'('
-string|"'/srv/node/'"
+string|"'/srv/node'"
 op|','
 op|')'
 op|','

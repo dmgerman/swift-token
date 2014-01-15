@@ -3148,7 +3148,10 @@ string|"'SERVER_NAME'"
 op|','
 string|"'SERVER_PORT'"
 op|','
+nl|'\n'
 string|"'HTTP_ORIGIN'"
+op|','
+string|"'HTTP_ACCESS_CONTROL_REQUEST_METHOD'"
 op|','
 nl|'\n'
 string|"'SERVER_PROTOCOL'"

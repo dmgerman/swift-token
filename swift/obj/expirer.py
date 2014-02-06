@@ -191,7 +191,16 @@ name|'or'
 string|"'.'"
 op|')'
 op|'+'
+op|'('
+name|'conf'
+op|'.'
+name|'get'
+op|'('
+string|"'expiring_objects_account_name'"
+op|')'
+name|'or'
 string|"'expiring_objects'"
+op|')'
 newline|'\n'
 name|'conf_path'
 op|'='

@@ -1326,8 +1326,6 @@ name|'test'
 op|'.'
 name|'assertEquals'
 op|'('
-string|"'config:'"
-op|'+'
 name|'conf_path'
 op|','
 name|'uri'

@@ -933,10 +933,11 @@ name|'self'
 op|'.'
 name|'configs'
 op|'['
-string|"'container'"
+string|"'container-server'"
 op|']'
-op|'%'
+op|'['
 name|'node_id'
+op|']'
 op|')'
 newline|'\n'
 name|'devices'

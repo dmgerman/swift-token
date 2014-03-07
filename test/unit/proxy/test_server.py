@@ -18874,10 +18874,10 @@ string|"'c/o'"
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_basic_put_with_x_copy_from_accross_container
+DECL|member|test_basic_put_with_x_copy_from_across_container
 dedent|''
 name|'def'
-name|'test_basic_put_with_x_copy_from_accross_container'
+name|'test_basic_put_with_x_copy_from_across_container'
 op|'('
 name|'self'
 op|')'
@@ -20393,10 +20393,10 @@ string|"'c/o'"
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_COPY_accross_containers
+DECL|member|test_COPY_across_containers
 dedent|''
 name|'def'
-name|'test_COPY_accross_containers'
+name|'test_COPY_across_containers'
 op|'('
 name|'self'
 op|')'

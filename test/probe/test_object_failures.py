@@ -461,10 +461,11 @@ name|'self'
 op|'.'
 name|'configs'
 op|'['
-string|"'object'"
+string|"'object-server'"
 op|']'
-op|'%'
+op|'['
 name|'node_id'
+op|']'
 op|')'
 newline|'\n'
 name|'devices'

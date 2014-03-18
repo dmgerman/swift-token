@@ -7360,6 +7360,9 @@ op|','
 string|"'0'"
 op|','
 string|"'123'"
+op|','
+nl|'\n'
+string|"'objects'"
 op|')'
 newline|'\n'
 nl|'\n'
@@ -7389,6 +7392,8 @@ op|','
 string|"'0'"
 op|','
 string|"'123'"
+op|','
+string|"'0'"
 op|')'
 newline|'\n'
 name|'self'
@@ -7420,6 +7425,8 @@ op|','
 string|"'0'"
 op|','
 string|"'123'"
+op|','
+string|"'0'"
 op|')'
 newline|'\n'
 name|'self'

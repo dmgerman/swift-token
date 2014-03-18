@@ -14705,6 +14705,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 nl|'\n'
@@ -14832,6 +14834,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 name|'quarantine_renamer'
@@ -14960,6 +14964,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 nl|'\n'
@@ -15069,6 +15075,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 nl|'\n'
@@ -15173,6 +15181,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 nl|'\n'
@@ -15276,6 +15286,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 nl|'\n'
@@ -15374,6 +15386,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 dedent|''
@@ -15500,6 +15514,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 dedent|''
@@ -15622,6 +15638,8 @@ op|','
 string|"'9'"
 op|','
 string|"'9a7175077c01a23ade5956b8a2bba900'"
+op|','
+number|'0'
 op|')'
 newline|'\n'
 name|'dfclass'
@@ -15652,6 +15670,10 @@ op|','
 string|"'c'"
 op|','
 string|"'o'"
+op|','
+name|'policy_idx'
+op|'='
+number|'0'
 op|')'
 newline|'\n'
 name|'hclistdir'
@@ -15974,6 +15996,8 @@ op|'('
 string|"'dev'"
 op|','
 string|"'9'"
+op|','
+number|'0'
 op|')'
 op|')'
 newline|'\n'
@@ -16055,6 +16079,8 @@ op|'('
 string|"'dev'"
 op|','
 string|"'9'"
+op|','
+number|'0'
 op|')'
 op|')'
 op|','
@@ -16139,6 +16165,8 @@ op|'('
 string|"'dev'"
 op|','
 string|"'9'"
+op|','
+number|'0'
 op|')'
 op|')'
 newline|'\n'
@@ -16220,6 +16248,8 @@ op|'('
 string|"'dev'"
 op|','
 string|"'9'"
+op|','
+number|'0'
 op|')'
 op|')'
 op|','
@@ -16283,6 +16313,9 @@ string|"'dev'"
 op|','
 string|"'9'"
 op|','
+number|'0'
+op|','
+nl|'\n'
 name|'suffixes'
 op|'='
 op|'['
@@ -16291,7 +16324,6 @@ op|']'
 op|')'
 op|')'
 op|','
-nl|'\n'
 op|'['
 op|']'
 op|')'
@@ -16525,6 +16557,8 @@ op|'('
 string|"'dev'"
 op|','
 string|"'9'"
+op|','
+number|'0'
 op|')'
 op|')'
 op|','
@@ -16806,6 +16840,8 @@ nl|'\n'
 string|"'dev'"
 op|','
 string|"'9'"
+op|','
+number|'0'
 op|','
 name|'suffixes'
 op|'='

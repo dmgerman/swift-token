@@ -98,6 +98,9 @@ name|'get_sys_meta_prefix'
 op|'('
 string|"'object'"
 op|')'
+op|','
+nl|'\n'
+string|"'x-backend'"
 op|']'
 newline|'\n'
 comment|"# 'x-object-sysmeta' is reserved in anticipation of future support"

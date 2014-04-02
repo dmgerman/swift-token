@@ -91,7 +91,7 @@ nl|'\n'
 DECL|variable|LIMIT
 name|'LIMIT'
 op|'='
-string|"'swift.common.middleware.dlo.CONTAINER_LISTING_LIMIT'"
+string|"'swift.common.constraints.CONTAINER_LISTING_LIMIT'"
 newline|'\n'
 nl|'\n'
 nl|'\n'

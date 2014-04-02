@@ -82,6 +82,12 @@ op|','
 name|'utf8encode'
 newline|'\n'
 nl|'\n'
+DECL|variable|DATADIR
+name|'DATADIR'
+op|'='
+string|"'containers'"
+newline|'\n'
+nl|'\n'
 nl|'\n'
 DECL|class|ContainerBroker
 name|'class'

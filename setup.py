@@ -41,10 +41,11 @@ op|'.'
 name|'setup'
 op|'('
 nl|'\n'
+DECL|variable|setup_requires
 name|'setup_requires'
 op|'='
 op|'['
-string|"'pbr>=0.5.21,<1.0'"
+string|"'pbr'"
 op|']'
 op|','
 nl|'\n'

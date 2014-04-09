@@ -161,12 +161,6 @@ string|"'x-container-sync-to'"
 op|','
 nl|'\n'
 string|"'x-versions-location'"
-op|','
-name|'POLICY_INDEX'
-op|'.'
-name|'lower'
-op|'('
-op|')'
 op|']'
 newline|'\n'
 nl|'\n'

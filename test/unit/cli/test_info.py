@@ -731,6 +731,11 @@ op|'='
 number|'107.9'
 op|','
 nl|'\n'
+name|'container_count'
+op|'='
+string|"'3'"
+op|','
+nl|'\n'
 name|'object_count'
 op|'='
 string|"'20'"
@@ -806,7 +811,7 @@ newline|'\n'
 dedent|''
 name|'exp_out'
 op|'='
-string|"'''Path: /acct\n  Account: acct\n  Account Hash: dc5be2aa4347a22a0fee6bc7de505b47\nMetadata:\n  Created at: 1970-01-01 00:01:40.100000 (100.1)\n  Put Timestamp: 1970-01-01 00:01:46.300000 (106.3)\n  Delete Timestamp: 1970-01-01 00:01:47.900000 (107.9)\n  Object Count: 20\n  Bytes Used: 42\n  Chexor: abaddeadbeefcafe\n  UUID: abadf100d0ddba11\n  X-Other-Something: boo\nNo system metadata found in db file\n  User Metadata: {'mydata': 'swift'}'''"
+string|"'''Path: /acct\n  Account: acct\n  Account Hash: dc5be2aa4347a22a0fee6bc7de505b47\nMetadata:\n  Created at: 1970-01-01 00:01:40.100000 (100.1)\n  Put Timestamp: 1970-01-01 00:01:46.300000 (106.3)\n  Delete Timestamp: 1970-01-01 00:01:47.900000 (107.9)\n  Container Count: 3\n  Object Count: 20\n  Bytes Used: 42\n  Chexor: abaddeadbeefcafe\n  UUID: abadf100d0ddba11\n  X-Other-Something: boo\nNo system metadata found in db file\n  User Metadata: {'mydata': 'swift'}'''"
 newline|'\n'
 nl|'\n'
 name|'self'

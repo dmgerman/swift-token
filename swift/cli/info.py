@@ -521,6 +521,22 @@ op|']'
 op|')'
 op|')'
 newline|'\n'
+name|'if'
+name|'db_type'
+op|'=='
+string|"'account'"
+op|':'
+newline|'\n'
+indent|'            '
+name|'print'
+string|"'  Container Count: %s'"
+op|'%'
+name|'info'
+op|'['
+string|"'container_count'"
+op|']'
+newline|'\n'
+dedent|''
 name|'print'
 string|"'  Object Count: %s'"
 op|'%'

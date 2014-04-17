@@ -693,6 +693,8 @@ op|','
 name|'headers'
 op|','
 name|'body'
+op|'='
+string|"''"
 op|')'
 op|':'
 newline|'\n'

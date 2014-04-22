@@ -1305,7 +1305,7 @@ op|'.'
 name|'append'
 op|'('
 op|'('
-string|"'content-length'"
+string|"'Content-Length'"
 op|','
 string|"'0'"
 op|')'
@@ -1334,7 +1334,7 @@ name|'append'
 op|'('
 nl|'\n'
 op|'('
-string|"'content-length'"
+string|"'Content-Length'"
 op|','
 name|'str'
 op|'('

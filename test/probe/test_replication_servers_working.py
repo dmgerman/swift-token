@@ -247,7 +247,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Class for testing replicators and replication servers.\n\n    By default configuration - replication servers not used.\n    For testing separete replication servers servers need to change\n    ring\'s files using set_info command or new ring\'s files with\n    different port values.\n    """'
+string|'"""\n    Class for testing replicators and replication servers.\n\n    By default configuration - replication servers not used.\n    For testing separate replication servers servers need to change\n    ring\'s files using set_info command or new ring\'s files with\n    different port values.\n    """'
 newline|'\n'
 DECL|member|setUp
 name|'def'

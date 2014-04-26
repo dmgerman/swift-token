@@ -146,7 +146,7 @@ string|"'startcap'"
 newline|'\n'
 comment|"# Not sure why the test.unit stuff isn't taking effect here; so I'm"
 nl|'\n'
-comment|'# reenforcing it.'
+comment|'# reinforcing it.'
 nl|'\n'
 name|'diskfile'
 op|'.'

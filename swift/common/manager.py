@@ -100,6 +100,9 @@ op|','
 nl|'\n'
 string|"'container-replicator'"
 op|','
+string|"'container-reconciler'"
+op|','
+nl|'\n'
 string|"'container-server'"
 op|','
 string|"'container-sync'"
@@ -179,6 +182,8 @@ name|'STANDALONE_SERVERS'
 op|'='
 op|'['
 string|"'object-expirer'"
+op|','
+string|"'container-reconciler'"
 op|']'
 newline|'\n'
 nl|'\n'

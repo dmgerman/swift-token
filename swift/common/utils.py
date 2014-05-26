@@ -1136,7 +1136,7 @@ indent|'        '
 name|'raise'
 name|'ValueError'
 op|'('
-string|"'Config option must be a integer or the '"
+string|"'Config option must be an integer or the '"
 nl|'\n'
 string|'\'string "auto", not "%s".\''
 op|'%'

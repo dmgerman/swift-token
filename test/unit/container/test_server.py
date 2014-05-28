@@ -18674,6 +18674,17 @@ op|':'
 string|"'0000012345.00000'"
 op|','
 nl|'\n'
+name|'POLICY_INDEX'
+op|':'
+string|"'%s'"
+op|'%'
+name|'POLICIES'
+op|'.'
+name|'default'
+op|'.'
+name|'idx'
+op|','
+nl|'\n'
 string|"'referer'"
 op|':'
 string|"'PUT http://localhost/sda1/p/a/c'"
@@ -18769,6 +18780,17 @@ nl|'\n'
 string|"'x-put-timestamp'"
 op|':'
 string|"'0000012345.00000'"
+op|','
+nl|'\n'
+name|'POLICY_INDEX'
+op|':'
+string|"'%s'"
+op|'%'
+name|'POLICIES'
+op|'.'
+name|'default'
+op|'.'
+name|'idx'
 op|','
 nl|'\n'
 string|"'referer'"

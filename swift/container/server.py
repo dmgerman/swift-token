@@ -1284,6 +1284,14 @@ string|"'-'"
 op|')'
 op|','
 nl|'\n'
+name|'POLICY_INDEX'
+op|':'
+name|'info'
+op|'['
+string|"'storage_policy_index'"
+op|']'
+op|','
+nl|'\n'
 string|"'user-agent'"
 op|':'
 string|"'container-server %s'"

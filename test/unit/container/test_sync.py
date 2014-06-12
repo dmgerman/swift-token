@@ -5473,6 +5473,11 @@ nl|'\n'
 string|"'other-header'"
 op|':'
 string|"'other header value'"
+op|','
+nl|'\n'
+string|"'content-type'"
+op|':'
+string|"'text/plain'"
 op|'}'
 op|')'
 newline|'\n'
@@ -5507,6 +5512,11 @@ nl|'\n'
 string|"'etag'"
 op|':'
 string|"'etagvalue'"
+op|','
+nl|'\n'
+string|"'content-type'"
+op|':'
+string|"'text/plain'"
 op|'}'
 op|')'
 newline|'\n'
@@ -5611,6 +5621,11 @@ op|','
 string|"'x-timestamp'"
 op|':'
 string|"'1.2'"
+op|','
+nl|'\n'
+string|"'content-type'"
+op|':'
+string|"'text/plain; swift_bytes=123'"
 op|'}'
 op|','
 nl|'\n'
@@ -5743,6 +5758,11 @@ nl|'\n'
 string|"'etag'"
 op|':'
 string|'\'"etagvalue"\''
+op|','
+nl|'\n'
+string|"'content-type'"
+op|':'
+string|"'text/plain; swift_bytes=123'"
 op|'}'
 op|','
 nl|'\n'

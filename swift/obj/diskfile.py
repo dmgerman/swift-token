@@ -1075,15 +1075,21 @@ op|'('
 nl|'\n'
 name|'_'
 op|'('
-string|"'Quarantined %s to %s because it is not a directory'"
-op|')'
-op|'%'
+string|"'Quarantined %(hsh_path)s to %(quar_path)s because '"
 nl|'\n'
-op|'('
+string|"'it is not a directory'"
+op|')'
+op|','
+op|'{'
+string|"'hsh_path'"
+op|':'
 name|'hsh_path'
 op|','
+nl|'\n'
+string|"'quar_path'"
+op|':'
 name|'quar_path'
-op|')'
+op|'}'
 op|')'
 newline|'\n'
 name|'continue'
@@ -2738,16 +2744,21 @@ op|'('
 nl|'\n'
 name|'_'
 op|'('
-string|"'Quarantined %s to %s because it is not a '"
+string|"'Quarantined %(object_path)s to %(quar_path)s because '"
 nl|'\n'
-string|"'directory'"
+string|"'it is not a directory'"
 op|')'
-op|'%'
-op|'('
+op|','
+op|'{'
+string|"'object_path'"
+op|':'
 name|'object_path'
 op|','
+nl|'\n'
+string|"'quar_path'"
+op|':'
 name|'quar_path'
-op|')'
+op|'}'
 op|')'
 newline|'\n'
 name|'raise'

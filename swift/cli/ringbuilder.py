@@ -3910,8 +3910,6 @@ string|"'id'"
 op|']'
 op|','
 name|'e'
-op|'.'
-name|'message'
 op|')'
 nl|'\n'
 op|')'

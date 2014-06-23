@@ -1843,7 +1843,7 @@ op|'['
 string|"'user-agent'"
 op|']'
 op|'='
-string|"'obj-updater %s'"
+string|"'object-updater %s'"
 op|'%'
 name|'os'
 op|'.'

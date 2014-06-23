@@ -630,7 +630,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-replicator %s'"
+string|"'object-replicator %s'"
 op|'%'
 name|'os'
 op|'.'

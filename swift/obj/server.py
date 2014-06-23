@@ -820,7 +820,7 @@ op|'['
 string|"'user-agent'"
 op|']'
 op|'='
-string|"'obj-server %s'"
+string|"'object-server %s'"
 op|'%'
 name|'os'
 op|'.'

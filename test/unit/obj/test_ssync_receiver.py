@@ -85,15 +85,6 @@ newline|'\n'
 name|'from'
 name|'swift'
 op|'.'
-name|'common'
-op|'.'
-name|'storage_policy'
-name|'import'
-name|'POLICY_INDEX'
-newline|'\n'
-name|'from'
-name|'swift'
-op|'.'
 name|'obj'
 name|'import'
 name|'diskfile'
@@ -7462,7 +7453,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -7792,7 +7783,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'1'"
 op|','
@@ -8054,7 +8045,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -8633,7 +8624,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -8716,7 +8707,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -8799,7 +8790,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -8896,7 +8887,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -8977,7 +8968,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -9044,7 +9035,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -9438,7 +9429,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','
@@ -9524,7 +9515,7 @@ op|':'
 string|"'localhost:80'"
 op|','
 nl|'\n'
-name|'POLICY_INDEX'
+string|"'X-Backend-Storage-Policy-Index'"
 op|':'
 string|"'0'"
 op|','

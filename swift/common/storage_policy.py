@@ -57,16 +57,6 @@ name|'import'
 name|'Ring'
 newline|'\n'
 nl|'\n'
-DECL|variable|POLICY
-name|'POLICY'
-op|'='
-string|"'X-Storage-Policy'"
-newline|'\n'
-DECL|variable|POLICY_INDEX
-name|'POLICY_INDEX'
-op|'='
-string|"'X-Backend-Storage-Policy-Index'"
-newline|'\n'
 DECL|variable|LEGACY_POLICY_NAME
 name|'LEGACY_POLICY_NAME'
 op|'='

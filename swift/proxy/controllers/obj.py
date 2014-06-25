@@ -3396,13 +3396,7 @@ op|'='
 op|'{'
 string|"'X-Backend-Storage-Policy-Index'"
 op|':'
-nl|'\n'
-name|'req'
-op|'.'
-name|'headers'
-op|'['
-string|"'X-Backend-Storage-Policy-Index'"
-op|']'
+name|'policy_index'
 op|','
 nl|'\n'
 string|"'X-Newest'"

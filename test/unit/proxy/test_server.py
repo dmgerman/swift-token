@@ -12739,6 +12739,16 @@ name|'endswith'
 op|'('
 name|'path'
 op|')'
+op|','
+nl|'\n'
+string|"'expected path to end with %s, it was %s'"
+op|'%'
+op|'('
+nl|'\n'
+name|'path'
+op|','
+name|'req_path'
+op|')'
 op|')'
 newline|'\n'
 name|'headers'
@@ -12796,7 +12806,7 @@ string|"'HEAD'"
 op|','
 name|'path'
 op|'='
-string|"'/sda/1/a'"
+string|"'/sda/0/a'"
 op|')'
 newline|'\n'
 name|'container_request'
@@ -12818,7 +12828,7 @@ string|"'HEAD'"
 op|','
 name|'path'
 op|'='
-string|"'/sda/1/a/c'"
+string|"'/sda/0/a/c'"
 op|')'
 newline|'\n'
 comment|'# make sure backend requests included expected container headers'
@@ -12874,7 +12884,7 @@ op|','
 nl|'\n'
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 nl|'\n'
 string|"'headers'"
@@ -12883,7 +12893,7 @@ op|'{'
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'Connection'"
@@ -13130,7 +13140,7 @@ op|','
 nl|'\n'
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 comment|'# ignore device bit'
 nl|'\n'
@@ -13330,7 +13340,7 @@ string|"'HEAD'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a'"
+string|"'/0/a'"
 op|'}'
 op|','
 nl|'\n'
@@ -13343,7 +13353,7 @@ string|"'HEAD'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c'"
+string|"'/0/a/c'"
 op|'}'
 op|','
 nl|'\n'
@@ -13356,7 +13366,7 @@ string|"'GET'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 string|"'headers'"
 op|':'
@@ -13371,7 +13381,7 @@ string|"'GET'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 string|"'headers'"
 op|':'
@@ -13386,7 +13396,7 @@ string|"'GET'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 string|"'headers'"
 op|':'
@@ -13403,7 +13413,7 @@ string|"'PUT'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 string|"'headers'"
 op|':'
@@ -13418,7 +13428,7 @@ string|"'PUT'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 string|"'headers'"
 op|':'
@@ -13433,7 +13443,7 @@ string|"'PUT'"
 op|','
 string|"'path'"
 op|':'
-string|"'/1/a/c/o'"
+string|"'/0/a/c/o'"
 op|','
 string|"'headers'"
 op|':'
@@ -37295,7 +37305,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37312,7 +37322,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37329,7 +37339,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37453,7 +37463,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37470,7 +37480,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37611,7 +37621,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37628,7 +37638,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37645,7 +37655,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37774,7 +37784,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37791,7 +37801,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37808,7 +37818,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37928,7 +37938,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37945,7 +37955,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -37962,7 +37972,7 @@ op|','
 nl|'\n'
 string|"'X-Container-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Container-Device'"
@@ -38163,7 +38173,7 @@ op|','
 nl|'\n'
 string|"'X-Delete-At-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Delete-At-Device'"
@@ -38185,7 +38195,7 @@ op|','
 nl|'\n'
 string|"'X-Delete-At-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Delete-At-Device'"
@@ -38423,7 +38433,7 @@ op|','
 nl|'\n'
 string|"'X-Delete-At-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Delete-At-Device'"
@@ -38445,7 +38455,7 @@ op|','
 nl|'\n'
 string|"'X-Delete-At-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Delete-At-Device'"
@@ -38467,7 +38477,7 @@ op|','
 nl|'\n'
 string|"'X-Delete-At-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Delete-At-Device'"
@@ -46759,7 +46769,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -46776,7 +46786,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -46899,7 +46909,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -46916,7 +46926,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -46933,7 +46943,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -47039,7 +47049,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -47056,7 +47066,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -47179,7 +47189,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -47196,7 +47206,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"
@@ -47213,7 +47223,7 @@ op|','
 nl|'\n'
 string|"'X-Account-Partition'"
 op|':'
-string|"'1'"
+string|"'0'"
 op|','
 nl|'\n'
 string|"'X-Account-Device'"

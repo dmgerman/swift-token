@@ -120,7 +120,7 @@ nl|'\n'
 DECL|variable|DB_PREALLOCATION
 name|'DB_PREALLOCATION'
 op|'='
-name|'True'
+name|'False'
 newline|'\n'
 comment|'#: Timeout for trying to connect to a DB'
 nl|'\n'

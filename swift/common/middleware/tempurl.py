@@ -302,6 +302,7 @@ name|'app'
 op|','
 name|'conf'
 op|','
+nl|'\n'
 name|'methods'
 op|'='
 op|'('
@@ -310,6 +311,10 @@ op|','
 string|"'HEAD'"
 op|','
 string|"'PUT'"
+op|','
+string|"'POST'"
+op|','
+string|"'DELETE'"
 op|')'
 op|')'
 op|':'
@@ -2011,7 +2016,7 @@ name|'get'
 op|'('
 string|"'methods'"
 op|','
-string|"'GET HEAD PUT'"
+string|"'GET HEAD PUT POST DELETE'"
 op|')'
 op|'.'
 name|'split'

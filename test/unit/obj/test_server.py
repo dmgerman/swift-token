@@ -19000,7 +19000,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %s'"
+string|"'object-server %s'"
 op|'%'
 name|'os'
 op|'.'
@@ -19520,7 +19520,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %d'"
+string|"'object-server %d'"
 op|'%'
 name|'os'
 op|'.'
@@ -19631,7 +19631,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %d'"
+string|"'object-server %d'"
 op|'%'
 name|'os'
 op|'.'
@@ -19742,7 +19742,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %d'"
+string|"'object-server %d'"
 op|'%'
 name|'os'
 op|'.'
@@ -20198,7 +20198,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %d'"
+string|"'object-server %d'"
 op|'%'
 name|'os'
 op|'.'
@@ -20307,7 +20307,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %d'"
+string|"'object-server %d'"
 op|'%'
 name|'os'
 op|'.'
@@ -21216,7 +21216,7 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %s'"
+string|"'object-server %s'"
 op|'%'
 name|'os'
 op|'.'
@@ -21531,7 +21531,8 @@ op|','
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %s'"
+nl|'\n'
+string|"'object-server %s'"
 op|'%'
 name|'os'
 op|'.'
@@ -22433,7 +22434,7 @@ op|'{'
 nl|'\n'
 string|"'user-agent'"
 op|':'
-string|"'obj-server %s'"
+string|"'object-server %s'"
 op|'%'
 name|'os'
 op|'.'
@@ -22748,7 +22749,7 @@ op|','
 nl|'\n'
 string|"'User-Agent'"
 op|':'
-string|"'obj-server %s'"
+string|"'object-server %s'"
 op|'%'
 name|'os'
 op|'.'

@@ -2924,7 +2924,7 @@ indent|'        '
 name|'raise'
 name|'TypeError'
 op|'('
-string|"'You must specificy which string format is required'"
+string|"'You must specify which string format is required'"
 op|')'
 newline|'\n'
 nl|'\n'

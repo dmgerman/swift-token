@@ -106,6 +106,8 @@ string|"'sphinx.ext.pngmath'"
 op|','
 nl|'\n'
 string|"'sphinx.ext.ifconfig'"
+op|','
+string|"'oslosphinx'"
 op|']'
 newline|'\n'
 DECL|variable|todo_include_todos
@@ -122,48 +124,20 @@ comment|'# source docs do not contain the code so local, offline sphinx builds a
 nl|'\n'
 comment|'# "clean."'
 nl|'\n'
-DECL|variable|templates_path
-name|'templates_path'
-op|'='
-op|'['
-op|']'
-newline|'\n'
-name|'if'
-name|'os'
-op|'.'
-name|'getenv'
-op|'('
-string|"'HUDSON_PUBLISH_DOCS'"
-op|')'
-op|':'
-newline|'\n'
-DECL|variable|templates_path
-indent|'    '
-name|'templates_path'
-op|'='
-op|'['
-string|"'_ga'"
-op|','
-string|"'_templates'"
-op|']'
-newline|'\n'
-dedent|''
-name|'else'
-op|':'
-newline|'\n'
-DECL|variable|templates_path
-indent|'    '
-name|'templates_path'
-op|'='
-op|'['
-string|"'_templates'"
-op|']'
-newline|'\n'
+comment|'#templates_path = []'
+nl|'\n'
+comment|"#if os.getenv('HUDSON_PUBLISH_DOCS'):"
+nl|'\n'
+comment|"#    templates_path = ['_ga', '_templates']"
+nl|'\n'
+comment|'#else:'
+nl|'\n'
+comment|"#    templates_path = ['_templates']"
+nl|'\n'
 nl|'\n'
 comment|'# The suffix of source filenames.'
 nl|'\n'
 DECL|variable|source_suffix
-dedent|''
 name|'source_suffix'
 op|'='
 string|"'.rst'"
@@ -334,18 +308,10 @@ comment|"# Sphinx are currently 'default' and 'sphinxdoc'."
 nl|'\n'
 comment|"# html_theme = 'default'"
 nl|'\n'
-DECL|variable|html_theme_path
-name|'html_theme_path'
-op|'='
-op|'['
-string|'"."'
-op|']'
-newline|'\n'
-DECL|variable|html_theme
-name|'html_theme'
-op|'='
-string|"'_theme'"
-newline|'\n'
+comment|'#html_theme_path = ["."]'
+nl|'\n'
+comment|"#html_theme = '_theme'"
+nl|'\n'
 nl|'\n'
 comment|'# Theme options are theme-specific and customize the look and feel of a theme'
 nl|'\n'
@@ -395,13 +361,8 @@ comment|'# relative to this directory. They are copied after the builtin static 
 nl|'\n'
 comment|'# so a file named "default.css" will overwrite the builtin "default.css".'
 nl|'\n'
-DECL|variable|html_static_path
-name|'html_static_path'
-op|'='
-op|'['
-string|"'_static'"
-op|']'
-newline|'\n'
+comment|"#html_static_path = ['_static']"
+nl|'\n'
 nl|'\n'
 comment|"# If not '', a 'Last updated on:' timestamp is inserted at every page bottom,"
 nl|'\n'

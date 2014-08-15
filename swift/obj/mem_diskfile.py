@@ -1807,6 +1807,8 @@ op|')'
 newline|'\n'
 name|'if'
 name|'md'
+name|'and'
+name|'md'
 op|'['
 string|"'X-Timestamp'"
 op|']'

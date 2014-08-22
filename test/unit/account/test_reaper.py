@@ -1952,7 +1952,7 @@ op|'['
 name|'i'
 op|']'
 op|','
-number|'1'
+number|'0'
 op|','
 string|"'a'"
 op|','

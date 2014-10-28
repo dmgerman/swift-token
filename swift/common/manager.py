@@ -119,6 +119,9 @@ string|"'object-expirer'"
 op|','
 string|"'object-replicator'"
 op|','
+nl|'\n'
+string|"'object-reconstructor'"
+op|','
 string|"'object-updater'"
 op|','
 nl|'\n'

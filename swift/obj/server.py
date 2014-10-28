@@ -5619,9 +5619,9 @@ op|'='
 number|'0.1'
 op|')'
 newline|'\n'
-DECL|member|REPLICATION
+DECL|member|SSYNC
 name|'def'
-name|'REPLICATION'
+name|'SSYNC'
 op|'('
 name|'self'
 op|','
@@ -5906,7 +5906,7 @@ name|'in'
 op|'('
 string|"'REPLICATE'"
 op|','
-string|"'REPLICATION'"
+string|"'SSYNC'"
 op|')'
 name|'or'
 string|"'X-Backend-Replication'"

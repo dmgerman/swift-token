@@ -10728,7 +10728,7 @@ newline|'\n'
 name|'for'
 name|'verb'
 name|'in'
-string|"'OPTIONS GET POST PUT DELETE HEAD REPLICATE \\\n                REPLICATION'"
+string|"'OPTIONS GET POST PUT DELETE HEAD REPLICATE \\\n                SSYNC'"
 op|'.'
 name|'split'
 op|'('
@@ -34148,10 +34148,10 @@ number|'507'
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_REPLICATION_can_be_called
+DECL|member|test_SSYNC_can_be_called
 dedent|''
 name|'def'
-name|'test_REPLICATION_can_be_called'
+name|'test_SSYNC_can_be_called'
 op|'('
 name|'self'
 op|')'
@@ -34172,7 +34172,7 @@ op|'='
 op|'{'
 string|"'REQUEST_METHOD'"
 op|':'
-string|"'REPLICATION'"
+string|"'SSYNC'"
 op|'}'
 op|','
 nl|'\n'
@@ -34857,7 +34857,7 @@ op|'='
 op|'['
 string|"'REPLICATE'"
 op|','
-string|"'REPLICATION'"
+string|"'SSYNC'"
 op|']'
 newline|'\n'
 name|'for'

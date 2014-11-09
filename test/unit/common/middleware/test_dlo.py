@@ -6097,6 +6097,7 @@ DECL|function|my_auth
 name|'def'
 name|'my_auth'
 op|'('
+name|'req'
 op|')'
 op|':'
 newline|'\n'

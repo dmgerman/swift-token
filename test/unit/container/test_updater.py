@@ -1395,7 +1395,11 @@ string|"'os.listdir'"
 op|','
 name|'return_value'
 op|'='
-string|"'bar/'"
+op|'['
+string|"'foo'"
+op|','
+string|"'bar'"
+op|']'
 op|')'
 newline|'\n'
 DECL|member|test_listdir_without_exception
@@ -1481,7 +1485,11 @@ name|'assertEqual'
 op|'('
 name|'path'
 op|','
-string|"'bar/'"
+op|'['
+string|"'foo'"
+op|','
+string|"'bar'"
+op|']'
 op|')'
 newline|'\n'
 name|'log_lines'

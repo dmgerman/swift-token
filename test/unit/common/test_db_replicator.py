@@ -5461,39 +5461,6 @@ op|')'
 op|')'
 newline|'\n'
 nl|'\n'
-comment|'#    def test_dispatch(self):'
-nl|'\n'
-comment|"#        rpc = db_replicator.ReplicatorRpc('/', '/', FakeBroker, False)"
-nl|'\n'
-comment|'#        no_op = lambda *args, **kwargs: True'
-nl|'\n'
-comment|"#        self.assertEquals(rpc.dispatch(('drv', 'part', 'hash'), ('op',)"
-nl|'\n'
-comment|'#                ).status_int, 400)'
-nl|'\n'
-comment|'#        rpc.mount_check = True'
-nl|'\n'
-comment|"#        self.assertEquals(rpc.dispatch(('drv', 'part', 'hash'), ['op',]"
-nl|'\n'
-comment|'#                ).status_int, 507)'
-nl|'\n'
-comment|'#        rpc.mount_check = False'
-nl|'\n'
-comment|'#        rpc.rsync_then_merge = lambda drive, db_file,'
-nl|'\n'
-comment|"#                                      args: self.assertEquals(args, ['test1'])"
-nl|'\n'
-comment|'#        rpc.complete_rsync = lambda drive, db_file,'
-nl|'\n'
-comment|"#                                      args: self.assertEquals(args, ['test2'])"
-nl|'\n'
-comment|"#        rpc.dispatch(('drv', 'part', 'hash'), ['rsync_then_merge','test1'])"
-nl|'\n'
-comment|"#        rpc.dispatch(('drv', 'part', 'hash'), ['complete_rsync','test2'])"
-nl|'\n'
-comment|"#        rpc.dispatch(('drv', 'part', 'hash'), ['other_op',])"
-nl|'\n'
-nl|'\n'
 DECL|member|test_dispatch_no_arg_pop
 dedent|''
 name|'def'

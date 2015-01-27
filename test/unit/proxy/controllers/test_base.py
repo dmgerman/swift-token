@@ -5076,6 +5076,11 @@ nl|'\n'
 string|"'x-base-meta-size'"
 op|':'
 string|"'151M'"
+op|','
+nl|'\n'
+string|"'connection'"
+op|':'
+string|"'close'"
 op|'}'
 newline|'\n'
 name|'for'

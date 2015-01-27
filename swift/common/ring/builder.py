@@ -660,8 +660,6 @@ op|'.'
 name|'get'
 op|'('
 string|"'dispersion'"
-op|','
-number|'0.0'
 op|')'
 newline|'\n'
 name|'self'

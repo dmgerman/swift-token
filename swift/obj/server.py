@@ -288,6 +288,12 @@ indent|'    '
 string|'"""Implements the WSGI application for the Swift Object Server."""'
 newline|'\n'
 nl|'\n'
+DECL|variable|server_type
+name|'server_type'
+op|'='
+string|"'object-server'"
+newline|'\n'
+nl|'\n'
 DECL|member|__init__
 name|'def'
 name|'__init__'

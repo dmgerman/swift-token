@@ -225,6 +225,12 @@ indent|'    '
 string|'"""WSGI controller for the account server."""'
 newline|'\n'
 nl|'\n'
+DECL|variable|server_type
+name|'server_type'
+op|'='
+string|"'account-server'"
+newline|'\n'
+nl|'\n'
 DECL|member|__init__
 name|'def'
 name|'__init__'

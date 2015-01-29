@@ -476,6 +476,11 @@ op|','
 string|"'x-container-sync-to'"
 op|']'
 newline|'\n'
+DECL|variable|server_type
+name|'server_type'
+op|'='
+string|"'container-server'"
+newline|'\n'
 nl|'\n'
 DECL|member|__init__
 name|'def'

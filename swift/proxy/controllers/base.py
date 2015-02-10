@@ -934,6 +934,11 @@ nl|'\n'
 string|"'meta'"
 op|':'
 name|'meta'
+op|','
+nl|'\n'
+string|"'sysmeta'"
+op|':'
+name|'sysmeta'
 nl|'\n'
 op|'}'
 newline|'\n'

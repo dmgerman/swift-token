@@ -513,7 +513,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-name|'None'
+number|'6002'
 op|','
 nl|'\n'
 string|"'device'"
@@ -535,7 +535,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-name|'None'
+number|'6002'
 op|','
 nl|'\n'
 string|"'device'"
@@ -557,7 +557,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-name|'None'
+number|'6002'
 op|','
 nl|'\n'
 string|"'device'"

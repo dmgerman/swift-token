@@ -1339,6 +1339,8 @@ string|"'x-container-sync-key, x-container-sync-to, '"
 nl|'\n'
 string|"'x-account-meta-temp-url-key, x-account-meta-temp-url-key-2, '"
 nl|'\n'
+string|"'x-container-meta-temp-url-key, x-container-meta-temp-url-key-2, '"
+nl|'\n'
 string|"'x-account-access-control'"
 op|')'
 newline|'\n'

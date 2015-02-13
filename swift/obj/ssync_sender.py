@@ -1838,6 +1838,8 @@ op|','
 string|"'X-Timestamp: '"
 op|'+'
 name|'timestamp'
+op|'.'
+name|'internal'
 op|']'
 newline|'\n'
 name|'msg'

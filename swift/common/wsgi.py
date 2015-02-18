@@ -5314,6 +5314,10 @@ string|"'HTTP_X_PROJECT_ID'"
 op|','
 nl|'\n'
 string|"'HTTP_REFERER'"
+op|','
+string|"'swift.orig_req_method'"
+op|','
+string|"'swift.log_info'"
 op|')'
 op|':'
 newline|'\n'

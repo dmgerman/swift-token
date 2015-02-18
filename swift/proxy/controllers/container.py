@@ -241,6 +241,16 @@ name|'st'
 op|','
 nl|'\n'
 string|"'x-remove-versions-location'"
+op|','
+nl|'\n'
+string|"'x-remove-%s-sync-key'"
+op|'%'
+name|'st'
+op|','
+nl|'\n'
+string|"'x-remove-%s-sync-to'"
+op|'%'
+name|'st'
 op|']'
 newline|'\n'
 nl|'\n'

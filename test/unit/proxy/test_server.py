@@ -43071,6 +43071,11 @@ nl|'\n'
 string|"'x-container-read'"
 op|':'
 string|"'*:user'"
+op|','
+nl|'\n'
+string|"'x-remove-container-sync-key'"
+op|':'
+string|"'x'"
 op|'}'
 newline|'\n'
 name|'dst_headers'
@@ -43121,6 +43126,11 @@ nl|'\n'
 string|"'x-container-read'"
 op|':'
 string|"'*:user'"
+op|','
+nl|'\n'
+string|"'x-container-sync-key'"
+op|':'
+string|"''"
 op|'}'
 newline|'\n'
 name|'self'

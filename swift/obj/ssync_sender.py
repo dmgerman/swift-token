@@ -194,7 +194,7 @@ name|'job'
 op|'.'
 name|'get'
 op|'('
-string|"'policy_idx'"
+string|"'policy'"
 op|','
 number|'0'
 op|')'

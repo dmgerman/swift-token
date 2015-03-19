@@ -4875,7 +4875,7 @@ indent|'                '
 name|'raise'
 name|'Exception'
 op|'('
-string|"'this shouldnt be caught'"
+string|"'this shouldn\\'t be caught'"
 op|')'
 newline|'\n'
 nl|'\n'

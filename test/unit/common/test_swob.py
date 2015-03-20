@@ -10154,8 +10154,6 @@ op|'.'
 name|'match'
 op|'('
 op|'('
-string|"'\\r\\n'"
-nl|'\n'
 string|"'--[a-f0-9]{32}\\r\\n'"
 nl|'\n'
 string|"'Content-Type: text/plain\\r\\n'"
@@ -10180,7 +10178,7 @@ string|"'Content-Range: bytes '"
 nl|'\n'
 string|"'20-29/100\\r\\n\\r\\n2123456789\\r\\n'"
 nl|'\n'
-string|"'--[a-f0-9]{32}--\\r\\n'"
+string|"'--[a-f0-9]{32}--'"
 op|')'
 op|','
 name|'content'

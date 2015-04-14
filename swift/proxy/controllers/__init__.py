@@ -55,7 +55,7 @@ name|'controllers'
 op|'.'
 name|'obj'
 name|'import'
-name|'ObjectController'
+name|'ObjectControllerRouter'
 newline|'\n'
 name|'from'
 name|'swift'
@@ -97,7 +97,7 @@ nl|'\n'
 string|"'InfoController'"
 op|','
 nl|'\n'
-string|"'ObjectController'"
+string|"'ObjectControllerRouter'"
 op|','
 nl|'\n'
 op|']'

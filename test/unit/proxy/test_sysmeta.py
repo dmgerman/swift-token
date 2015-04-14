@@ -965,7 +965,7 @@ name|'self'
 op|'.'
 name|'testdir'
 op|','
-string|"'sda1'"
+string|"'sda'"
 op|','
 string|"'tmp'"
 op|')'

@@ -3178,7 +3178,8 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'unable to locate'"
+string|"'unable to locate config for auth'"
+nl|'\n'
 name|'in'
 name|'pop_stream'
 op|'('
@@ -3267,7 +3268,11 @@ name|'self'
 op|'.'
 name|'assert_'
 op|'('
-string|"'unable to locate'"
+nl|'\n'
+string|"'unable to locate config number 2 for '"
+op|'+'
+nl|'\n'
+string|"'container-auditor'"
 name|'in'
 name|'pop_stream'
 op|'('

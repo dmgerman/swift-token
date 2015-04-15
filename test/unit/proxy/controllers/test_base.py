@@ -4776,7 +4776,7 @@ name|'resp'
 op|'.'
 name|'status'
 op|','
-string|"'503 Internal Server Error'"
+string|"'503 Service Unavailable'"
 op|')'
 newline|'\n'
 nl|'\n'

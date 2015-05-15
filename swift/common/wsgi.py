@@ -5245,15 +5245,13 @@ name|'for'
 name|'name'
 name|'in'
 op|'('
-string|"'eventlet.posthooks'"
-op|','
 string|"'HTTP_USER_AGENT'"
 op|','
 string|"'HTTP_HOST'"
 op|','
-nl|'\n'
 string|"'PATH_INFO'"
 op|','
+nl|'\n'
 string|"'QUERY_STRING'"
 op|','
 string|"'REMOTE_USER'"

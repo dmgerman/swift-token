@@ -2612,6 +2612,14 @@ string|"'multipart-manifest'"
 op|')'
 op|'!='
 string|"'get'"
+nl|'\n'
+name|'and'
+string|"'swift.post_as_copy'"
+name|'not'
+name|'in'
+name|'source_req'
+op|'.'
+name|'environ'
 op|')'
 op|':'
 newline|'\n'

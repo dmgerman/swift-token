@@ -34164,7 +34164,7 @@ name|'Request'
 op|'.'
 name|'blank'
 op|'('
-string|"'/sda1/p/other/suff'"
+string|"'/sda1/0'"
 op|','
 nl|'\n'
 name|'environ'

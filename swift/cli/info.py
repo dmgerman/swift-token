@@ -2254,7 +2254,7 @@ op|':'
 newline|'\n'
 indent|'                '
 name|'print'
-string|"'Attention: Ring does not match policy!'"
+string|"'Warning: Ring does not match policy!'"
 newline|'\n'
 name|'print'
 string|"'Double check your policy name!'"
@@ -2712,7 +2712,7 @@ op|':'
 newline|'\n'
 indent|'                '
 name|'print'
-string|"'Attention! mismatch between ring and policy detected!'"
+string|"'Warning: mismatch between ring and policy name!'"
 newline|'\n'
 dedent|''
 dedent|''
@@ -2721,7 +2721,7 @@ op|':'
 newline|'\n'
 indent|'            '
 name|'print'
-string|"'Attention! Policy %s is not valid'"
+string|"'Warning: Policy %s is not valid'"
 op|'%'
 name|'policy_name'
 newline|'\n'
@@ -3048,7 +3048,9 @@ op|':'
 newline|'\n'
 indent|'                '
 name|'print'
-string|"'Attention! mismatch between ring and item detected!'"
+string|"'Warning: account/container specified '"
+op|'+'
+string|'\'but ring not named "container"\''
 newline|'\n'
 dedent|''
 dedent|''
@@ -3105,7 +3107,9 @@ op|':'
 newline|'\n'
 indent|'                '
 name|'print'
-string|"'Attention! mismatch between ring and item detected!'"
+string|"'Warning: account specified '"
+op|'+'
+string|'\'but ring not named "account"\''
 newline|'\n'
 nl|'\n'
 dedent|''

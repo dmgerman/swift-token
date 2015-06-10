@@ -3081,7 +3081,7 @@ newline|'\n'
 dedent|''
 name|'ring_alert_msg'
 op|'='
-string|"'Attention: Ring does not match policy'"
+string|"'Warning: Ring does not match policy!'"
 newline|'\n'
 name|'self'
 op|'.'

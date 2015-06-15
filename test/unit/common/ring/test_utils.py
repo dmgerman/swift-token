@@ -534,7 +534,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|')'
 op|','
 nl|'\n'
@@ -543,7 +543,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|','
 number|'0'
 op|')'
@@ -655,7 +655,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.2:6000'"
+string|"'192.168.1.2'"
 op|')'
 op|','
 nl|'\n'
@@ -664,7 +664,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|')'
 op|']'
 op|')'
@@ -692,7 +692,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.2:6000'"
+string|"'192.168.2.2'"
 op|')'
 op|','
 nl|'\n'
@@ -701,7 +701,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.1:6000'"
+string|"'192.168.2.1'"
 op|')'
 op|']'
 op|')'
@@ -718,7 +718,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|')'
 op|']'
 op|','
@@ -731,7 +731,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|','
 number|'0'
 op|')'
@@ -742,7 +742,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|','
 number|'1'
 op|')'
@@ -753,7 +753,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.1:6000'"
+string|"'192.168.1.1'"
 op|','
 number|'2'
 op|')'
@@ -772,7 +772,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.2:6000'"
+string|"'192.168.1.2'"
 op|')'
 op|']'
 op|','
@@ -785,7 +785,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.2:6000'"
+string|"'192.168.1.2'"
 op|','
 number|'3'
 op|')'
@@ -796,7 +796,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.2:6000'"
+string|"'192.168.1.2'"
 op|','
 number|'4'
 op|')'
@@ -807,7 +807,7 @@ number|'1'
 op|','
 number|'1'
 op|','
-string|"'192.168.1.2:6000'"
+string|"'192.168.1.2'"
 op|','
 number|'5'
 op|')'
@@ -826,7 +826,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.1:6000'"
+string|"'192.168.2.1'"
 op|')'
 op|']'
 op|','
@@ -839,7 +839,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.1:6000'"
+string|"'192.168.2.1'"
 op|','
 number|'6'
 op|')'
@@ -850,7 +850,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.1:6000'"
+string|"'192.168.2.1'"
 op|','
 number|'7'
 op|')'
@@ -861,7 +861,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.1:6000'"
+string|"'192.168.2.1'"
 op|','
 number|'8'
 op|')'
@@ -880,7 +880,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.2:6000'"
+string|"'192.168.2.2'"
 op|')'
 op|']'
 op|','
@@ -893,7 +893,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.2:6000'"
+string|"'192.168.2.2'"
 op|','
 number|'9'
 op|')'
@@ -904,7 +904,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.2:6000'"
+string|"'192.168.2.2'"
 op|','
 number|'10'
 op|')'
@@ -915,7 +915,7 @@ number|'1'
 op|','
 number|'2'
 op|','
-string|"'192.168.2.2:6000'"
+string|"'192.168.2.2'"
 op|','
 number|'11'
 op|')'
@@ -4352,7 +4352,7 @@ op|','
 nl|'\n'
 string|"'ip'"
 op|':'
-string|"'127.0.0.1'"
+string|"'127.0.0.0'"
 op|','
 string|"'port'"
 op|':'
@@ -4424,7 +4424,7 @@ op|','
 nl|'\n'
 string|"'ip'"
 op|':'
-string|"'127.0.0.1'"
+string|"'127.0.0.2'"
 op|','
 string|"'port'"
 op|':'
@@ -4489,82 +4489,6 @@ number|'39.84375'
 op|')'
 newline|'\n'
 nl|'\n'
-comment|'# Each node should store 256 partitions to avoid multiple replicas'
-nl|'\n'
-comment|'# 2/5 of total weight * 768 ~= 307 -> 51 partitions on each node in'
-nl|'\n'
-comment|'# zone 1 are stored at least twice on the nodes'
-nl|'\n'
-name|'expected'
-op|'='
-op|'['
-nl|'\n'
-op|'['
-string|"'r1z1'"
-op|','
-number|'2'
-op|','
-string|"'0'"
-op|','
-string|"'154'"
-op|','
-string|"'102'"
-op|']'
-op|','
-nl|'\n'
-op|'['
-string|"'r1z1-127.0.0.1:10001'"
-op|','
-number|'1'
-op|','
-string|"'205'"
-op|','
-string|"'51'"
-op|','
-string|"'0'"
-op|']'
-op|','
-nl|'\n'
-op|'['
-string|"'r1z1-127.0.0.1:10001/sda1'"
-op|','
-number|'1'
-op|','
-string|"'205'"
-op|','
-string|"'51'"
-op|','
-string|"'0'"
-op|']'
-op|','
-nl|'\n'
-op|'['
-string|"'r1z1-127.0.0.1:10002'"
-op|','
-number|'1'
-op|','
-string|"'205'"
-op|','
-string|"'51'"
-op|','
-string|"'0'"
-op|']'
-op|','
-nl|'\n'
-op|'['
-string|"'r1z1-127.0.0.1:10002/sda1'"
-op|','
-number|'1'
-op|','
-string|"'205'"
-op|','
-string|"'51'"
-op|','
-string|"'0'"
-op|']'
-op|']'
-newline|'\n'
-nl|'\n'
 DECL|function|build_tier_report
 name|'def'
 name|'build_tier_report'
@@ -4606,6 +4530,13 @@ op|','
 nl|'\n'
 op|'}'
 newline|'\n'
+nl|'\n'
+comment|'# Each node should store 256 partitions to avoid multiple replicas'
+nl|'\n'
+comment|'# 2/5 of total weight * 768 ~= 307 -> 51 partitions on each node in'
+nl|'\n'
+comment|'# zone 1 are stored at least twice on the nodes'
+nl|'\n'
 dedent|''
 name|'expected'
 op|'='
@@ -4637,7 +4568,7 @@ op|']'
 op|','
 nl|'\n'
 op|'['
-string|"'r1z1-127.0.0.1:10001'"
+string|"'r1z1-127.0.0.1'"
 op|','
 name|'build_tier_report'
 op|'('
@@ -4662,7 +4593,7 @@ op|']'
 op|','
 nl|'\n'
 op|'['
-string|"'r1z1-127.0.0.1:10001/sda1'"
+string|"'r1z1-127.0.0.1/sda1'"
 op|','
 name|'build_tier_report'
 op|'('
@@ -4687,7 +4618,7 @@ op|']'
 op|','
 nl|'\n'
 op|'['
-string|"'r1z1-127.0.0.1:10002'"
+string|"'r1z1-127.0.0.2'"
 op|','
 name|'build_tier_report'
 op|'('
@@ -4712,7 +4643,7 @@ op|']'
 op|','
 nl|'\n'
 op|'['
-string|"'r1z1-127.0.0.1:10002/sda1'"
+string|"'r1z1-127.0.0.2/sda1'"
 op|','
 name|'build_tier_report'
 op|'('
@@ -4890,7 +4821,7 @@ op|'['
 string|"'worst_tier'"
 op|']'
 op|','
-string|"'r1z0-127.0.0.1:10003'"
+string|"'r1z0-127.0.0.1'"
 op|')'
 newline|'\n'
 name|'self'

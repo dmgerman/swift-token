@@ -5026,7 +5026,10 @@ nl|'\n'
 string|"'port'"
 op|':'
 number|'1234'
+op|'+'
+name|'device'
 op|','
+nl|'\n'
 string|"'zone'"
 op|':'
 name|'zone'

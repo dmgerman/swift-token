@@ -678,6 +678,8 @@ op|'.'
 name|'get'
 op|'('
 string|"'frag_index'"
+op|','
+string|"''"
 op|')'
 op|')'
 op|')'
@@ -700,6 +702,8 @@ op|'.'
 name|'get'
 op|'('
 string|"'index'"
+op|','
+string|"''"
 op|')'
 op|')'
 newline|'\n'

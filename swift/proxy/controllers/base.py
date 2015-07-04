@@ -8658,8 +8658,13 @@ op|'.'
 name|'get'
 op|'('
 string|"'allow_origin'"
-op|','
-string|"''"
+op|')'
+name|'and'
+name|'cors'
+op|'.'
+name|'get'
+op|'('
+string|"'allow_origin'"
 op|')'
 op|'.'
 name|'strip'

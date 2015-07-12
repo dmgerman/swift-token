@@ -4481,7 +4481,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 name|'as'
 name|'mock_print'
@@ -4515,7 +4515,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 name|'as'
 name|'mock_print'
@@ -4592,7 +4592,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 name|'as'
 name|'mock_print'
@@ -4670,7 +4670,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 newline|'\n'
 op|'@'
@@ -5032,7 +5032,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 newline|'\n'
 op|'@'
@@ -5263,7 +5263,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 newline|'\n'
 op|'@'
@@ -5428,7 +5428,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.print'"
+string|"'six.moves.builtins.print'"
 op|')'
 newline|'\n'
 op|'@'

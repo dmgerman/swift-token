@@ -987,7 +987,7 @@ newline|'\n'
 indent|'                '
 name|'self'
 op|'.'
-name|'assert_'
+name|'assertTrue'
 op|'('
 string|"'no such column: storage_policy_index'"
 name|'in'

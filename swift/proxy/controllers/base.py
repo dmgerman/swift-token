@@ -5159,7 +5159,7 @@ name|'bodies'
 op|'.'
 name|'append'
 op|'('
-string|"''"
+name|'None'
 op|')'
 newline|'\n'
 name|'self'

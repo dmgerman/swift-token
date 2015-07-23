@@ -4099,7 +4099,7 @@ op|')'
 newline|'\n'
 name|'self'
 op|'.'
-name|'assert_'
+name|'assertTrue'
 op|'('
 string|"'fake_app'"
 op|'=='

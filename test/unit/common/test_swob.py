@@ -52,7 +52,7 @@ nl|'\n'
 name|'from'
 name|'six'
 name|'import'
-name|'StringIO'
+name|'BytesIO'
 newline|'\n'
 nl|'\n'
 name|'import'
@@ -4028,9 +4028,9 @@ op|','
 nl|'\n'
 string|"'wsgi.input'"
 op|':'
-name|'StringIO'
+name|'BytesIO'
 op|'('
-string|"''"
+string|"b''"
 op|')'
 op|'}'
 op|','
@@ -4097,9 +4097,9 @@ op|')'
 newline|'\n'
 name|'body_file'
 op|'='
-name|'StringIO'
+name|'BytesIO'
 op|'('
-string|"'asdf'"
+string|"b'asdf'"
 op|')'
 newline|'\n'
 name|'req'
@@ -4127,9 +4127,9 @@ op|','
 nl|'\n'
 string|"'wsgi.input'"
 op|':'
-name|'StringIO'
+name|'BytesIO'
 op|'('
-string|"''"
+string|"b''"
 op|')'
 op|'}'
 op|','
@@ -4188,9 +4188,9 @@ op|','
 nl|'\n'
 string|"'wsgi.input'"
 op|':'
-name|'StringIO'
+name|'BytesIO'
 op|'('
-string|"''"
+string|"b''"
 op|')'
 op|'}'
 op|','

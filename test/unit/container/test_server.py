@@ -8376,10 +8376,10 @@ string|"'/sda1/p/a/%s'"
 op|'%'
 name|'container_name'
 op|','
+nl|'\n'
 name|'environ'
 op|'='
 op|'{'
-nl|'\n'
 string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"

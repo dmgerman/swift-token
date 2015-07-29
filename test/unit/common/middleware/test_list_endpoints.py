@@ -852,6 +852,7 @@ op|':'
 name|'None'
 op|'}'
 op|','
+nl|'\n'
 string|"'sysmeta'"
 op|':'
 op|'{'

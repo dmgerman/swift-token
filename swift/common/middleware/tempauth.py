@@ -2487,7 +2487,7 @@ op|'=='
 string|"'OPTIONS'"
 op|':'
 newline|'\n'
-comment|'#allow OPTIONS requests to proceed as normal'
+comment|'# allow OPTIONS requests to proceed as normal'
 nl|'\n'
 indent|'            '
 name|'self'

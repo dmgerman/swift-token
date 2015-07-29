@@ -1,7 +1,7 @@
 begin_unit
 comment|'#!/usr/bin/env python'
 nl|'\n'
-comment|'#-*- coding:utf-8 -*-'
+comment|'# coding: utf-8'
 nl|'\n'
 comment|'# Copyright (c) 2013 OpenStack Foundation'
 nl|'\n'

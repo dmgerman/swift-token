@@ -3602,8 +3602,8 @@ nl|'\n'
 string|"' re: %(info)s'"
 op|')'
 op|','
-op|'{'
 nl|'\n'
+op|'{'
 string|"'type'"
 op|':'
 name|'typ'
@@ -3615,9 +3615,9 @@ op|'['
 string|"'ip'"
 op|']'
 op|','
+nl|'\n'
 string|"'port'"
 op|':'
-nl|'\n'
 name|'node'
 op|'['
 string|"'port'"
@@ -3634,9 +3634,9 @@ nl|'\n'
 string|"'info'"
 op|':'
 name|'additional_info'
-nl|'\n'
 op|'}'
 op|','
+nl|'\n'
 op|'**'
 name|'kwargs'
 op|')'

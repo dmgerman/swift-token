@@ -2594,6 +2594,7 @@ op|'('
 nl|'\n'
 string|"'/sda1/p/a/c'"
 op|','
+nl|'\n'
 name|'environ'
 op|'='
 op|'{'
@@ -2601,7 +2602,6 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
-nl|'\n'
 string|"'HTTP_X_TIMESTAMP'"
 op|':'
 string|"'1'"
@@ -2639,6 +2639,7 @@ op|'('
 nl|'\n'
 string|"'/sda1/p/a/c'"
 op|','
+nl|'\n'
 name|'environ'
 op|'='
 op|'{'
@@ -2646,7 +2647,6 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
-nl|'\n'
 string|"'HTTP_X_TIMESTAMP'"
 op|':'
 string|"'2'"
@@ -2886,6 +2886,7 @@ op|'('
 nl|'\n'
 string|"'/sda1/p/a/c'"
 op|','
+nl|'\n'
 name|'environ'
 op|'='
 op|'{'
@@ -2893,7 +2894,6 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
-nl|'\n'
 string|"'HTTP_X_TIMESTAMP'"
 op|':'
 string|"'1'"
@@ -2940,6 +2940,7 @@ op|'('
 nl|'\n'
 string|"'/sda1/p/a/c'"
 op|','
+nl|'\n'
 name|'environ'
 op|'='
 op|'{'
@@ -2947,7 +2948,6 @@ string|"'REQUEST_METHOD'"
 op|':'
 string|"'PUT'"
 op|','
-nl|'\n'
 string|"'HTTP_X_TIMESTAMP'"
 op|':'
 string|"'1'"

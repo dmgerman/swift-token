@@ -1,5 +1,5 @@
 begin_unit
-comment|'#-*- coding:utf-8 -*-'
+comment|'# coding: utf-8'
 nl|'\n'
 comment|'# Copyright (c) 2013 OpenStack Foundation'
 nl|'\n'

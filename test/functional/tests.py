@@ -11102,7 +11102,7 @@ name|'self'
 op|')'
 op|':'
 newline|'\n'
-comment|'#Skip this test until webob 1.2 can tolerate LWS in Range header.'
+comment|'# Skip this test until webob 1.2 can tolerate LWS in Range header.'
 nl|'\n'
 indent|'        '
 name|'file_length'
@@ -11702,9 +11702,9 @@ newline|'\n'
 nl|'\n'
 comment|'# bad request types'
 nl|'\n'
-comment|"#for req in ('LICK', 'GETorHEAD_base', 'container_info',"
+comment|"# for req in ('LICK', 'GETorHEAD_base', 'container_info',"
 nl|'\n'
-comment|"#            'best_response'):"
+comment|"#             'best_response'):"
 nl|'\n'
 name|'for'
 name|'req'

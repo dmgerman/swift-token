@@ -740,7 +740,7 @@ op|'.'
 name|'frag_index'
 op|':'
 newline|'\n'
-comment|"# a primary node should only recieve it's own fragments"
+comment|"# a primary node should only receive it's own fragments"
 nl|'\n'
 indent|'                '
 name|'raise'

@@ -48,6 +48,15 @@ name|'import'
 name|'errno'
 newline|'\n'
 name|'from'
+name|'swift'
+op|'.'
+name|'common'
+op|'.'
+name|'utils'
+name|'import'
+name|'Timestamp'
+newline|'\n'
+name|'from'
 name|'test'
 op|'.'
 name|'unit'
@@ -5551,6 +5560,13 @@ name|'uuid'
 op|'='
 name|'FakeUUID'
 newline|'\n'
+name|'ts_data'
+op|'='
+name|'Timestamp'
+op|'('
+number|'1.1'
+op|')'
+newline|'\n'
 nl|'\n'
 DECL|function|fake_delete_object
 name|'def'
@@ -5616,12 +5632,14 @@ nl|'\n'
 string|"'x-container-sync-auth'"
 op|':'
 nl|'\n'
-string|"'US abcdef 90e95aabb45a6cdc0892a3db5535e7f918428c90'"
+string|"'US abcdef a2401ecb1256f469494a0abcb0eb62ffa73eca63'"
 op|','
 nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'ts_data'
+op|'.'
+name|'internal'
 op|'}'
 op|')'
 newline|'\n'
@@ -5643,9 +5661,12 @@ string|"'x-container-sync-key'"
 op|':'
 string|"'key'"
 op|','
+nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'ts_data'
+op|'.'
+name|'internal'
 op|'}'
 op|')'
 newline|'\n'
@@ -5730,8 +5751,19 @@ op|'['
 string|"'http://proxy'"
 op|']'
 newline|'\n'
-comment|'# Success'
+comment|'# Success.'
 nl|'\n'
+comment|'# simulate a row with tombstone at 1.1 and later ctype, meta times'
+nl|'\n'
+name|'created_at'
+op|'='
+name|'ts_data'
+op|'.'
+name|'internal'
+op|'+'
+string|"'+1388+1388'"
+comment|'# last modified = 1.2'
+newline|'\n'
 name|'self'
 op|'.'
 name|'assertTrue'
@@ -5754,7 +5786,7 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'created_at'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -6358,6 +6390,20 @@ name|'x'
 op|':'
 name|'x'
 newline|'\n'
+name|'ts_data'
+op|'='
+name|'Timestamp'
+op|'('
+number|'1.1'
+op|')'
+newline|'\n'
+name|'timestamp'
+op|'='
+name|'Timestamp'
+op|'('
+number|'1.2'
+op|')'
+newline|'\n'
 nl|'\n'
 DECL|function|fake_put_object
 name|'def'
@@ -6428,12 +6474,14 @@ nl|'\n'
 string|"'x-container-sync-auth'"
 op|':'
 nl|'\n'
-string|"'US abcdef ef62c64bb88a33fa00722daa23d5d43253164962'"
+string|"'US abcdef a5fb3cf950738e6e3b364190e246bd7dd21dad3c'"
 op|','
 nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|','
 nl|'\n'
 string|"'etag'"
@@ -6472,7 +6520,9 @@ op|','
 nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|','
 nl|'\n'
 string|"'other-header'"
@@ -6635,9 +6685,12 @@ string|"'etag'"
 op|':'
 string|'\'"etagvalue"\''
 op|','
+nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|','
 nl|'\n'
 string|"'content-type'"
@@ -6662,8 +6715,19 @@ name|'get_object'
 op|'='
 name|'fake_get_object'
 newline|'\n'
-comment|'# Success as everything says it worked'
+comment|'# Success as everything says it worked.'
 nl|'\n'
+comment|'# simulate a row with data at 1.1 and later ctype, meta times'
+nl|'\n'
+name|'created_at'
+op|'='
+name|'ts_data'
+op|'.'
+name|'internal'
+op|'+'
+string|"'+1388+1388'"
+comment|'# last modified = 1.2'
+newline|'\n'
 name|'self'
 op|'.'
 name|'assertTrue'
@@ -6686,7 +6750,7 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'created_at'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -6797,7 +6861,9 @@ op|','
 nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|','
 nl|'\n'
 string|"'other-header'"
@@ -6860,7 +6926,9 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -7089,7 +7157,9 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -7264,7 +7334,9 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -7393,8 +7465,11 @@ op|','
 nl|'\n'
 string|"'x-timestamp'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|','
+nl|'\n'
 string|"'etag'"
 op|':'
 string|'\'"etagvalue"\''
@@ -7472,7 +7547,9 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -7583,7 +7660,9 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|'}'
 op|','
 string|"'http://sync/to/path'"
@@ -7696,7 +7775,9 @@ op|','
 nl|'\n'
 string|"'created_at'"
 op|':'
-string|"'1.2'"
+name|'timestamp'
+op|'.'
+name|'internal'
 op|'}'
 op|','
 string|"'http://sync/to/path'"

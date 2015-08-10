@@ -23048,6 +23048,11 @@ op|'{'
 string|"'X-Object-Meta-Color'"
 op|':'
 string|"'Blue'"
+op|','
+nl|'\n'
+string|"'Content-Type'"
+op|':'
+string|"'text/plain'"
 op|'}'
 op|')'
 newline|'\n'
@@ -23481,6 +23486,11 @@ op|'{'
 string|"'X-Object-Meta-Color'"
 op|':'
 string|"'Blue'"
+op|','
+nl|'\n'
+string|"'Content-Type'"
+op|':'
+string|"'text/plain'"
 op|','
 nl|'\n'
 string|"'X-Backend-Storage-Policy-Index'"

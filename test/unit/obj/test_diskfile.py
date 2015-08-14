@@ -27553,10 +27553,10 @@ op|']'
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_purge_non_existant_fragment_index
+DECL|member|test_purge_non_existent_fragment_index
 dedent|''
 name|'def'
-name|'test_purge_non_existant_fragment_index'
+name|'test_purge_non_existent_fragment_index'
 op|'('
 name|'self'
 op|')'

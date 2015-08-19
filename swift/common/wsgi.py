@@ -5286,6 +5286,10 @@ string|"'swift.authorize_override'"
 op|','
 nl|'\n'
 string|"'swift.authorize'"
+op|','
+string|"'HTTP_X_USER_ID'"
+op|','
+string|"'HTTP_X_PROJECT_ID'"
 op|')'
 op|':'
 newline|'\n'

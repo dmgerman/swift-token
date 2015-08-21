@@ -3112,8 +3112,15 @@ op|']'
 op|'}'
 newline|'\n'
 nl|'\n'
-DECL|member|get_lines_for_level
+DECL|variable|clear
 dedent|''
+name|'clear'
+op|'='
+name|'_clear'
+comment|'# this is a public interface'
+newline|'\n'
+nl|'\n'
+DECL|member|get_lines_for_level
 name|'def'
 name|'get_lines_for_level'
 op|'('

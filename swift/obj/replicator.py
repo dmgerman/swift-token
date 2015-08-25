@@ -784,11 +784,13 @@ name|'logger'
 op|'.'
 name|'warn'
 op|'('
-string|"'handoffs_first and handoff_delete should be'"
+string|"'Handoff only mode is not intended for normal '"
 nl|'\n'
-string|"' changed back to the default before the next'"
+string|"'operation, please disable handoffs_first and '"
 nl|'\n'
-string|"' normal rebalance'"
+string|"'handoff_delete before the next '"
+nl|'\n'
+string|"'normal rebalance'"
 op|')'
 newline|'\n'
 dedent|''

@@ -117,7 +117,7 @@ string|"'-'"
 op|'+'
 name|'string'
 op|'.'
-name|'letters'
+name|'ascii_letters'
 op|'+'
 name|'string'
 op|'.'

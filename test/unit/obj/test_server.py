@@ -24763,11 +24763,6 @@ op|'.'
 name|'internal'
 op|','
 nl|'\n'
-string|"'X-Backend-Storage-Policy-Index'"
-op|':'
-string|"'37'"
-op|','
-nl|'\n'
 string|"'referer'"
 op|':'
 string|"'PUT http://localhost/sda1/p/a/c/o'"

@@ -4268,7 +4268,7 @@ op|','
 nl|'\n'
 string|"'size_bytes'"
 op|':'
-number|'1'
+name|'None'
 op|','
 string|"'range'"
 op|':'

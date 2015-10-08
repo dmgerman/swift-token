@@ -26413,7 +26413,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.open'"
+string|"'six.moves.builtins.open'"
 op|','
 name|'mock_open'
 op|')'
@@ -26765,7 +26765,7 @@ name|'mock'
 op|'.'
 name|'patch'
 op|'('
-string|"'__builtin__.open'"
+string|"'six.moves.builtins.open'"
 op|','
 name|'mock_open'
 op|')'

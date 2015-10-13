@@ -449,7 +449,7 @@ op|','
 nl|'\n'
 string|"'node_timeout'"
 op|':'
-string|"'5'"
+string|"'5.'"
 op|','
 nl|'\n'
 op|'}'
@@ -522,7 +522,7 @@ name|'cu'
 op|'.'
 name|'node_timeout'
 op|','
-number|'5'
+number|'5.'
 op|')'
 newline|'\n'
 name|'self'

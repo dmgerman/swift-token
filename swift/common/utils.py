@@ -1066,7 +1066,7 @@ newline|'\n'
 dedent|''
 name|'last_row'
 op|'='
-string|"''"
+string|"b''"
 newline|'\n'
 name|'while'
 name|'f'
@@ -1149,7 +1149,7 @@ name|'block'
 op|'.'
 name|'split'
 op|'('
-string|"'\\n'"
+string|"b'\\n'"
 op|')'
 newline|'\n'
 name|'rows'

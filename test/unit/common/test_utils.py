@@ -6488,43 +6488,42 @@ newline|'\n'
 name|'lines'
 op|'='
 op|'['
-string|"'123456789x12345678><123456789\\n'"
+string|"b'123456789x12345678><123456789\\n'"
 op|','
 comment|'# block larger than rest'
 nl|'\n'
-string|"'123456789x123>\\n'"
+string|"b'123456789x123>\\n'"
 op|','
 comment|'# block ends just before \\n character'
 nl|'\n'
-string|"'123423456789\\n'"
+string|"b'123423456789\\n'"
 op|','
 nl|'\n'
-string|"'123456789x\\n'"
+string|"b'123456789x\\n'"
 op|','
 comment|'# block ends at the end of line'
 nl|'\n'
-string|"'<123456789x123456789x123\\n'"
+string|"b'<123456789x123456789x123\\n'"
 op|','
 nl|'\n'
-string|"'<6789x123\\n'"
+string|"b'<6789x123\\n'"
 op|','
 comment|'# block ends at the beginning of the line'
 nl|'\n'
-string|"'6789x1234\\n'"
+string|"b'6789x1234\\n'"
 op|','
 nl|'\n'
-string|"'1234><234\\n'"
+string|"b'1234><234\\n'"
 op|','
 comment|'# block ends typically in the middle of line'
 nl|'\n'
-string|"'123456789x123456789\\n'"
+string|"b'123456789x123456789\\n'"
 op|']'
 newline|'\n'
 nl|'\n'
 name|'with'
 name|'TemporaryFile'
 op|'('
-string|"'r+w'"
 op|')'
 name|'as'
 name|'f'
@@ -6583,7 +6582,7 @@ op|']'
 op|'.'
 name|'split'
 op|'('
-string|"'\\n'"
+string|"b'\\n'"
 op|')'
 op|'['
 number|'0'

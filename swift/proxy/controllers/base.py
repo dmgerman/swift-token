@@ -6691,7 +6691,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'        '
-string|'"""\n        Create a list of headers to be used in backend requets\n\n        :param orig_req: the original request sent by the client to the proxy\n        :param additional: additional headers to send to the backend\n        :param transfer: If True, transfer headers from original client request\n        :returns: a dictionary of headers\n        """'
+string|'"""\n        Create a list of headers to be used in backend requests\n\n        :param orig_req: the original request sent by the client to the proxy\n        :param additional: additional headers to send to the backend\n        :param transfer: If True, transfer headers from original client request\n        :returns: a dictionary of headers\n        """'
 newline|'\n'
 comment|"# Use the additional headers first so they don't overwrite the headers"
 nl|'\n'

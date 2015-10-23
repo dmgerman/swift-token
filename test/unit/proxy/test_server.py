@@ -237,6 +237,8 @@ name|'write_fake_ring'
 op|','
 nl|'\n'
 name|'mocked_http_conn'
+op|','
+name|'DEFAULT_TEST_EC_TYPE'
 op|')'
 newline|'\n'
 name|'from'
@@ -942,7 +944,7 @@ string|"'ec'"
 op|','
 name|'ec_type'
 op|'='
-string|"'jerasure_rs_vand'"
+name|'DEFAULT_TEST_EC_TYPE'
 op|','
 nl|'\n'
 name|'ec_ndata'
@@ -13538,7 +13540,9 @@ string|"'x-object-sysmeta-ec-scheme'"
 op|']'
 op|','
 nl|'\n'
-string|"'jerasure_rs_vand 2+1'"
+string|"'%s 2+1'"
+op|'%'
+name|'DEFAULT_TEST_EC_TYPE'
 op|')'
 newline|'\n'
 name|'self'

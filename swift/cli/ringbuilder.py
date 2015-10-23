@@ -2697,7 +2697,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'        '
-string|'"""\nswift-ring-builder <builder_file>\n    Shows information about the ring and the devices within.\n        """'
+string|'"""\nswift-ring-builder <builder_file>\n    Shows information about the ring and the devices within.\n    Flags:\n        DEL - marked for removal and will be removed next rebalance.\n        """'
 newline|'\n'
 name|'print'
 op|'('
@@ -2914,7 +2914,7 @@ string|"'Devices:    id  region  zone      ip address  port  '"
 nl|'\n'
 string|"'replication ip  replication port      name '"
 nl|'\n'
-string|"'weight partitions balance meta'"
+string|"'weight partitions balance flags meta'"
 op|')'
 newline|'\n'
 name|'weighted_parts'
@@ -3022,11 +3022,23 @@ op|'-'
 number|'100.0'
 newline|'\n'
 dedent|''
+name|'flags'
+op|'='
+string|"'DEL'"
+name|'if'
+name|'dev'
+name|'in'
+name|'builder'
+op|'.'
+name|'_remove_devs'
+name|'else'
+string|"''"
+newline|'\n'
 name|'print'
 op|'('
 string|"'         %5d %7d %5d %15s %5d %15s %17d %9s %6.02f '"
 nl|'\n'
-string|"'%10s %7.02f %s'"
+string|"'%10s %7.02f %5s %s'"
 op|'%'
 nl|'\n'
 op|'('
@@ -3084,6 +3096,8 @@ string|"'parts'"
 op|']'
 op|','
 name|'balance'
+op|','
+name|'flags'
 op|','
 name|'dev'
 op|'['

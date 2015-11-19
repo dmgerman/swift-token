@@ -2570,8 +2570,6 @@ op|':'
 number|'10'
 op|','
 nl|'\n'
-comment|'# simplejson sometimes hands back strings, sometimes unicodes'
-nl|'\n'
 string|"'versions'"
 op|':'
 string|'u"\\u1F4A9"'

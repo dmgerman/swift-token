@@ -10371,7 +10371,7 @@ name|'resp'
 op|'.'
 name|'content_type'
 op|'='
-string|"'text/plain'"
+string|"'text/plain; charset=utf8'"
 newline|'\n'
 name|'content'
 op|'='
@@ -10406,7 +10406,7 @@ op|'('
 op|'('
 string|"'--[a-f0-9]{32}\\r\\n'"
 nl|'\n'
-string|"'Content-Type: text/plain\\r\\n'"
+string|"'Content-Type: text/plain; charset=utf8\\r\\n'"
 nl|'\n'
 string|"'Content-Range: bytes '"
 nl|'\n'
@@ -10414,7 +10414,7 @@ string|"'0-9/100\\r\\n\\r\\n0123456789\\r\\n'"
 nl|'\n'
 string|"'--[a-f0-9]{32}\\r\\n'"
 nl|'\n'
-string|"'Content-Type: text/plain\\r\\n'"
+string|"'Content-Type: text/plain; charset=utf8\\r\\n'"
 nl|'\n'
 string|"'Content-Range: bytes '"
 nl|'\n'
@@ -10422,7 +10422,7 @@ string|"'10-19/100\\r\\n\\r\\n1123456789\\r\\n'"
 nl|'\n'
 string|"'--[a-f0-9]{32}\\r\\n'"
 nl|'\n'
-string|"'Content-Type: text/plain\\r\\n'"
+string|"'Content-Type: text/plain; charset=utf8\\r\\n'"
 nl|'\n'
 string|"'Content-Range: bytes '"
 nl|'\n'

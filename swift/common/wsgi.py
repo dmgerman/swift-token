@@ -5300,6 +5300,9 @@ op|','
 string|"'HTTP_X_USER_ID'"
 op|','
 string|"'HTTP_X_PROJECT_ID'"
+op|','
+nl|'\n'
+string|"'HTTP_REFERER'"
 op|')'
 op|':'
 newline|'\n'

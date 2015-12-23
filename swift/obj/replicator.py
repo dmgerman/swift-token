@@ -599,15 +599,17 @@ name|'self'
 op|'.'
 name|'logger'
 op|'.'
-name|'warn'
+name|'warning'
 op|'('
-string|"'Option object-replicator/vm_test_mode is '"
+string|"'Option object-replicator/vm_test_mode '"
 nl|'\n'
-string|"'deprecated and will be removed in a future '"
+string|"'is deprecated and will be removed in a '"
 nl|'\n'
-string|"'version. Update your configuration to use '"
+string|"'future version. Update your '"
 nl|'\n'
-string|"'option object-replicator/rsync_module.'"
+string|"'configuration to use option '"
+nl|'\n'
+string|"'object-replicator/rsync_module.'"
 op|')'
 newline|'\n'
 name|'self'
@@ -841,7 +843,7 @@ name|'self'
 op|'.'
 name|'logger'
 op|'.'
-name|'warn'
+name|'warning'
 op|'('
 string|"'Handoff only mode is not intended for normal '"
 nl|'\n'
@@ -4232,8 +4234,9 @@ name|'self'
 op|'.'
 name|'logger'
 op|'.'
-name|'warn'
+name|'warning'
 op|'('
+nl|'\n'
 name|'_'
 op|'('
 string|"'%s is not mounted'"
@@ -4996,7 +4999,7 @@ name|'self'
 op|'.'
 name|'logger'
 op|'.'
-name|'warn'
+name|'warning'
 op|'('
 name|'_'
 op|'('

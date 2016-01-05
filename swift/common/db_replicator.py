@@ -1153,15 +1153,17 @@ name|'self'
 op|'.'
 name|'logger'
 op|'.'
-name|'warn'
+name|'warning'
 op|'('
-string|"'Option %(type)s-replicator/vm_test_mode is '"
+string|"'Option %(type)s-replicator/vm_test_mode '"
 nl|'\n'
-string|"'deprecated and will be removed in a future '"
+string|"'is deprecated and will be removed in a '"
 nl|'\n'
-string|"'version. Update your configuration to use '"
+string|"'future version. Update your configuration'"
 nl|'\n'
-string|"'option %(type)s-replicator/rsync_module.'"
+string|"' to use option %(type)s-replicator/'"
+nl|'\n'
+string|"'rsync_module.'"
 nl|'\n'
 op|'%'
 op|'{'

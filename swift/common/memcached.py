@@ -267,7 +267,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    Connection pool for Memcache Connections\n\n    The *server* parameter can be a hostname, an IPv4 address, or an IPv6\n    address with an optional port. If an IPv6 address is specified it **must**\n    be enclosed in [], like *[::1]* or *[::1]:11211*. This follows the accepted\n    prescription for IPv6 host literals:\n    https://tools.ietf.org/html/rfc3986#section-3.2.2.\n\n    Examples:\n\n        * memcache.local:11211\n        * 127.0.0.1:11211\n        * [::1]:11211\n        * [::1]\n    """'
+string|'"""\n    Connection pool for Memcache Connections\n\n    The *server* parameter can be a hostname, an IPv4 address, or an IPv6\n    address with an optional port. If an IPv6 address is specified it **must**\n    be enclosed in [], like *[::1]* or *[::1]:11211*. This follows the accepted\n    prescription for `IPv6 host literals`_.\n\n    Examples::\n\n        memcache.local:11211\n        127.0.0.1:11211\n        [::1]:11211\n        [::1]\n\n    .. _IPv6 host literals: https://tools.ietf.org/html/rfc3986#section-3.2.2\n    """'
 newline|'\n'
 DECL|variable|IPV6_RE
 name|'IPV6_RE'

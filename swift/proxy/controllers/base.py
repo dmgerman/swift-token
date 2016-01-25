@@ -831,13 +831,8 @@ name|'headers'
 op|'.'
 name|'get'
 op|'('
-string|"'X-Backend-Storage-Policy-Index'"
-op|'.'
-name|'lower'
-op|'('
-op|')'
+string|"'x-backend-storage-policy-index'"
 op|','
-nl|'\n'
 string|"'0'"
 op|')'
 op|','

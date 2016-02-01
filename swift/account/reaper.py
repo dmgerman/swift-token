@@ -364,7 +364,7 @@ name|'get'
 op|'('
 string|"'bind_port'"
 op|','
-number|'6002'
+number|'6202'
 op|')'
 op|')'
 newline|'\n'

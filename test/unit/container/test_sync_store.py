@@ -785,7 +785,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'            '
-string|"'%0xlength'"
+string|"'%0x'"
 op|'%'
 name|'random'
 op|'.'

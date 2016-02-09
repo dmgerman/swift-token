@@ -314,6 +314,10 @@ name|'_junk'
 op|':'
 op|'['
 nl|'\n'
+string|"'slo'"
+op|','
+string|"'dlo'"
+op|','
 string|"'staticweb'"
 op|','
 string|"'tempauth'"

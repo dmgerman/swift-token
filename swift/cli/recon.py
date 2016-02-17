@@ -1,6 +1,4 @@
 begin_unit
-comment|'#! /usr/bin/env python'
-nl|'\n'
 comment|'# Licensed under the Apache License, Version 2.0 (the "License");'
 nl|'\n'
 comment|'# you may not use this file except in compliance with the License.'
@@ -7650,21 +7648,7 @@ op|'('
 string|"'\\n'"
 op|')'
 newline|'\n'
-nl|'\n'
-nl|'\n'
 dedent|''
-dedent|''
-name|'if'
-name|'__name__'
-op|'=='
-string|"'__main__'"
-op|':'
-newline|'\n'
-indent|'    '
-name|'main'
-op|'('
-op|')'
-newline|'\n'
 dedent|''
 endmarker|''
 end_unit

@@ -1,6 +1,4 @@
 begin_unit
-comment|'#! /usr/bin/env python'
-nl|'\n'
 comment|'# Copyright (c) 2015 Samuel Merritt <sam@swiftstack.com>'
 nl|'\n'
 comment|'#'

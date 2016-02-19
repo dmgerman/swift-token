@@ -702,9 +702,9 @@ string|"'Object audit (%(type)s). '"
 nl|'\n'
 string|"'Since %(start_time)s: Locally: %(passes)d passed, '"
 nl|'\n'
-string|"'%(quars)d quarantined, %(errors)d errors '"
+string|"'%(quars)d quarantined, %(errors)d errors, '"
 nl|'\n'
-string|"'files/sec: %(frate).2f , bytes/sec: %(brate).2f, '"
+string|"'files/sec: %(frate).2f, bytes/sec: %(brate).2f, '"
 nl|'\n'
 string|"'Total time: %(total).2f, Auditing time: %(audit).2f, '"
 nl|'\n'

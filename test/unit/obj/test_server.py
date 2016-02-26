@@ -27608,10 +27608,10 @@ op|'}'
 op|')'
 newline|'\n'
 nl|'\n'
-DECL|member|test_object_delete_at_aysnc_update
+DECL|member|test_object_delete_at_async_update
 dedent|''
 name|'def'
-name|'test_object_delete_at_aysnc_update'
+name|'test_object_delete_at_async_update'
 op|'('
 name|'self'
 op|')'

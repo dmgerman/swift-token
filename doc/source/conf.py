@@ -103,8 +103,6 @@ string|"'sphinx.ext.todo'"
 op|','
 string|"'sphinx.ext.coverage'"
 op|','
-string|"'sphinx.ext.pngmath'"
-op|','
 nl|'\n'
 string|"'sphinx.ext.ifconfig'"
 op|','

@@ -3187,15 +3187,20 @@ name|'print'
 op|'('
 name|'_'
 op|'('
-string|"'Removing pid file %s with wrong pid %d'"
-op|')'
-op|'%'
-op|'('
+string|"'Removing pid file %(pid_file)s with wrong pid '"
 nl|'\n'
+string|"'%(pid)d'"
+op|')'
+op|','
+op|'{'
+string|"'pid_file'"
+op|':'
 name|'pid_file'
 op|','
+string|"'pid'"
+op|':'
 name|'pid'
-op|')'
+op|'}'
 op|')'
 newline|'\n'
 dedent|''

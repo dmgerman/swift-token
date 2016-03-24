@@ -1362,8 +1362,12 @@ name|'env'
 op|'['
 string|"'REQUEST_METHOD'"
 op|']'
-op|'=='
+name|'in'
+op|'('
 string|"'GET'"
+op|','
+string|"'HEAD'"
+op|')'
 name|'and'
 name|'status'
 op|'['

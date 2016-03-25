@@ -326,7 +326,7 @@ op|')'
 op|':'
 newline|'\n'
 indent|'    '
-string|'"""\n    This class wraps the the reconstructed fragment archive data and\n    metadata in the DiskFile interface for ssync.\n    """'
+string|'"""\n    This class wraps the reconstructed fragment archive data and\n    metadata in the DiskFile interface for ssync.\n    """'
 newline|'\n'
 nl|'\n'
 DECL|member|__init__

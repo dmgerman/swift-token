@@ -1001,15 +1001,22 @@ op|'('
 nl|'\n'
 name|'_'
 op|'('
-string|"'Audit Failed for %s: %s'"
+string|"'Audit Failed for %(path)s: %(err)s'"
 op|')'
 op|','
+nl|'\n'
+op|'{'
+string|"'path'"
+op|':'
 name|'path'
 op|','
+string|"'err'"
+op|':'
 name|'str'
 op|'('
 name|'e'
 op|')'
+op|'}'
 op|')'
 newline|'\n'
 dedent|''

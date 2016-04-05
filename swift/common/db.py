@@ -1914,18 +1914,28 @@ name|'detail'
 op|'='
 name|'_'
 op|'('
-string|"'Quarantined %s to %s due to %s database'"
+string|"'Quarantined %(db_dir)s to %(quar_path)s due to '"
+nl|'\n'
+string|"'%(exc_hint)s database'"
 op|')'
 op|'%'
-op|'('
+op|'{'
+string|"'db_dir'"
+op|':'
 name|'self'
 op|'.'
 name|'db_dir'
 op|','
+nl|'\n'
+string|"'quar_path'"
+op|':'
 name|'quar_path'
 op|','
+nl|'\n'
+string|"'exc_hint'"
+op|':'
 name|'exc_hint'
-op|')'
+op|'}'
 newline|'\n'
 name|'self'
 op|'.'

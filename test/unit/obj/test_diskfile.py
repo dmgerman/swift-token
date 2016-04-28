@@ -7536,15 +7536,6 @@ name|'df_mgr'
 op|','
 string|"'/srv/dev/'"
 op|','
-name|'self'
-op|'.'
-name|'df_mgr'
-op|'.'
-name|'threadpools'
-op|'['
-string|"'dev'"
-op|']'
-op|','
 string|"'9'"
 op|','
 nl|'\n'

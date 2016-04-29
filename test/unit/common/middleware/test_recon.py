@@ -1471,7 +1471,7 @@ string|"'10.1.1.1'"
 op|','
 string|"'port'"
 op|':'
-number|'6000'
+number|'6200'
 op|','
 nl|'\n'
 string|"'device'"
@@ -1500,7 +1500,7 @@ string|"'10.1.1.1'"
 op|','
 string|"'port'"
 op|':'
-number|'6000'
+number|'6200'
 op|','
 nl|'\n'
 string|"'device'"
@@ -1532,7 +1532,7 @@ string|"'10.1.2.1'"
 op|','
 string|"'port'"
 op|':'
-number|'6000'
+number|'6200'
 op|','
 nl|'\n'
 string|"'device'"
@@ -1561,7 +1561,7 @@ string|"'10.1.2.2'"
 op|','
 string|"'port'"
 op|':'
-number|'6000'
+number|'6200'
 op|','
 nl|'\n'
 string|"'device'"
@@ -2182,7 +2182,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'d288bdf39610e90d4f0b67fa00eeec4f'"
+string|"'11e0c98abb209474d40d6a9a8a523803'"
 op|','
 nl|'\n'
 string|"'%s/container.ring.gz'"
@@ -2192,7 +2192,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'9a5a05a8a4fbbc61123de792dbe4592d'"
+string|"'6685496a4045ce0be123068e0165a64d'"
 op|','
 nl|'\n'
 string|"'%s/object.ring.gz'"
@@ -2202,7 +2202,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'da02bfbd0bf1e7d56faea15b6fe5ab1e'"
+string|"'782728be98644fb725e165d4bf5728d4'"
 op|','
 nl|'\n'
 string|"'%s/object-1.ring.gz'"
@@ -2212,7 +2212,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'3f1899b27abf5f2efcc67d6fae1e1c64'"
+string|"'7c3a4bc9f724d4eb69c9b797cdc28b8c'"
 op|','
 nl|'\n'
 string|"'%s/object-2.ring.gz'"
@@ -2222,7 +2222,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'8f0e57079b3c245d9b3d5a428e9312ee'"
+string|"'324b9c4da20cf7ef097edbd219d296e0'"
 op|'}'
 newline|'\n'
 nl|'\n'
@@ -2549,7 +2549,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'da02bfbd0bf1e7d56faea15b6fe5ab1e'"
+string|"'782728be98644fb725e165d4bf5728d4'"
 op|'}'
 newline|'\n'
 name|'ringmd5'
@@ -2651,7 +2651,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'d288bdf39610e90d4f0b67fa00eeec4f'"
+string|"'11e0c98abb209474d40d6a9a8a523803'"
 op|','
 nl|'\n'
 string|"'%s/container.ring.gz'"
@@ -2661,7 +2661,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'9a5a05a8a4fbbc61123de792dbe4592d'"
+string|"'6685496a4045ce0be123068e0165a64d'"
 op|','
 nl|'\n'
 string|"'%s/object.ring.gz'"
@@ -2671,7 +2671,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'da02bfbd0bf1e7d56faea15b6fe5ab1e'"
+string|"'782728be98644fb725e165d4bf5728d4'"
 op|','
 nl|'\n'
 string|"'%s/object-2.ring.gz'"
@@ -2681,7 +2681,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'8f0e57079b3c245d9b3d5a428e9312ee'"
+string|"'324b9c4da20cf7ef097edbd219d296e0'"
 op|'}'
 newline|'\n'
 nl|'\n'
@@ -2855,7 +2855,7 @@ op|'['
 name|'ringpath'
 op|']'
 op|'='
-string|"'acfa4b85396d2a33f361ebc07d23031d'"
+string|"'a7e591642beea6933f64aebd56f357d9'"
 newline|'\n'
 nl|'\n'
 comment|'# We should now see it in the ringmd5 response, without a restart'
@@ -2950,7 +2950,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'d288bdf39610e90d4f0b67fa00eeec4f'"
+string|"'11e0c98abb209474d40d6a9a8a523803'"
 op|','
 nl|'\n'
 string|"'%s/container.ring.gz'"
@@ -2960,7 +2960,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'9a5a05a8a4fbbc61123de792dbe4592d'"
+string|"'6685496a4045ce0be123068e0165a64d'"
 op|','
 nl|'\n'
 string|"'%s/object.ring.gz'"
@@ -2970,7 +2970,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'da02bfbd0bf1e7d56faea15b6fe5ab1e'"
+string|"'782728be98644fb725e165d4bf5728d4'"
 op|','
 nl|'\n'
 string|"'%s/object-2.ring.gz'"
@@ -2980,7 +2980,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'8f0e57079b3c245d9b3d5a428e9312ee'"
+string|"'324b9c4da20cf7ef097edbd219d296e0'"
 op|'}'
 newline|'\n'
 nl|'\n'
@@ -3084,7 +3084,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'d288bdf39610e90d4f0b67fa00eeec4f'"
+string|"'11e0c98abb209474d40d6a9a8a523803'"
 op|','
 nl|'\n'
 string|"'%s/container.ring.gz'"
@@ -3094,7 +3094,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'9a5a05a8a4fbbc61123de792dbe4592d'"
+string|"'6685496a4045ce0be123068e0165a64d'"
 op|','
 nl|'\n'
 string|"'%s/object.ring.gz'"
@@ -3104,7 +3104,7 @@ op|'.'
 name|'tempdir'
 op|':'
 nl|'\n'
-string|"'da02bfbd0bf1e7d56faea15b6fe5ab1e'"
+string|"'782728be98644fb725e165d4bf5728d4'"
 op|'}'
 newline|'\n'
 nl|'\n'

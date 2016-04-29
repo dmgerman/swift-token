@@ -543,7 +543,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-number|'6002'
+number|'6202'
 op|','
 nl|'\n'
 string|"'device'"
@@ -565,7 +565,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-number|'6002'
+number|'6202'
 op|','
 nl|'\n'
 string|"'device'"
@@ -587,7 +587,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-number|'6002'
+number|'6202'
 op|','
 nl|'\n'
 string|"'device'"
@@ -609,7 +609,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-number|'6002'
+number|'6202'
 op|','
 nl|'\n'
 string|"'device'"
@@ -631,7 +631,7 @@ op|','
 nl|'\n'
 string|"'port'"
 op|':'
-number|'6002'
+number|'6202'
 op|','
 nl|'\n'
 string|"'device'"

@@ -77,7 +77,7 @@ newline|'\n'
 DECL|variable|default_port
 name|'default_port'
 op|'='
-number|'6002'
+number|'6202'
 newline|'\n'
 dedent|''
 endmarker|''

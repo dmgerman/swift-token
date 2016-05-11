@@ -264,7 +264,7 @@ DECL|variable|MAX_PROCS
 name|'MAX_PROCS'
 op|'='
 number|'8192'
-comment|'# workers * disks * threads_per_disk, can get high'
+comment|'# workers * disks, can get high'
 newline|'\n'
 nl|'\n'
 nl|'\n'

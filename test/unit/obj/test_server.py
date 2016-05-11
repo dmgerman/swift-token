@@ -8383,7 +8383,7 @@ comment|"# data file doesn't exist there (This is sanity because"
 nl|'\n'
 comment|'# if .data written unexpectedly, it will be removed'
 nl|'\n'
-comment|'# by hash_cleanup_list_dir)'
+comment|'# by cleanup_ondisk_files)'
 nl|'\n'
 name|'datafile'
 op|'='

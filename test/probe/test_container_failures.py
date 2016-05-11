@@ -907,7 +907,7 @@ op|'['
 string|"'port'"
 op|']'
 op|'-'
-number|'6200'
+number|'6000'
 op|')'
 op|'/'
 number|'10'
